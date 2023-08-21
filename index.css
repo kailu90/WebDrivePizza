@@ -108,3 +108,19 @@ h1 {
 }
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
+@media (max-width: 1000px)
+{
+  .container_menu {   
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+    row-gap: 5px;    
+    margin-bottom: 50px;
+  }
+  .container_menu .card {  
+    display: flex;  
+    height: max-content;
+    max-width: 300px;     
+    margin: 20px;
+    border-radius: 30px;  
+  }
+}

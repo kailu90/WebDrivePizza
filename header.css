@@ -1,6 +1,7 @@
 /**************************Estilos HEADER****************************/
 .header {
   display: flex; 
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   background-color: black;
@@ -40,11 +41,15 @@
 }
 @media (max-width: 1000px)
 {
-  .header nav {
-    width: 70vw;
+  .header img {
+    width: 100px;
+    height: 100px;  
+    margin: 0 auto 0 40px;
   }
-
-
-
-  
+  .header .nav_bar {
+    width: max-content;    
+  }
+  .nav_bar ul li a {
+    margin: 0 30px;
+  }  
 }
