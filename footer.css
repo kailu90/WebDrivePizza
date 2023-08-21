@@ -1,0 +1,50 @@
+/**********************FOOTER********************/
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;  
+}
+/***********************FOOTER SUPERIOR******************/
+.footer_superior {
+  margin: 0 80px;
+  display: flex; 
+  justify-content: space-between;
+}
+.footer_superior img {
+  width: 400px;
+  height: 400px;
+}
+.footer_superior .nav_bar__footer {
+  display: flex;  
+  justify-content: space-between;
+  align-self: center;
+}
+.footer_superior .nav_bar__footer ul {
+  display: flex;
+  flex-direction: column;  
+  width: 200px;  
+}
+.footer_superior .nav_bar__footer img {
+ width: 300px;
+ height: 300px;
+}
+/***********************FOOTER INFERIOR******************/
+.footer_inferior { 
+  margin: 0 80px 20px 80px; 
+  display: flex; 
+  justify-content: space-between;  
+  align-items: center;
+}
+.footer_inferior img {
+  width: 50px;
+  margin: 10px;
+}
+.footer_inferior h3 {
+  font-size: 2rem;
+  margin: 10px;
+}
+.footer_inferior .metodos_pago__footer_inferior img:nth-child(1){
+  width: 500px;
+  height: auto;
+}
