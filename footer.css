@@ -29,6 +29,9 @@
  width: 300px;
  height: 300px;
 }
+.footer_superior .footer_titulo_utilidades {
+  color: red;
+}
 /***********************FOOTER INFERIOR******************/
 .footer_inferior { 
   margin: 0 80px 20px 80px; 
