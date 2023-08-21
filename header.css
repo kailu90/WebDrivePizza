@@ -38,3 +38,13 @@
   max-width: max-content;
   background-color: transparent; 
 }
+@media (max-width: 1000px)
+{
+  .header nav {
+    width: 70vw;
+  }
+
+
+
+  
+}
