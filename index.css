@@ -32,16 +32,16 @@ h1 {
 .container_menu {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 5px;    
+  margin-bottom: 50px; 
   max-width: 1200px; 
   justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
+  align-items: center; 
 }
 .container_menu .card {  
   display: flex;  
-  height: max-content;
+  height: 400px;
   max-width: 300px;  
   background-color: #008000;
   margin: 20px;
@@ -72,10 +72,13 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
 }
-.container_menu .card a {  
+.container_menu .card a { 
+  display: flex;
+  flex-direction: column; 
   height: max-content;
   width: 100%;
   align-self: flex-end;
+  align-items: center;
   margin: 10px;
   border-radius: 10px; 
 }
@@ -83,13 +86,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;  
-  margin-top: 40px;
+  font-size: 2rem;   
 }
 .container_menu .card p {
   font-size: 2rem;
   text-align: left;
-  margin: 40px;
+  margin: 10px; 
 }
 .container_menu .card button {  
   border-radius: 20px;
@@ -98,8 +100,8 @@ h1 {
   font-size: 1rem;
   font-weight: 600;
   background-color: #e4bc22;  
-  justify-self: end;
-  margin: 0 40px 40px 40px;
+  justify-self: end; 
+  margin-bottom: 10px; 
 }
 .container_menu .card a:hover {   
   opacity: 0.7;
@@ -109,45 +111,15 @@ h1 {
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1000px)
-{
-  .container_menu {      
+{ 
+  .container_menu { 
+    grid-template-columns: repeat(2,1fr);     
     column-gap: 5px;
     row-gap: 5px;    
     margin-bottom: 50px;
-  }
-  .container_menu .card {     
-    height: 300px;
-    justify-items: center;
-    max-width: 230px;     
-  }
-  .container_menu .card h2 {   
-    font-size: 1rem;    
-  }
-  .container_menu .card p {
-    font-size: 1rem;
-    margin: 10px;    
-  }
-  .container_menu .card button { 
-    width: 100px;
-    height: 40px;
-    font-size: 0.8rem;      
-  }
+  }  
 }
-@media (max-width: 768px)
-{  
-  .container_menu .card {     
-    height: 280px;   
-    max-width: 200px;       
-  } 
-  .container_menu .card button { 
-    width: 100px;
-    height: 40px;
-    font-size: 0.8rem;    
-    justify-self: center;    
-    margin: auto;
-  }
-}
-@media (max-width: 460px)
+@media (max-width: 700px)
 {  
   h1 {
     font-size: 1.5rem;   
@@ -155,4 +127,7 @@ h1 {
   .container_menu {   
     grid-template-columns: repeat(1,1fr);   
   } 
+  .container_menu .card button { 
+    height: 30px;     
+  }
 }

@@ -4,20 +4,21 @@
 }
 .header {
   display: flex; 
-  width: 93.3%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
-  height: 150px;
-  padding: 40px;
+  height: 150px;  
 }
 .header img {
   width: 140px;
   height: 140px; 
+  padding-left: 40px;  
 }
-.header nav {
+.header .nav_bar {
  width: max-content;
+ padding-right: 40px;  
 }
 .nav_bar ul {
   display: flex;  
@@ -27,11 +28,11 @@
 }
 .nav_bar ul li a { 
   color: white;
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   align-items: center;
   height: 100%;
   font-weight: 600;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 .nav_bar ul li a:hover { 
   color: green;
@@ -45,40 +46,31 @@
 @media (max-width: 1000px)
 {  
   .header img {
-    width: 148px;
-    height: 148px;  
-    margin: 0 auto 0 40px;
-  }
-  .header .nav_bar {
-    width: max-content;    
-  }
-  .nav_bar ul li a {
-    margin: 0 30px;
-    font-size: 1rem;
+    width: 100px;
+    height: 100px;      
+  }  
+  .nav_bar ul li a {    
+    font-size: 0.6rem;
   }   
 }
-@media (max-width: 768px)
+@media (max-width: 700px)
 {  
   .header .nav_bar ul {
     padding: 0 40px;
-  }
-  .header img {
-    margin: 0;      
-  }
+  }  
   .header .nav_bar {
     width: max-content;  
     padding: 0 20px 0 0;  
   }
   .nav_bar ul li a {
-    margin: 0 10px;
-    font-size: 0.8rem;
+    margin: 0 10px;   
   }   
 }
-@media (max-width: 460px)
+@media (max-width: 640px)
 {  
   .header {
     padding: 0;
-    justify-content: space-around;
+    justify-content: space-between;    
     width: 100%;
   }
   .header .nav_bar {
@@ -89,12 +81,13 @@
     color: #008000;
     width: 40px;
     height: 40px;
+    padding: 0 40px;
   }    
   .header img {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 40px;
   }
   .header .nav_bar {
     width: max-content;  
@@ -102,6 +95,6 @@
   }
   .nav_bar ul li a {
     margin: 0 10px;
-    font-size: 0.8rem;
+    font-size: 0.2rem;
   }   
 }
