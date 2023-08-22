@@ -1,20 +1,23 @@
 /**************************Estilos HEADER****************************/
+.header .menu_hamburguesa {
+  display: none;
+}
 .header {
   display: flex; 
-  width: 100vw;
+  width: 93.3%;
   justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
   height: 150px;
+  padding: 40px;
 }
 .header img {
-  width: 150px;
-  height: 150px;  
-  margin: 0 auto 0 40px;
+  width: 140px;
+  height: 140px; 
 }
 .header nav {
- width: 70vw;
+ width: max-content;
 }
 .nav_bar ul {
   display: flex;  
@@ -24,7 +27,7 @@
 }
 .nav_bar ul li a { 
   color: white;
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   align-items: center;
   height: 100%;
   font-weight: 600;
@@ -40,10 +43,10 @@
   background-color: transparent; 
 }
 @media (max-width: 1000px)
-{
+{  
   .header img {
-    width: 100px;
-    height: 100px;  
+    width: 148px;
+    height: 148px;  
     margin: 0 auto 0 40px;
   }
   .header .nav_bar {
@@ -51,5 +54,54 @@
   }
   .nav_bar ul li a {
     margin: 0 30px;
-  }  
+    font-size: 1rem;
+  }   
+}
+@media (max-width: 768px)
+{  
+  .header .nav_bar ul {
+    padding: 0 40px;
+  }
+  .header img {
+    margin: 0;      
+  }
+  .header .nav_bar {
+    width: max-content;  
+    padding: 0 20px 0 0;  
+  }
+  .nav_bar ul li a {
+    margin: 0 10px;
+    font-size: 0.8rem;
+  }   
+}
+@media (max-width: 320px)
+{  
+  .header {
+    padding: 0;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .header .nav_bar {
+    display: none;    
+  }
+  .header .menu_hamburguesa {
+    display: flex;
+    color: #008000;
+    width: 40px;
+    height: 40px;
+  }    
+  .header img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .header .nav_bar {
+    width: max-content;  
+    padding: 0 20px 0 0;  
+  }
+  .nav_bar ul li a {
+    margin: 0 10px;
+    font-size: 0.8rem;
+  }   
 }

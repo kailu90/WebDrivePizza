@@ -27,11 +27,11 @@ h1 {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 0px auto;
+  margin: 20px auto;
 }
 .container_menu {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
   column-gap: 10px;
   row-gap: 10px;
   max-width: 1200px; 
@@ -110,17 +110,49 @@ h1 {
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1000px)
 {
-  .container_menu {   
-    grid-template-columns: repeat(3,1fr);
+  .container_menu {      
     column-gap: 5px;
     row-gap: 5px;    
     margin-bottom: 50px;
   }
-  .container_menu .card {  
-    display: flex;  
-    height: max-content;
-    max-width: 300px;     
-    margin: 20px;
-    border-radius: 30px;  
+  .container_menu .card {     
+    height: 300px;
+    justify-items: center;
+    max-width: 230px;     
   }
+  .container_menu .card h2 {   
+    font-size: 1rem;    
+  }
+  .container_menu .card p {
+    font-size: 1rem;
+    margin: 10px;    
+  }
+  .container_menu .card button { 
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;      
+  }
+}
+@media (max-width: 768px)
+{  
+  .container_menu .card {     
+    height: 280px;   
+    max-width: 200px;       
+  } 
+    .container_menu .card button { 
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;    
+    justify-self: center;    
+    margin: auto;
+  }
+}
+@media (max-width: 320px)
+{  
+  h1 {
+    font-size: 1.5rem;   
+  }
+  .container_menu {   
+    grid-template-columns: repeat(1,1fr);   
+  } 
 }
