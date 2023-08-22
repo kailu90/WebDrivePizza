@@ -131,3 +131,21 @@ h1 {
     height: 30px;     
   }
 }
+@media (max-width: 640px)
+{ 
+  .container_menu .card_pizza {
+    background-image: url(./imagenes/Fondo_Pizzas_Mobile.jpg);
+  }
+  .container_menu .card_pasta {
+    background-image: url(./imagenes/Fondo_Pastas_Mobile.jpg);
+  }
+  .container_menu .card_otras_delicias{
+    background-image: url(./imagenes/Fondo_Hamburguesas_Mobile.jpg);
+  }
+  .container_menu .card_ensaladas {
+    background-image: url(./imagenes/Fondo_Ensaladas_Mobile.jpg);   
+  }
+  .container_menu .card_bebidas {
+    background-image: url(./imagenes/Fondo_Bebidas_Mobile.jpg);    
+  }
+}
