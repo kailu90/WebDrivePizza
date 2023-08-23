@@ -98,3 +98,33 @@
     font-size: 0.2rem;
   }   
 }
+@media (max-width: 320px)
+{  
+  .header {
+    height: 100px;
+  }
+  .header .nav_bar {
+    display: none;    
+  }
+  .header .menu_hamburguesa {
+    display: flex;
+    color: #008000;
+    width: 40px;
+    height: 40px;
+    padding: 0 40px;
+  }    
+  .header img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 40px;
+  }
+  .header .nav_bar {
+    width: max-content;  
+    padding: 0 20px 0 0;  
+  }
+  .nav_bar ul li a {
+    margin: 0 10px;
+    font-size: 0.2rem;
+  }   
+}

@@ -55,8 +55,7 @@ h1 {
 }
 .container_menu .card .card__container_precio p {
   margin: 5px;
-  font-size: 1rem;
-  margin: 0 10px;
+  font-size: 1rem;  
 }
 .container_menu .card .card__container_precio {
   display: flex;
@@ -67,7 +66,7 @@ h1 {
   font-weight: 600;
   align-self: end;
   color: red; 
-  margin: 10px;
+  margin: 10px 30px;
 }
 .container_menu .card h2 {
   display: flex;
@@ -107,17 +106,23 @@ h1 {
     row-gap: 5px;    
     margin-bottom: 50px;
   }  
+  .container_menu .card {
+    position: relative;
+    height: 100px;
+    width: 450px;
+    background-color: #008000;
+    margin: 5px;
+    border-radius: 30px;
+  }
 }
 @media (max-width: 1000px)
 { 
   .container_menu { 
-    grid-template-columns: repeat(1,1fr);     
-    column-gap: 5px;
-    row-gap: 5px;    
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);    
   }  
+  .container_menu .card {    
+    width: 400px;    
+  }
 }
 @media (max-width: 600px)
 { 
