@@ -1,0 +1,92 @@
+/**********************Estilos GENERALES****************************/
+* {
+  border-radius: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;  
+  background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+}
+ul {
+  list-style: none;
+}
+/******************************INICIO DE MAIN******************************/
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: max-content;
+  justify-content: center;
+  align-items: center;  
+}
+h1 {
+  font-size: 80px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 100px auto;
+}
+.container_menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw; 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+/******************************CARD***********************************/
+.container_menu .card {
+  height: max-content;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: auto;  
+  background-color: #008000;
+  margin: 20px;
+  border-radius: 30px;
+}
+.container_menu .card h2 {
+  margin-top: 40px;
+}
+.container_menu .card .card__container_descripcion p {
+  font-size: 48px;
+ 
+}
+.container_menu .card .card__container_precio {
+  display: flex;
+  justify-content: space-between;
+}
+.container_menu .card .card__container_precio p {
+  font-size: 40px;
+  font-weight: 600;
+  align-self: end;
+  color: red;
+  margin: 0 0 20px 20px;
+}
+.container_menu .card h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  text-align: center;   
+}
+.container_menu .card p {
+  font-size: 18px;
+  text-align: center;  
+}
+.container_menu .card button {  
+  border-radius: 200px 0 30px 0;
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: red;  
+  justify-self: end;
+  margin: 0;
+}
+.container_menu .card a:hover {   
+  opacity: 0.7;
+  border-color: 1px solid #008000;
+  cursor: pointer;
+}
