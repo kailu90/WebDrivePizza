@@ -22,64 +22,66 @@ main {
   align-items: center;  
 }
 h1 {
-  font-size: 80px;
+  font-size: 3rem;
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 100px auto;
+  margin: 20px auto;
 }
 .container_menu {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 80vw; 
+  width: 80vw;  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
   margin-bottom: 200px;
 }
 /******************************CARD***********************************/
 .container_menu .card {
-  height: max-content;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: auto;  
+  position: relative;
+  height: 100px;
+  width: 600px;
   background-color: #008000;
-  margin: 20px;
+  margin: 5px;
   border-radius: 30px;
 }
 .container_menu .card h2 {
-  margin-top: 40px;
+  margin-top: 0.8rem;
 }
 .container_menu .card .card__container_descripcion p {
-  font-size: 48px;
- 
+  margin: 20px;
+  font-size: 1rem;
 }
 .container_menu .card .card__container_precio {
   display: flex;
   justify-content: space-between;
 }
 .container_menu .card .card__container_precio p {
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: 600;
   align-self: end;
-  color: red;
-  margin: 0 0 20px 20px;
+  color: red; 
+  margin: 10px;
 }
 .container_menu .card h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 1.5rem;
   text-align: center;   
 }
 .container_menu .card p {
   font-size: 18px;
   text-align: center;  
 }
-.container_menu .card button {  
-  border-radius: 200px 0 30px 0;
-  width: 100px;
-  height: 100px;
-  font-size: 18px;
+.container_menu .card button { 
+  position: absolute; 
+  top: 50px;
+  right: 0;
+  border-radius: 200px 0 100px 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0.5rem;
   font-weight: 600;
   background-color: red;  
   justify-self: end;
