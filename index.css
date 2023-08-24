@@ -42,8 +42,7 @@ h1 {
 .container_menu .card {  
   display: flex;  
   height: 400px;
-  max-width: 300px;  
-  background-color: #008000;
+  max-width: 300px;    
   margin: 20px;
   border-radius: 30px;  
 }
@@ -104,8 +103,7 @@ h1 {
   margin-bottom: 10px; 
 }
 .container_menu .card a:hover {   
-  opacity: 0.7;
-  border-color: 1px solid #008000;
+  opacity: 0.7;  
   cursor: pointer;
 }
 /***********************MENU PIZZAS**************/
