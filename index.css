@@ -3,6 +3,7 @@
   border-radius: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 a {
   text-decoration: none;
@@ -11,6 +12,9 @@ a {
 }
 ul {
   list-style: none;
+}
+p {
+  font-weight: 300;
 }
 /******************************INICIO DE MAIN******************************/
 /***Acá están las 5 secciones de todos los productos, pizzas, pastas, otras delicias, ensaladas y bebidas***/
@@ -24,6 +28,7 @@ main {
 }
 h1 {
   font-size: 3rem;
+  font-weight: 800;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -43,7 +48,7 @@ h1 {
   display: flex;  
   height: 400px;
   max-width: 300px;    
-  margin: 20px;
+  margin: 10px;
   border-radius: 30px;  
 }
 .container_menu .card_pizza {
@@ -78,7 +83,7 @@ h1 {
   width: 100%;
   align-self: flex-end;
   align-items: center;
-  margin: 10px;
+  margin: 0;
   border-radius: 10px; 
 }
 .container_menu .card h2 {
