@@ -102,7 +102,7 @@
 @media (max-width: 320px)
 {  
   .header {
-    height: 100px;
+    height: 80px;
   }
   .header .nav_bar {
     display: none;    
@@ -119,6 +119,8 @@
     justify-content: center;
     margin: 0;
     padding: 0 40px;
+    height: 80px;
+    width: 80px;
   }
   .header .nav_bar {
     width: max-content;  
