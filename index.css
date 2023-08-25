@@ -137,11 +137,12 @@ h1 {
 { 
   .container_menu .card {    
     height: 200px;
-    width: 40vw; 
+    width: 45vw; 
     max-width: 150px;   
+    margin: 5px;
   }
   .container_menu .card a {     
-    width: 40vw;     
+    width: 100%;     
   }
   .container_menu .card h2 {   
     font-size: 0.8rem;     
