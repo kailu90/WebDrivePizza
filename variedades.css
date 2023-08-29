@@ -111,32 +111,6 @@ h1 {
 }
 @media (max-width: 1200px)
 { 
-  .container_menu { 
-    grid-template-columns: repeat(2,1fr);     
-    column-gap: 5px;
-    row-gap: 5px;    
-    margin-bottom: 50px;
-  }  
-  .container_menu .card {
-    position: relative;
-    height: 100px;
-    width: 450px;
-    background-color: #008000;
-    margin: 5px;
-    border-radius: 30px;
-  }
-}
-@media (max-width: 1000px)
-{ 
-  .container_menu { 
-    grid-template-columns: repeat(1,1fr);    
-  }  
-  .container_menu .card {    
-    width: 400px;    
-  }
-}
-@media (max-width: 600px)
-{ 
   h1 {
     font-size: 2rem;    
   }
@@ -150,8 +124,7 @@ h1 {
   .container_menu .card {
     position: relative;
     height: 60px;
-    width: 300px;
-    background-color: #008000;
+    width: 280px;   
     margin: 5px;
     border-radius: 20px;
   } 
@@ -164,4 +137,15 @@ h1 {
   .container_menu .card .card__container_precio p {
     font-size: 0.6rem;   
   }
+  .container_menu .card a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px 0 0 20px;
+  }
+}
+@media (max-width: 600px)
+{
+  .container_menu { 
+    grid-template-columns: repeat(1,1fr);    
+  } 
 }
