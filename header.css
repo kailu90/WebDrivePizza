@@ -7,7 +7,7 @@ header .menu_hamburguesa {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color:black;
   color: white;
   height: 150px;  
   z-index: 1;
@@ -77,6 +77,7 @@ header .menu_hamburguesa {
     width: 100%;  
     height: 80px;
     border-bottom: 2px solid black;
+    background-color: white;
   }
   .header .nav_bar {
     display: none;    
