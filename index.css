@@ -7,8 +7,7 @@
 }
 a {
   text-decoration: none;
-  color: white;  
-  background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+  color: white;   
 }
 ul {
   list-style: none;
@@ -24,7 +23,8 @@ main {
   background-color: white;
   height: max-content;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  padding-top: 80px;  
 }
 h1 {
   font-size: 3rem;
@@ -43,6 +43,7 @@ h1 {
   max-width: 1200px; 
   justify-content: center;
   align-items: center; 
+  z-index: 0;
 }
 .container_menu .card {  
   display: flex;  
@@ -90,6 +91,7 @@ h1 {
   justify-content: center;
   margin: 0;
   border-radius: 30px; 
+  background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
 }
 .container_menu .card h2 {
   display: flex;

@@ -20,12 +20,14 @@ main {
   height: max-content;
   justify-content: center;
   align-items: center;  
+  padding-top: 80px;
 }
 h1 {
   font-size: 3rem;
   font-weight: 800;
   display: flex;
   align-content: center;
+  text-align: center;
   justify-content: center;
   margin: 20px auto;
 }
