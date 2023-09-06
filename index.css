@@ -115,10 +115,11 @@ h1 {
   justify-self: end; 
   margin-bottom: 10px; 
 }
-.container_menu .card a:hover {   
-  opacity: 0.7;  
-  cursor: pointer;
+.container_menu .card:hover {   
+  scale: 1.05;  
+  cursor: pointer;  
 }
+
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1200px)
