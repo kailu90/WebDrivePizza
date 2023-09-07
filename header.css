@@ -15,6 +15,7 @@ header .menu_hamburguesa {
   border-bottom: 1px solid white;  
 }
 .header_logo img {
+  padding-left: 40px;
   width: 140px;
   height: 70px;   
 }
@@ -60,7 +61,7 @@ header .menu_hamburguesa {
   justify-self: center;
 }
 .carrito {
-  display: block;
+  display: none;
   border-top: 1px solid white;
   width: 40%;  
   max-height:   80vh;
@@ -244,7 +245,7 @@ header .menu_hamburguesa {
   padding: 10px;
 }
 }
-@media (max-width: 650px)
+@media (max-width: 700px)
 {  
   .header {
     padding: 0;
