@@ -4,6 +4,7 @@ header .menu_hamburguesa {
 }
 .header {
   display: flex; 
+  position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +30,7 @@ header .menu_hamburguesa {
 }
 .nav_bar ul li a { 
   color: white;
-  font-size: 1rem; 
+  font-size: 0.8rem; 
   align-items: center;
   height: 100%;
   font-weight: 600;
@@ -59,15 +60,18 @@ header .menu_hamburguesa {
   justify-self: center;
 }
 .carrito {
-  display: none;
-  border: 1px solid black;
+  display: block;
+  border-top: 1px solid white;
   width: 40%;
-  max-width: 550px;
+  height: max-content;
+  max-height: 100vh;
+  max-width: 350px;
   margin-top: 150px;  
   overflow: hidden;
   margin-bottom: auto;
-  position: sticky;
+  position: absolute;
   top: 0;
+  right: 0;;
   transition: 0.3s;
   color: black;
   z-index: 2;
@@ -88,6 +92,8 @@ header .menu_hamburguesa {
 }
 .carrito .carrito_item img {
   margin-right: 10px; 
+  width: 50px;
+  height: auto;
 }
 .carrito .carrito_item .carrito_item_titulo {
   display: block;
@@ -140,6 +146,9 @@ header .menu_hamburguesa {
   background: transparent;
   z-index: 20;
 }
+.carrito .carrito_item .btn_eliminar:hover {
+ scale: 1.05;
+}
 .carrito .carrito_item .btn_eliminar i {
   pointer-events: none;
 }
@@ -178,12 +187,6 @@ header .menu_hamburguesa {
     width: 100px;
     height: 50px;      
   }  
-  .nav_bar ul li a {    
-    font-size: 0.6rem;
-  }   
-}
-@media (max-width: 700px)
-{  
   .header .nav_bar ul {
     padding: 0;
   }  
@@ -193,9 +196,56 @@ header .menu_hamburguesa {
   }
   .nav_bar ul li a {
     margin: 0 10px;   
+  } 
+  .nav_bar ul li a {    
+    font-size: 0.6rem;
   }   
+/*******carrito******/
+.carrito {
+  width: 270px;
 }
-@media (max-width: 640px)
+.carrito .carrito_item img {
+  margin-right: 10px; 
+  width: 30px;
+  height: auto;
+}
+.carrito .carrito_item .carrito_item_titulo {
+ font-size: 0.8rem;
+}
+.carrito .carrito_item .carrito_item_cantidad {
+  font-size: 0.5rem;
+  width: 40px;
+  padding: 5px;
+}
+.carrito .carrito_item .selector_cantidad i{
+  font-size: 0.5rem;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;  
+}
+.carrito .carrito_item .carrito_item_precio {  
+  font-size: 0.8rem;
+}
+.carrito .carrito_item .btn_eliminar {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.carrito .carrito_item .btn_eliminar i {
+  width: 20px;  
+}
+.carrito_total {
+  padding: 15px;
+}
+.carrito_total .fila {
+  font-size: 0.8rem;
+}
+.carrito_total .btn_pagar {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+}
+@media (max-width: 650px)
 {  
   .header {
     padding: 0;
@@ -248,7 +298,12 @@ header .menu_hamburguesa {
     width: 80px;
     height: 40px;
   }    
+  /*******carrito****/
   .carrito_img {
     color: black;
+  }
+  .carrito {
+    border: 1px solid black;
+    margin-top: 80px;
   }
 }
