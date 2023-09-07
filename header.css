@@ -38,10 +38,8 @@ header .menu_hamburguesa {
   margin: 0 20px;
   border: 1px solid transparent;
 }
-.nav_bar ul li a:hover { 
-  color: green;
-  text-overflow: #008000;
-  font-weight: 800;
+.nav_bar ul li:hover { 
+  scale: 1.1;    
 }
 .nav_bar a {
   max-width: max-content;
@@ -61,7 +59,7 @@ header .menu_hamburguesa {
   justify-self: center;
 }
 .carrito {
-  display: none;
+  display: block;
   border-top: 1px solid white;
   width: 40%;  
   max-height:   80vh;
