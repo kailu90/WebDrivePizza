@@ -90,7 +90,7 @@ h1 {
   font-weight: 800;
   color: black;
   background-color: red; 
-  border-radius: 50px 0 18px 0;  
+  border-radius: 50px 0 28px 0;  
 }
 .container_menu .card .card_boton button:hover { 
   scale: 1.02;
