@@ -253,9 +253,29 @@ header .menu_hamburguesa {
     height: 80px;
     border-bottom: 2px solid black;
     background-color: white;
+  } 
+  .header .nav_bar .nav_bar__items {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    border-radius: 0 0 10px 0;   
+    border-top: 2px solid black; 
+    height: 50vh;
+    width: 50vw;
+    max-width: 200px;
+    padding: 20px;
+    line-height: 40px;    
   }
-  .header .nav_bar {
-    display: none;    
+  .header .nav_bar .nav_bar__items li a {  
+    display: block;    
+    color: black;  
+    width: 160px
+  }
+  .header .nav_bar .nav_bar_items {
+    color: black;
   }
   .header .menu_hamburguesa {
     display: flex; 
