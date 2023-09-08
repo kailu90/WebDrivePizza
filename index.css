@@ -174,14 +174,10 @@ h1 {
     font-size: 0.5rem;   
   }
   .container_menu .card button {  
-    border-radius: 20px;
     width: 80px;
     height: 20px;
     font-size: 0.5rem;
     font-weight: 600;
-    background-color: #e4bc22;  
-    justify-self: end; 
-    margin-bottom: 5px; 
   } 
   .container_menu .card_pizza {
     background-image: url(./imagenes/pizzas/Fondo_Pizzas_Mobile.jpg);

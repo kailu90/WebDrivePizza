@@ -43,68 +43,66 @@ h1 {
 /******************************CARD***********************************/
 .container_menu .card {
   position: relative;
-  height: 100px;
   width: 550px;  
+  height: 150px;  
   border: 2px solid #008000;  
   margin: 5px;
   border-radius: 30px;
 }
-.container_menu .card a {
+.container_menu .card a {  
   display: flex;
   border-radius: 30px;
   margin: 0;
   color: #008000;
 }
-.container_menu .card a img {
- height: 100px;
- width: 100px; 
+.container_menu .card a img{
+ height: 150px; 
+ width: auto;
+ max-width: 200px; 
  border-radius: 30px 0 0 30px; 
 }
 .container_menu .card .card_descripcion {
-  width: 100%;
+  margin: auto;
+  width: 80%;
 }
 .container_menu .card h2 {
-  margin-top: 0.8rem;
-}
-.container_menu .card .card__container_precio p {
-  margin: 5px;
-  font-size: 1rem;  
-}
-.container_menu .card .card__container_precio {
-  display: flex;
-  justify-content: space-between;
-}
-.container_menu .card .card__container_precio p {
-  font-size: 1rem;
-  font-weight: 600;
-  align-self: end;
-  color: red; 
-  margin: 10px 30px;
+  margin-top: 10px;
 }
 .container_menu .card h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;   
 }
 .container_menu .card p {
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center; 
   margin: 0 20px; 
 }
-.container_menu .card button { 
+.container_menu .card .card_boton button { 
   position: absolute; 
-  top: 50px;
-  right: 0;
-  border-radius: 200px 0 100px 0;
+  top: 100px;
+  right: 0; 
   width: 50px;
   height: 50px;
   font-size: 0.5rem;
-  font-weight: 600;
-  background-color: red;  
-  justify-self: end;
-  margin: 0;
+  font-weight: 800;
+  color: black;
+  background-color: red; 
+  border-radius: 50px 0 18px 0;  
+}
+.container_menu .card .card_boton button:hover { 
+  scale: 1.02;
+  color: white; 
+}
+.container_menu .card .card_add_cart{ 
+  position: absolute; 
+  top: 120px;
+  right: -15px; 
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;  
 }
 .container_menu .card a:hover {   
   opacity: 0.7;
@@ -125,23 +123,20 @@ h1 {
   }
   .container_menu .card {
     position: relative;
-    height: 60px;
+    height: 150px;
     width: 280px;   
     margin: 5px;
     border-radius: 20px;
   } 
-  .container_menu .card button { 
-    top: 35px;
+  .container_menu .card .button { 
+    top: 125px;
     width: 25px;
     height: 25px;
     font-size: 0.3rem;    
-  }
-  .container_menu .card .card__container_precio p {
-    font-size: 0.6rem;   
-  }
+  }  
   .container_menu .card a img {
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: 150px;
     border-radius: 20px 0 0 20px;
   }
 }

@@ -59,7 +59,7 @@ header .menu_hamburguesa {
   justify-self: center;
 }
 .carrito {
-  display: block;
+  display: none;
   border-top: 1px solid white;
   width: 40%;  
   max-height:   80vh;
