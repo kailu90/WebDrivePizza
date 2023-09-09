@@ -254,6 +254,9 @@ header .menu_hamburguesa {
     border-bottom: 2px solid black;
     background-color: white;
   } 
+  .header .nav_bar {
+    display: none;
+  }
   .header .nav_bar .nav_bar__items {
     display: none;
     flex-direction: column; 
