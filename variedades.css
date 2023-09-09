@@ -43,6 +43,7 @@ h1 {
 /******************************CARD***********************************/
 .container_menu .card {
   position: relative;
+  display: flex;
   width: 550px;  
   height: 150px;  
   border: 2px solid #008000;  
@@ -54,6 +55,7 @@ h1 {
   border-radius: 30px;
   margin: 0;
   color: #008000;
+  width: 100%;
 }
 .container_menu .card a img{
  height: 150px; 
@@ -62,11 +64,50 @@ h1 {
  border-radius: 18px 0 0 18px;
 }
 .container_menu .card .card_descripcion {
-  margin: auto;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin: 0;
+  width: 100%;
+  border-radius: 0 30px 30px 0;
+}
+.container_menu .card .card_clases {
+  display: flex;
+  justify-content: center;
+}
+.container_menu .card .card_descripcion .card_descripcion_tamaños {
+  font-size: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño li {
+  background: black;
+  color: white;
+  height: 40px;
+  font-weight: 800;
+  text-align: center;  
+  width: 20%;
+  padding-top: 10px;
+}
+.container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño li:hover {
+  background: #008000;  
+}
+.container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño .tamaño_jumbo {
+  border-radius: 0 18px 0 0;
+}
+.container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño p {
+  font-size: 0.5rem;
+}
+.container_menu .card .card_descripcion .card_add_cart i:hover {
+  scale: 1.2;
 }
 .container_menu .card h2 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .container_menu .card h2 {
   display: flex;
@@ -104,8 +145,7 @@ h1 {
   height: 50px;
   font-size: 1.2rem;  
 }
-.container_menu .card a:hover {   
-  opacity: 0.7;
+.container_menu .card a:hover {     
   border-color: 1px solid #008000;
   cursor: pointer;
 }
@@ -118,8 +158,12 @@ h1 {
     margin-top: 10px;
     font-size: 0.8rem;
   }
+  .container_menu .card h3 {
+    font-size: 0.5rem;
+  }
   .container_menu .card p {
     font-size: 0.6rem;
+    margin: 0.8px;
   }
   .container_menu .card {
     position: relative;
@@ -139,9 +183,15 @@ h1 {
     height: 150px;
     border-radius: 18px 0 0 18px;
   }
+  .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño h3 {
+    font-size: 0.3rem;
+  }
+  .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño p {
+    font-size: 0.3rem;
+  }  
 }
 @media (max-width: 600px)
-{
+{  
   .container_menu { 
     grid-template-columns: repeat(1,1fr);    
   } 
