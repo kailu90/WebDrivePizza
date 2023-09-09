@@ -251,8 +251,7 @@ header .menu_hamburguesa {
     position: fixed;    
     width: 100%;  
     height: 80px;
-    border-bottom: 2px solid black;
-    background-color: white;
+    border-bottom: 2px solid black;    
   } 
   .header .nav_bar {
     display: none;
@@ -287,41 +286,25 @@ header .menu_hamburguesa {
     height: 30px;
     padding: 0 40px;
   }    
-  .menu_hamburguesa .linea_superior {
+  .menu_hamburguesa div{
     width: 30px;
     height: 4px;
     border-radius: 20px;
-    background-color: black;
+    background-color: white;
     opacity: 0.8;
     margin: 1.5px 0;
-  }
-  .menu_hamburguesa .linea_medio {
-    width: 30px;
-    height: 4px;
-    border-radius: 20px;
-    background-color: black;
-    opacity: 0.8;
-    margin: 1.5px 0;
-  }
-  .menu_hamburguesa .linea_inferior {
-    width: 30px;
-    height: 4px;
-    border-radius: 20px;
-    background-color: black;
-    opacity: 0.8;
-    margin: 1.5px 0;
-  }
+  }  
   .header_logo img {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;    
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: auto;
   }    
   /*******carrito****/
   .carrito_img {
-    color: black;
+    color: white;
   }
   .carrito {
     border: 1px solid black;
