@@ -177,9 +177,7 @@
     padding-top: 10px;
   }  
   .footer_superior .nav_bar__footer {
-    height: 70px;
-    flex-direction: column;
-    align-self: left;
+    height: 70px;  
    }
   .footer_superior .nav_bar__footer ul {
     font-size: 0.7rem;   
