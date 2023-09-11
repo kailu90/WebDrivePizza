@@ -94,6 +94,9 @@ h1 {
   border-radius: 30px; 
   background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
 }
+.container_menu .card a:hover {
+  background: transparent;
+}
 .container_menu .card h2 {
   display: flex;
   justify-content: top;

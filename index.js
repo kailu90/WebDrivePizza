@@ -1,7 +1,8 @@
-const menu = document.querySelector("#menu_hamburguesa")
+const menu = document.querySelector(".nav_bar")
+const navBarItems = document.querySelector(".nav_bar__items")
 
-menu.addEventListener("click", mostrarMenu);
+menu.addEventListener("click", mostrarMenu) ;
 
-function mostrarMenu() {
-  display=none
+function mostrarMenu(navBarItems) {
+ navBarItems
 }

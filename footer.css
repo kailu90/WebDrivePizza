@@ -51,12 +51,21 @@ p {
   font-size: 3rem;
   font-weight: bold;
 }
+.footer_superior .nav_bar__footer ul h3 {
+  font-size: 3rem;
+}
 .footer_superior .nav_bar__footer ul a {
   font-size: 1.6rem;  
   font-weight: 500;  
 }
-.footer_superior .nav_bar__footer ul a:hover {
+.footer_superior .nav_bar__footer ul:nth-child(1) a:hover {
   color: #008000; 
+}
+.footer_superior .nav_bar__footer ul:nth-child(2) a:hover {
+  color: gray;
+}
+.footer_superior .nav_bar__footer ul:nth-child(3) a:hover {
+  color: red; 
 }
 .footer_superior .nav_bar__footer img {
  width: 300px;
