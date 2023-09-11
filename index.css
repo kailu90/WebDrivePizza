@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
 }
 a {
   text-decoration: none;
@@ -27,12 +28,12 @@ main {
   padding-top: 80px;  
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 20px auto;
+  margin: 100px 0 30px 0;
 }
 .container_menu {
   display: grid;
@@ -97,8 +98,12 @@ h1 {
   display: flex;
   justify-content: top;
   align-items: center;
-  font-size: 2rem;   
+  font-size: 3rem;   
   padding-bottom: 20px;
+  opacity: 0.5;
+}
+.container_menu .card h2:hover {
+  opacity: 1;
 }
 .container_menu .card p {
   font-size: 2rem;
@@ -134,7 +139,8 @@ h1 {
 @media (max-width: 700px)
 {  
   h1 {
-    font-size: 1.5rem;   
+    margin-top: 30px;
+    font-size: 2rem;   
   } 
   .container_menu .card {  
     width: 140px;

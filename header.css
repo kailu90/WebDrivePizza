@@ -1,3 +1,20 @@
+* {
+  border-radius: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: white;   
+}
+ul {
+  list-style: none;
+}
+p {
+  font-weight: 300;
+}
 /**************************Estilos HEADER****************************/
 header .menu_hamburguesa {
   display: none;
@@ -15,9 +32,9 @@ header .menu_hamburguesa {
   border-bottom: 1px solid white;  
 }
 .header_logo img {
-  padding-left: 40px;
-  width: 140px;
-  height: 70px;   
+  width: auto;
+  height: 70px;
+  padding-left: 40px;   
 }
 .header .nav_bar {
  width: max-content;
@@ -31,7 +48,7 @@ header .menu_hamburguesa {
 }
 .nav_bar ul li a { 
   color: white;
-  font-size: 0.8rem; 
+  font-size: 1.2rem; 
   align-items: center;
   height: 100%;
   font-weight: 600;
@@ -52,11 +69,17 @@ header .menu_hamburguesa {
   height: 30px;
   padding: 0 40px;
   cursor: pointer;  
+  font-size: 3rem;
 }
 .carrito_img i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  justify-self: center;
+}
+.carrito_img i:hover {
+ scale: 1.2;
 }
 .carrito {
   display: none;
@@ -73,13 +96,16 @@ header .menu_hamburguesa {
   transition: 0.3s;
   color: black;
   z-index: 2;
-  background-color: white;
+  background-color: white;  
 }
 .carrito .header_carrito {
   background-color:black;
   color: white;
   text-align: center;
   padding: 30px 0;
+}
+.carrito .header_carrito h3 {
+  font-size: 2rem;  
 }
 .carrito .carrito_item {
   display: flex;
@@ -96,6 +122,7 @@ header .menu_hamburguesa {
 .carrito .carrito_item .carrito_item_titulo {
   display: block;
   font-weight: bold;
+  font-size: 1rem;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -105,7 +132,7 @@ header .menu_hamburguesa {
 }
 .carrito .carrito_item .carrito_item_cantidad {
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: rgba(237, 236, 236, 0.918);
   display: inline-block;
   width: 60px;
@@ -125,7 +152,7 @@ header .menu_hamburguesa {
 .carrito .carrito_item .carrito_item_precio {
   font-weight: bold;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 .carrito .carrito_item .btn_eliminar {
@@ -148,7 +175,9 @@ header .menu_hamburguesa {
  scale: 1.05;
 }
 .carrito .carrito_item .btn_eliminar i {
-  pointer-events: none;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-self: center;
 }
 .carrito_total {
   background-color: grey;
@@ -158,7 +187,7 @@ header .menu_hamburguesa {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -169,22 +198,18 @@ header .menu_hamburguesa {
   background: black;
   color: white;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 20px;
- justify-content: space-between;
- align-items: center;
- cursor: pointer;
- transition: 0.3s;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .carrito_total .btn_pagar:hover {
   scale: 1.05;
 }
 @media (max-width: 1000px)
 {  
-  .header_logo img {
-    width: 100px;
-    height: 50px;      
-  }  
   .header .nav_bar ul {
     padding: 0;
   }  
@@ -196,7 +221,7 @@ header .menu_hamburguesa {
     margin: 0 10px;   
   } 
   .nav_bar ul li a {    
-    font-size: 0.6rem;
+    font-size: 1rem;
   }   
 /*******carrito******/
 .carrito {
@@ -291,7 +316,7 @@ header .menu_hamburguesa {
     height: 4px;
     border-radius: 20px;
     background-color: white;
-    opacity: 0.8;
+    opacity: 1;
     margin: 1.5px 0;
   }  
   .header_logo img {
@@ -299,8 +324,6 @@ header .menu_hamburguesa {
     justify-content: center;
     margin: 0;
     padding: 0;    
-    width: 100px;
-    height: auto;
   }    
   /*******carrito****/
   .carrito_img {
