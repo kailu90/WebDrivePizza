@@ -124,16 +124,12 @@ h1 {
   scale: 1.05;  
   cursor: pointer;  
 }
-
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1200px)
 { 
   .container_menu { 
-    grid-template-columns: repeat(2,1fr);     
-    column-gap: 5px;
-    row-gap: 5px;    
-    margin-bottom: 50px;
+    grid-template-columns: repeat(2,1fr);  
   }    
 }
 @media (max-width: 700px)
@@ -143,48 +139,20 @@ h1 {
     font-size: 2rem;   
   } 
   .container_menu .card {  
-    width: 140px;
+    width: 45vw; 
+    max-width: 150px;  
     height: 200px; 
+    margin: 5px;
   }
   .container_menu .card a { 
-    display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
   }
   .container_menu .card h2 {  
-    font-size: 0.8rem;     
-  }
-  .container_menu .card p {
-    font-size: 0.8rem;   
-  }
-  .container_menu .card button { 
-    height: 30px; 
-    font-size: 0.4rem;   
-    width: 60px; 
+    font-size: 1.5rem;     
   }
 }
 @media (max-width: 320px)
 { 
-  .container_menu .card {    
-    height: 200px;
-    width: 45vw; 
-    max-width: 150px;   
-    margin: 5px;
-  }
-  .container_menu .card a {     
-    width: 100%;     
-  }
-  .container_menu .card h2 {   
-    font-size: 0.8rem;     
-  }
-  .container_menu .card p {
-    font-size: 0.5rem;   
-  }
-  .container_menu .card button {  
-    width: 80px;
-    height: 20px;
-    font-size: 0.5rem;
-    font-weight: 600;
-  } 
   .container_menu .card_pizza {
     background-image: url(./imagenes/pizzas/Fondo_Pizzas_Mobile.jpg);
   }

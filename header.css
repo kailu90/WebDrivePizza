@@ -268,7 +268,7 @@ header .menu_hamburguesa {
   padding: 10px;
 }
 }
-@media (max-width: 700px)
+@media (max-width: 715px)
 {  
   .header {
     padding: 0;
