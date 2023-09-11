@@ -126,11 +126,11 @@ p {
     padding: 0 40px ;
   }
   .footer_superior .nav_bar__footer ul {
-    font-size: 1rem;   
+    font-size: 2.5rem;   
     width: 120px;
   }
   .footer_superior .nav_bar__footer ul a {
-    font-size: 0.8rem;  
+    font-size: 1.5rem;  
     font-weight: 300;  
   }
   .footer_superior .nav_bar__footer img {
@@ -142,7 +142,7 @@ p {
   }  
   /***********************FOOTER INFERIOR******************/
   .footer_inferior h3 {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     margin: 5px;
   }
   .footer_inferior img {
@@ -191,12 +191,15 @@ p {
     height: 70px;  
    }
   .footer_superior .nav_bar__footer ul {
-    font-size: 0.7rem;   
+    font-size: 1rem;   
     width: 80px;
     height: 70px;
   }
+  .footer_superior .nav_bar__footer ul u {
+    font-size: 1.2rem; 
+  }
   .footer_superior .nav_bar__footer ul a {
-    font-size: 0.5rem;  
+    font-size: 1rem;  
     font-weight: 300;  
   }
   .footer_superior img {   
@@ -209,7 +212,7 @@ p {
     padding: 0,
 }
   .footer_inferior h3 {
-    font-size: 0.3rem;
+    font-size: 1rem;
     margin: 0 5px;
   }  
   .footer_inferior .metodos_pago__footer_inferior img:nth-child(1) {
