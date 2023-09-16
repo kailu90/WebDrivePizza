@@ -1,5 +1,5 @@
 /**Mostrar menu versión mobile***/
-const navBar = document.querySelector(".nav_bar__items")
+const navBar = document.getElementById("nav_bar_items")
 const menuBurguer = document.getElementById("menu_hamburguesa")
 
 menuBurguer.addEventListener("click", function(){mostrarMenu(navBar,"flex")})
@@ -19,3 +19,11 @@ const carrito = document.querySelector(".carrito")
 const carritoImg = document.getElementById("carrito_img")
 
 carritoImg.addEventListener("click", function(){mostrarMenu(carrito,"block")})
+
+/******Mostrar modal productos***/
+
+const modal = document.querySelector(".modal")
+const cierreModal = document.getElementById("icon_close")
+
+cierreModal.addEventListener("click", function(){mostrarMenu(modal,"flex")})
+

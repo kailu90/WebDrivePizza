@@ -206,6 +206,7 @@ p {
   }
   .footer_superior .nav_bar__footer ul u {
     font-size: 1.2rem; 
+    height: 30px;
   }
   .footer_superior .nav_bar__footer ul a {
     font-size: 1rem;  

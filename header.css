@@ -215,7 +215,7 @@ header .menu_hamburguesa {
   }  
   .header .nav_bar {
     width: max-content;  
-    padding: 0 20px 0 0;  
+    padding: 0;  
   }
   .nav_bar ul li a {
     margin: 0 10px;   
@@ -278,6 +278,9 @@ header .menu_hamburguesa {
     height: 80px;
     border-bottom: 2px solid black;    
   } 
+  .header_logo {
+    width: 60vw;
+  }
   .header .nav_bar {
     display: flex;
   }
@@ -307,8 +310,8 @@ header .menu_hamburguesa {
   .header .menu_hamburguesa {
     display: flex; 
     flex-direction: column;   
-    width: 30px;
-    height: 30px;
+    width: 30vw;
+    height: max-content;
     padding: 0 40px;
   }    
   .menu_hamburguesa div{
@@ -322,12 +325,13 @@ header .menu_hamburguesa {
   .header_logo img {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;    
   }    
   /*******carrito****/
   .carrito_img {
     color: white;
+    width: 30vw;
   }
   .carrito {
     border: 1px solid black;
