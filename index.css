@@ -101,9 +101,10 @@ h1 {
   display: flex;
   justify-content: top;
   align-items: center;
-  font-size: 3rem;   
+  font-size: 2rem;   
   padding-bottom: 20px;
   opacity: 0.5;
+  text-align: center;
 }
 .container_menu .card h2:hover {
   opacity: 1;
@@ -129,7 +130,7 @@ h1 {
 }
 /******modal products******/
 .modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   margin-top: 80px;
@@ -208,7 +209,6 @@ h1 {
   text-align: center;
   color: black;
 }
-
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1200px)
