@@ -98,10 +98,9 @@ h1 {
   background: transparent;
 }
 .container_menu .card h2 {
-  display: flex;
-  justify-content: top;
+  display: flex;  
   align-items: center;
-  font-size: 2rem;   
+  font-size: 3rem;   
   padding-bottom: 20px;
   opacity: 0.5;
   text-align: center;
@@ -128,87 +127,7 @@ h1 {
   scale: 1.05;  
   cursor: pointer;  
 }
-/******modal products******/
-.modal {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  margin-top: 80px;
-  top: 0; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;    
-  border: 1px solid black;
-  overflow: scroll;
-}
-.modal i {
-  position: absolute;
-  right: 0;
-  font-size: 3rem;
-  padding: 20px 20px 0 0;
-}
-.modal .modal_descripcion img {
-  display: flex;
-  padding-top: 40px;
-  margin: 0 auto;
-  width: 90%;
-  height: auto;   
-}
-.modal .modal_descripcion_title {
-  font-size: 2rem;
-  padding: 10px 25px;
-}
-.modal .modal_descripcion_parrafo {
-  font-size: 2rem;
-  padding: 0 25px 0 25px;
-}
-.modal_tamaño_title , .modal_sabores_title {
-  display: flex;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  padding-left: 25px;
-  width: 155px;
-  height: 30px;
-  align-items: center;
-}
-.modal_tamaño .modal_tamaño_lista , .modal_sabores .modal_sabores_lista {
-  display: flex;
-}
-.modal_tamaño .modal_tamaño_lista select , .modal_sabores .modal_sabores_lista select {
-  display: flex;
-  width: 120px;
-  justify-content: right;
-  margin-top: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-.modal_tamaño .modal_tamaño_lista select option , .modal_sabores .modal_sabores_lista select option {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.modal .modal_cantidad {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.modal .modal_cantidad i {
-  position: static;
-  display: flex;  
-  padding: 0;
-  margin: 0 10px;  
-  border-radius: 1px solid black;
-}
-.modal .modal_cantidad input {
-  display: flex;
-  width: 150px;
-  height: 30px;
-  border-radius: 10px;
-  font-size: 2rem;
-  text-align: center;
-  color: black;
-}
+
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1200px)
@@ -232,8 +151,8 @@ h1 {
   .container_menu .card a { 
     flex-direction: column; 
   }
-  .container_menu .card.subtitle_products {  
-    font-size: 1.5rem;     
+  .container_menu .card h2 {  
+    font-size: 2rem;     
   }
 }
 @media (max-width: 320px)
