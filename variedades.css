@@ -152,118 +152,7 @@ h1 {
   cursor: pointer;
 }
 /******modal products******/
-.modal {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  margin-top: 80px;
-  top: 0; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;    
-  border: 1px solid black;
-  overflow: scroll;
-}
-#icon_close {
-  position: absolute;
-  top: 5px;
-  right: -20px;
-  font-size: 3rem;
-  padding: 20px 20px 0 0;
-}
-.modal .modal_descripcion img {
-  display: flex;
-  padding-top: 40px;
-  margin: 0 auto;
-  width: 90%;
-  height: auto;   
-}
-.modal .modal_descripcion_title {
-  font-size: 2rem;
-  padding: 10px 25px;
-}
-.modal .modal_descripcion_parrafo {
-  font-size: 2rem;
-  padding: 0 25px 0 25px;
-}
-.modal_tamaño_title , .modal_sabores_title {
-  display: flex;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  padding-left: 25px;
-  width: 155px;
-  height: 30px;
-  align-items: center;
-}
-.modal_tamaño .modal_tamaño_lista , .modal_sabores .modal_sabores_lista {
-  display: flex;
-}
-.modal_tamaño .modal_tamaño_lista select , .modal_sabores .modal_sabores_lista select {
-  display: flex;
-  width: 120px;
-  justify-content: right;
-  margin-top: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-.modal_tamaño .modal_tamaño_lista select option , .modal_sabores .modal_sabores_lista select option {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.modal .modal_cantidad {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.modal .modal_cantidad i {
-  position: static;
-  display: flex;
-  font-size: 2rem;  
-  padding: 0;
-  margin: 0 10px;  
-  border-radius: 1px solid black;
-}
-.modal .modal_cantidad input {
-  display: flex;
-  width: 150px;
-  height: 30px;
-  border-radius: 10px;
-  font-size: 2rem;
-  text-align: center;
-  color: black;
-}
-.footer_modal {
-  margin-top: 20px;
-  display: flex;
-  width: 100vw;
-  height: 200px;
-  background: black;
-}
-.footer_modal_total {
-  display: flex;
-  color: white;
-  font-size: 3rem;
-  width: 60vw;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-}
-.footer_modal_carrito {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 3rem;
-  width: 100%;
-  background: transparent;
-  width: 40vw;
-}
-.footer_modal_carrito:hover {
-  color: black;
-  background: white;
-}
+
 
 @media (max-width: 1200px)
 { 
@@ -308,31 +197,216 @@ h1 {
   .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño p {
     font-size: 0.3rem;
   }  
+ /****modal***/
+ .modal {   
+  width: 300px;       
+}  
+#icon_close {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  font-size: 3rem;
 }
-@media (max-width: 600px)
-{  
-  h1 {
-    margin-top: 20px;
-    font-size: 3rem;    
-  }
-  .container_menu { 
-    grid-template-columns: repeat(1,1fr);    
-  } 
-  .container_menu .card .card_descripcion .card_descripcion_tamaños {
-    font-size: 3rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño li {
-    text-align: center;       
-  }
-  .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño p {
-    font-size: 0.6rem;
-    margin: 0;
-  }
+.modal .modal_descripcion .modal_descripcion_title  , .modal_descripcion_parrafo{
+  font-size: 1.5rem;
+}     
+.modal_tamaño_title , .modal_sabores_title {
+  display: flex;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  padding-left: 25px;
+  width: 155px;
+  height: 30px;
+  align-items: center;
 }
+.modal_tamaño .modal_tamaño_lista , .modal_sabores .modal_sabores_lista {
+  display: flex;
+}
+.modal_tamaño .modal_tamaño_lista select , .modal_sabores .modal_sabores_lista select {
+  display: flex;
+  width: 120px;
+  justify-content: right;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.modal_tamaño .modal_tamaño_lista select option , .modal_sabores .modal_sabores_lista select option {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.modal .modal_cantidad {
+  display: flex;
+  justify-content: center;
+  width: 100%;      
+  align-items: center;
+  margin-top: 20px;
+}
+.modal .modal_cantidad i {
+  position: static;
+  display: flex;
+  font-size: 2rem;  
+  padding: 0;
+  margin: 0 10px;  
+  border-radius: 1px solid black;
+}
+.modal .modal_cantidad input {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+.footer_modal {
+  margin-top: 20px;
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  background: black;
+}
+.footer_modal_total {
+  display: flex;
+  color: white;
+  font-size: 3rem;
+  width: 60vw;
+  height: 80px;
+  justify-content: center;
+  align-items: center;     
+}
+.footer_modal_carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  width: 100%;
+  background: transparent;
+  width: 40vw;     
+}
+.footer_modal_carrito:hover {
+  color: black;
+  background: white;
+}
+  }
+  @media (max-width: 600px)
+  {  
+    h1 {
+      margin-top: 20px;
+      font-size: 3rem;    
+    }
+    .container_menu { 
+      grid-template-columns: repeat(1,1fr);    
+    } 
+    .container_menu .card .card_descripcion .card_descripcion_tamaños {
+      font-size: 3rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño li {
+      text-align: center;       
+    }
+    .container_menu .card .card_descripcion .card_descripcion_tamaños .tamaño p {
+      font-size: 0.6rem;
+      margin: 0;
+    }
+    /****modal***/
+    .modal {  
+      position: absolute;     
+      width: 100vw;
+      top: 0;   
+      border-radius: 0 0 20px 20px;        
+    }  
+    #icon_close {
+      position: absolute;
+      top: 26px;
+      right: 0;
+      font-size: 3rem;
+    }
+    .modal .modal_descripcion .modal_descripcion_title  , .modal_descripcion_parrafo{
+      font-size: 1.5rem;
+    }     
+    .modal_tamaño_title , .modal_sabores_title {
+      display: flex;
+      margin-top: 10px;
+      font-size: 1.5rem;
+      padding-left: 25px;
+      width: 155px;
+      height: 30px;
+      align-items: center;
+    }
+    .modal_tamaño .modal_tamaño_lista , .modal_sabores .modal_sabores_lista {
+      display: flex;
+    }
+    .modal_tamaño .modal_tamaño_lista select , .modal_sabores .modal_sabores_lista select {
+      display: flex;
+      width: 120px;
+      justify-content: right;
+      margin-top: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+    .modal_tamaño .modal_tamaño_lista select option , .modal_sabores .modal_sabores_lista select option {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .modal .modal_cantidad {
+      display: flex;
+      justify-content: center;
+      width: 100%;      
+      align-items: center;
+      margin-top: 20px;
+    }
+    .modal .modal_cantidad i {
+      position: static;
+      display: flex;
+      font-size: 2rem;  
+      padding: 0;
+      margin: 0 10px;  
+      border-radius: 1px solid black;
+    }
+    .modal .modal_cantidad input {
+      display: flex;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      text-align: center;
+      color: black;
+    }
+    .footer_modal {
+      margin-top: 20px;
+      display: flex;
+      width: 100vw;
+      height: 80px;
+      background: black;
+    }
+    .footer_modal_total {
+      display: flex;
+      color: white;
+      font-size: 3rem;
+      width: 60vw;
+      height: 80px;
+      justify-content: center;
+      align-items: center;     
+    }
+    .footer_modal_carrito {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 3rem;
+      width: 100%;
+      background: transparent;
+      width: 40vw;     
+    }
+    .footer_modal_carrito:hover {
+      color: black;
+      background: white;
+    }
+  }
