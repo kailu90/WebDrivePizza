@@ -263,5 +263,44 @@
       
     </section>        
   </footer>  
+  <div class="modal" action="#" id="modal">
+    <i class="fa-solid fa-circle-xmark" id="icon_close"></i>
+    <section class="modal_descripcion">
+      <img src="./imagenes/pizzas/Fondo_Pizzas_Mobile.jpg" alt="imagen de producto">
+      <h2 class="modal_descripcion_title">ESTOFADA</h2>
+      <p class="modal_descripcion_parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, mollitia.</p>
+    </section>
+    <section class="modal_tamaño">
+      <form class="modal_tamaño_lista">
+        <label for="tamaño" class="modal_tamaño_title">Escoge el tamaño</label>
+        <select name="tamaño" id="tamaño">
+           <option selected>Seleccionar</option>
+           <option value="">Porción</option>
+           <option value="">Pequeña</option>
+           <option value="">Mediana</option>
+           <option value="">Grande</option>
+           <option value="">Jumbo</option>
+        </select>
+      </form>
+    </section>
+    <section class="modal_sabores">
+      <form class="modal_sabores_lista">
+        <label for="sabores" class="modal_sabores_title">Escoge el sabor</label>
+        <select name="sabores" id="sabores">
+          <option selected>Seleccionar</option>
+          <option value="">Estofada hawaiana</option>
+          <option value="">Suprema estofada</option>
+          <option value="">Estofada triple queso</option> 
+          <option value="">Estofada de carnes</option>   
+        </select>          
+      </form>
+    </section> 
+    <section class="modal_cantidad">
+      <i class="fa-solid fa-minus"></i>
+      <input type="text" placeholder="1">
+      <i class="fa-solid fa-plus"></i>
+    </section> 
+  </div>  
+  <script src="./index.js"></script> 
 </body>
 </html>

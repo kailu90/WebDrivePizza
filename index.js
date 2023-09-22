@@ -30,9 +30,9 @@ carritoImg.addEventListener("click", function(){mostrarMenu(carrito,"block")})
 
 const modal = document.getElementById("modal")
 const iconClose = document.getElementById("icon_close")
-const pizzaEstofada = document.getElementById("pizza_estofada")
+const modalOpen = document.querySelector(".card")
 
-pizzaEstofada.addEventListener("click" , function(){mostrarMenu(modal,"flex")})
+modalOpen.addEventListener("click" , function(){mostrarMenu(modal,"flex")})
 
 /******Ocultar modal productos***/
 
