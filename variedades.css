@@ -200,95 +200,8 @@ h1 {
  /****modal***/
  .modal {   
   width: 300px;       
-}  
-#icon_close {
-  position: absolute;
-  top: 26px;
-  right: 0;
-  font-size: 3rem;
+} 
 }
-.modal .modal_descripcion .modal_descripcion_title  , .modal_descripcion_parrafo{
-  font-size: 1.5rem;
-}     
-.modal_tamaño_title , .modal_sabores_title {
-  display: flex;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  padding-left: 25px;
-  width: 155px;
-  height: 30px;
-  align-items: center;
-}
-.modal_tamaño .modal_tamaño_lista , .modal_sabores .modal_sabores_lista {
-  display: flex;
-}
-.modal_tamaño .modal_tamaño_lista select , .modal_sabores .modal_sabores_lista select {
-  display: flex;
-  width: 120px;
-  justify-content: right;
-  margin-top: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-.modal_tamaño .modal_tamaño_lista select option , .modal_sabores .modal_sabores_lista select option {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.modal .modal_cantidad {
-  display: flex;
-  justify-content: center;
-  width: 100%;      
-  align-items: center;
-  margin-top: 20px;
-}
-.modal .modal_cantidad i {
-  position: static;
-  display: flex;
-  font-size: 2rem;  
-  padding: 0;
-  margin: 0 10px;  
-  border-radius: 1px solid black;
-}
-.modal .modal_cantidad input {
-  display: flex;
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
-}
-.footer_modal {
-  margin-top: 20px;
-  display: flex;
-  width: 100vw;
-  height: 80px;
-  background: black;
-}
-.footer_modal_total {
-  display: flex;
-  color: white;
-  font-size: 3rem;
-  width: 60vw;
-  height: 80px;
-  justify-content: center;
-  align-items: center;     
-}
-.footer_modal_carrito {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 3rem;
-  width: 100%;
-  background: transparent;
-  width: 40vw;     
-}
-.footer_modal_carrito:hover {
-  color: black;
-  background: white;
-}
-  }
   @media (max-width: 600px)
   {  
     h1 {
@@ -319,8 +232,10 @@ h1 {
     .modal {  
       position: absolute;     
       width: 100vw;
+      height: 100vh;
       top: 0;   
-      border-radius: 0 0 20px 20px;        
+      border-radius: 0 0 20px 20px;
+      background: white;        
     }  
     #icon_close {
       position: absolute;
@@ -328,20 +243,30 @@ h1 {
       right: 0;
       font-size: 3rem;
     }
+    .modal_descripcion {
+      display: flex;
+      flex-direction: column;
+    }
+    .modal_descripcion h2 {
+      margin: 10px;
+    }
+    .modal_descripcion p {
+      margin: 10px;
+    }
     .modal .modal_descripcion .modal_descripcion_title  , .modal_descripcion_parrafo{
       font-size: 1.5rem;
     }     
     .modal_tamaño_title , .modal_sabores_title {
       display: flex;
       margin-top: 10px;
-      font-size: 1.5rem;
-      padding-left: 25px;
+      font-size: 1.5rem;      
       width: 155px;
       height: 30px;
       align-items: center;
     }
     .modal_tamaño .modal_tamaño_lista , .modal_sabores .modal_sabores_lista {
       display: flex;
+      margin: 10px;
     }
     .modal_tamaño .modal_tamaño_lista select , .modal_sabores .modal_sabores_lista select {
       display: flex;
