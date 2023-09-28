@@ -35,6 +35,7 @@ p {
   flex-direction: column;
   width: 100%; 
   margin-bottom: 40px;
+  margin-top: 40px;
   text-align: center;
 }
 .nav_bar_footer ul {
@@ -82,28 +83,25 @@ p {
 .container_footer_derecha {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   height: max-content;  
 }
 .footer_logo {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 150px;
 }
 .footer_logo img {
-  width: auto;  
-  height: 60%;
-}
-.footer_logo img {
-  width: 60%;
-  height: auto;
+  width: 100%;  
+  height: 100%;
 }
 .metodos_pago_footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 400px;
   height: auto;
   margin-bottom: 20px;
   border-radius: 10px;

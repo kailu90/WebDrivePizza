@@ -35,7 +35,7 @@ p {
   align-items: center;
   width: 40px;
   height: 40px;
-  margin-left: 20px; 
+  margin-left: 40px; 
 }
 .linea_superior , .linea_medio , .linea_inferior {
   margin: 5px 10px;
@@ -63,7 +63,7 @@ p {
   width: 40px;
   height: 40px;  
   cursor: pointer;  
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .carrito_img i {
   display: flex;
