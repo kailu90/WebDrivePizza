@@ -34,12 +34,15 @@ p {
   display: flex; 
   flex-direction: column;
   width: 100%; 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-top: 40px;
-  text-align: center;
+  margin-left: 40px;
+  text-align: start;
 }
 .nav_bar_footer ul {
-  font-size: 2rem; 
+  font-size: 3rem; 
+  margin-bottom: 10px;
+  line-height: 12px;
 }
 .nav_bar_footer ul li .ancla_verde:hover {
   color: green;
@@ -57,23 +60,24 @@ p {
 .redes_footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
   width: 100vw;
-  height: max-content; 
+  height: max-content;
+  margin-left: 40px; 
 }
 .redes_footer h3 {
   width: 100%;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .iconos_redes {
   display: flex; 
-  justify-content: center; 
+  align-items: start; 
   margin: 0;  
 }
 .iconos_redes img {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   margin: 5px;
 }
 .iconos_redes img:hover {
