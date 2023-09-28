@@ -21,7 +21,7 @@ function mostrarMenu(elemento,propiedadDisplay){
 }
 /**Mostrar carrito compras mobile***/
 
-const carrito = document.querySelector(".carrito")
+const carrito = document.querySelector(".carrito_container")
 const carritoImg = document.getElementById("carrito_img")
 
 carritoImg.addEventListener("click", function(){mostrarMenu(carrito,"block")})

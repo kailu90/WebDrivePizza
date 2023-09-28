@@ -21,26 +21,27 @@ p {
 main {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  width: 100vw;
   height: max-content;
+  background-color: white;  
   justify-content: center;
   align-items: center;
-  padding-top: 80px;  
+  padding-top: 500px;  
 }
 h1 {
-  font-size: 4rem;
+  font-size: 10rem;
   font-weight: 800;
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 100px 0 30px 0;
+  margin: 200px 0 100px 0;
 }
 .container_menu {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   column-gap: 5px;
   row-gap: 5px;    
-  margin-bottom: 50px; 
+  margin-bottom: 200px; 
   max-width: 1200px; 
   justify-content: center;
   align-items: center; 
@@ -48,9 +49,10 @@ h1 {
 }
 .container_menu .card {  
   display: flex;  
-  height: 400px;
-  width: 300px;
-  margin: 10px;
+  height: 30vh;
+  max-height: 800px;
+  width: 600px;
+  margin: 20px;
   border-radius: 30px;  
 }
 .container_menu .card_pizza {
@@ -100,7 +102,7 @@ h1 {
 .container_menu .card h2 {
   display: flex;  
   align-items: center;
-  font-size: 3rem;   
+  font-size: 8rem;   
   padding-bottom: 20px;
   opacity: 0.5;
   text-align: center;
@@ -127,7 +129,6 @@ h1 {
   scale: 1.05;  
   cursor: pointer;  
 }
-
 /***********************MENU PIZZAS**************/
 /***Acá están las secciones de todos las pizzas que hay, estofadas, superestofadas, especiales, sencillas, típicas, exclusivas, premium***/
 @media (max-width: 1200px)

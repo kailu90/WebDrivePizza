@@ -19,7 +19,9 @@ p {
 .container_footer {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  width: 100vw;
+  height: max-content;
+  max-height: 1200px;
   background-color: black;
   color: white; 
   padding: 40px; 
@@ -30,32 +32,34 @@ p {
   grid-template-columns: repeat(2,1fr);
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  height: 1000px;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 .footer_superior img {
   width: auto;
-  height: 150px;
+  height: 600px;
   justify-self: center;
 }
 .footer_superior .nav_bar__footer {
   display: flex;  
   justify-content: space-between;
-  align-self: center;
+  align-self: start;
   width: max-content;
-  height: 230px;
+  height: 230px; 
 }
 .footer_superior .nav_bar__footer ul {
   display: flex;
   flex-direction: column;  
-  width: 220px; 
+  width: 800px; 
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: bold;  
 }
 .footer_superior .nav_bar__footer ul h3 {
-  font-size: 3rem;
+  font-size: 8rem;
 }
 .footer_superior .nav_bar__footer ul a {
-  font-size: 1.6rem;  
+  font-size: 6rem;  
   font-weight: 500;  
 }
 .footer_superior .nav_bar__footer ul:nth-child(1) a:hover {
@@ -76,22 +80,30 @@ p {
   display: flex; 
   justify-content: space-between;  
   align-items: center;
-  height: 100px;
+  height: max-content;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
 .footer_inferior h3 {
-  font-size: 2rem;
+  font-size: 8rem;
   margin: 10px;
 }
 .footer_inferior img {
-  width: 50px;
-  margin: 10px;
+  width: 100px;
+  margin: 20px;
 }
 .footer_inferior .redes__footer_inferior img:hover {
   scale: 1.1;
 }
+.footer_inferior .metodos_pago__footer_inferior {
+  width: max-content;
+  height: max-content;
+  margin-right: 400px;
+}
 .footer_inferior .metodos_pago__footer_inferior img:nth-child(1){
   width: 500px;
-  height: auto;
+  height: 100px;
+  margin-right: 100px;
 }
 @media (max-width: 1000px)
 {  
