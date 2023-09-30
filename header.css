@@ -78,18 +78,18 @@ p {
   display: none;
   border-top: 1px solid white;
   width: 100vw; 
-  max-width: 393px; 
+  max-width: 380px; 
   height: max-content;  
+  max-height: 100vh;
   margin-top: 100px;  
   margin-bottom: auto;
   position: absolute;
   top: 0;
-  right: calc(50vw - 196.5px);
+  right: calc(50vw - 190px);
   transition: 0.3s;
   color: black;
   z-index: 2;
-  background-color: white;  
-  overflow-y: scroll;
+  background-color: white;   
 }
 .carrito_container .header_carrito {
   display: flex;
@@ -99,7 +99,7 @@ p {
   background-color:black;
   color: white;   
 }
-.carrito_container .header_carrito h3 {
+.carrito_container .header_carrito h3 { 
   font-size: 2rem;  
 }
 .carrito_container .carrito_item {
@@ -188,7 +188,7 @@ p {
   height: 100%;
 }
 .carrito_total { 
-  height: 300px;
+  height: 140px;
   background-color: grey;
   padding: 30px; 
 }
@@ -196,7 +196,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -208,7 +208,7 @@ p {
   background: black;
   color: white;
   border-radius: 5px;
-  font-size: 8rem;
+  font-size: 2rem;
   padding: 40px;
   justify-content: space-between; 
   align-items: center;

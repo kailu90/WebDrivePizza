@@ -64,6 +64,7 @@ h1 {
   max-width: 200px; 
   border-radius: 18px 0 0 18px;
   object-fit: cover;  
+  border-right: 2px solid #008000;
 }
 .container_menu .card .card_descripcion {
   display: flex;
@@ -210,12 +211,10 @@ h1 {
 .modal_sabores_lista select {  
   width: 100px;
 }
-
 .modal_cantidad {
   display: flex;
   justify-content: center;
 }
-
 .modal_cantidad {
   display: flex;
   justify-content: center;
@@ -240,7 +239,6 @@ h1 {
   color: black;
   text-align: center;
 }
-
 .footer_modal {
   display: flex;
   margin: 0 auto;

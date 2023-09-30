@@ -8,7 +8,7 @@ function mostrarMenu(elemento,propiedadDisplay){
   if(elemento.style.display == ""){
     elemento.style.display = propiedadDisplay   
     console.log("esta entrando primer if")
-  } if (elemento.style.display == propiedadDisplay){    
+  } else if (elemento.style.display == propiedadDisplay){    
     elemento.style.display = "none"   
     console.log("esta entrando segundo if") 
   } else if (elemento.style.display == "none"){

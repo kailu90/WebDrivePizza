@@ -73,8 +73,8 @@ h1 {
   background-repeat: no-repeat;
 }
 .container_menu .card_ensaladas {
-  background-image: url(./imagenes/ensaladas/Fondo_Ensaladas.jpg);
-  background-position: center;
+  background-image: url(./imagenes/ensaladas/Ensalada01_Mobile.JPG);
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
