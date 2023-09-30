@@ -1,5 +1,5 @@
 /**Mostrar menu versión mobile***/
-const navBar = document.getElementById("nav_bar_items")
+const navBar = document.getElementById("nav_bar")
 const menuBurguer = document.getElementById("menu_hamburguesa")
 
 menuBurguer.addEventListener("click", function(){mostrarMenu(navBar,"flex")})
@@ -7,8 +7,8 @@ menuBurguer.addEventListener("click", function(){mostrarMenu(navBar,"flex")})
 function mostrarMenu(elemento,propiedadDisplay){  
   if(elemento.style.display == ""){
     elemento.style.display = propiedadDisplay   
-    console.log("esta entrando primer if") 
-  } else if(elemento.style.display == propiedadDisplay){    
+    console.log("esta entrando primer if")
+  } if (elemento.style.display == propiedadDisplay){    
     elemento.style.display = "none"   
     console.log("esta entrando segundo if") 
   } else if (elemento.style.display == "none"){
