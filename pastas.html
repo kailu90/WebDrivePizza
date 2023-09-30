@@ -13,130 +13,129 @@
   <link rel="stylesheet" href="./footer.css">
   <title>Menú - Drive Pizza / Pastas</title>
 </head>
-<body>
-  <header class="header">
-    <div class="menu_hamburguesa">
-      <div class="linea_superior"></div>
-      <div class="linea_medio"></div>
-      <div class="linea_inferior"></div>
-    </div>    
-    <div class="header_logo">
-      <a href="./index.html"><img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza"></a>
-    </div>   
-    <nav class="nav_bar">
-      <ul class="nav_bar__items">
-        <li><a href="https://drivepizza.co/i/">INICIO</a></li>
-        <li><a href="./index.html">NUESTRO MENU</a></li>
-        <li><a href="https://drivepizza.co/i/?page_id=3301">NUESTRAS SEDES</a></li>
-        <li><a href="https://drivepizza.co/i/?page_id=121">BLOG</a></li>
-        <li><a href="https://drivepizza.co/i/?page_id=2152">CONTACTANOS</a></li>
-      </ul>      
-    </nav>  
-    <div class="carrito_img">
-      <i class="fa-solid fa-bag-shopping"></i>
-    </div> 
-    <div class="carrito">        
-      <div class="header_carrito">
-        <h3>Tu carrito</h3>
+<header class="header">
+  <div class="menu_hamburguesa" id="menu_hamburguesa">
+    <div class="linea_superior"></div>
+    <div class="linea_medio"></div>
+    <div class="linea_inferior"></div>
+  </div>    
+  <div class="header_logo">
+    <a href="./index.html"><img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza"></a>
+  </div>   
+  <nav class="nav_bar">
+    <ul class="nav_bar__items" id="nav_bar_items">
+      <li><a href="https://drivepizza.co/i/">INICIO</a></li>
+      <li><a href="./index.html">NUESTRO MENU</a></li>
+      <li><a href="https://drivepizza.co/i/?page_id=3301">NUESTRAS SEDES</a></li>
+      <li><a href="https://drivepizza.co/i/?page_id=121">BLOG</a></li>
+      <li><a href="https://drivepizza.co/i/?page_id=2152">CONTACTANOS</a></li>
+    </ul>      
+  </nav>  
+  <div class="carrito_img" id="carrito_img">
+    <i class="fa-solid fa-bag-shopping"></i>
+  </div> 
+  <div class="carrito_container">        
+    <div class="header_carrito">
+      <h3>Tu carrito</h3>
+    </div>
+    <div class="carrito_items">
+      <div class="carrito_item">
+        <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
+        <div class="carrito_item_detalle">
+          <span class="carrito_item_titulo">Porción Estofada</span>
+          <div class="selector_cantidad">
+            <i class="fa-solid fa-minus restar-cantidad"></i>
+            <input type="text" value="1" class="carrito_item_cantidad" disabled>
+            <i class="fa-solid fa-plus sumar-cantidad"></i>
+          </div>
+          <span class="carrito_item_precio">
+            $13.000
+          </span>
+        </div>
+        <span class="btn_eliminar">
+          <i class="fa-solid fa-trash"></i>            
+        </span>
       </div>
-      <div class="carrito_items">
-        <div class="carrito_item">
-          <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
-          <div class="carrito_item_detalle">
-            <span class="carrito_item_titulo">Porción Estofada</span>
-            <div class="selector_cantidad">
-              <i class="fa-solid fa-minus restar-cantidad"></i>
-              <input type="text" value="1" class="carrito_item_cantidad" disabled>
-              <i class="fa-solid fa-plus sumar-cantidad"></i>
-            </div>
-            <span class="carrito_item_precio">
-              $13.000
-            </span>
+      <div class="carrito_item">
+        <img src="./imagenes/pastas/Fondo_Pastas.jpg" alt="imagen pasta">
+        <div class="carrito_item_detalle">
+          <span class="carrito_item_titulo">Spaguetti</span>
+          <div class="selector_cantidad">
+            <i class="fa-solid fa-minus restar-cantidad"></i>
+            <input type="text" value="1" class="carrito_item_cantidad" disabled>
+            <i class="fa-solid fa-plus sumar-cantidad"></i>
           </div>
-          <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+          <span class="carrito_item_precio">
+            $13.000
           </span>
         </div>
-        <div class="carrito_item">
-          <img src="./imagenes/pastas/Fondo_Pastas.jpg" alt="imagen pasta">
-          <div class="carrito_item_detalle">
-            <span class="carrito_item_titulo">Spaguetti</span>
-            <div class="selector_cantidad">
-              <i class="fa-solid fa-minus restar-cantidad"></i>
-              <input type="text" value="1" class="carrito_item_cantidad" disabled>
-              <i class="fa-solid fa-plus sumar-cantidad"></i>
-            </div>
-            <span class="carrito_item_precio">
-              $13.000
-            </span>
-          </div>
-          <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
-          </span>
-        </div>
-        <div class="carrito_item">
-          <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
-          <div class="carrito_item_detalle">
-            <span class="carrito_item_titulo">Porción Estofada</span>
-            <div class="selector_cantidad">
-              <i class="fa-solid fa-minus restar-cantidad"></i>
-              <input type="text" value="1" class="carrito_item_cantidad" disabled>
-              <i class="fa-solid fa-plus sumar-cantidad"></i>
-            </div>
-            <span class="carrito_item_precio">
-              $13.000
-            </span>
-          </div>
-          <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
-          </span>
-        </div>
-        <div class="carrito_item">
-          <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
-          <div class="carrito_item_detalle">
-            <span class="carrito_item_titulo">Porción Estofada</span>
-            <div class="selector_cantidad">
-              <i class="fa-solid fa-minus restar-cantidad"></i>
-              <input type="text" value="1" class="carrito_item_cantidad" disabled>
-              <i class="fa-solid fa-plus sumar-cantidad"></i>
-            </div>
-            <span class="carrito_item_precio">
-              $13.000
-            </span>
-          </div>
-          <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
-          </span>
-        </div>
-        <div class="carrito_item">
-          <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
-          <div class="carrito_item_detalle">
-            <span class="carrito_item_titulo">Porción Estofada</span>
-            <div class="selector_cantidad">
-              <i class="fa-solid fa-minus restar-cantidad"></i>
-              <input type="text" value="1" class="carrito_item_cantidad" disabled>
-              <i class="fa-solid fa-plus sumar-cantidad"></i>
-            </div>
-            <span class="carrito_item_precio">
-              $13.000
-            </span>
-          </div>
-          <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
-          </span>
-        </div>
-        <div class="carrito_total">
-          <div class="fila">
-            <strong>Tu total</strong>
-            <span class="carrito_precio_total">
-              $26.000
-            </span>
-          </div>
-          <button class="btn_pagar">Pagar<i class="fa solid fa-bag-shopping"></i></button>
-        </div>
+        <span class="btn_eliminar">
+          <i class="fa-solid fa-trash"></i>            
+        </span>
       </div>
-    </div>  
-  </header>
+      <div class="carrito_item">
+        <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
+        <div class="carrito_item_detalle">
+          <span class="carrito_item_titulo">Porción Estofada</span>
+          <div class="selector_cantidad">
+            <i class="fa-solid fa-minus restar-cantidad"></i>
+            <input type="text" value="1" class="carrito_item_cantidad" disabled>
+            <i class="fa-solid fa-plus sumar-cantidad"></i>
+          </div>
+          <span class="carrito_item_precio">
+            $13.000
+          </span>
+        </div>
+        <span class="btn_eliminar">
+          <i class="fa-solid fa-trash"></i>            
+        </span>
+      </div>
+      <div class="carrito_item">
+        <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
+        <div class="carrito_item_detalle">
+          <span class="carrito_item_titulo">Porción Estofada</span>
+          <div class="selector_cantidad">
+            <i class="fa-solid fa-minus restar-cantidad"></i>
+            <input type="text" value="1" class="carrito_item_cantidad" disabled>
+            <i class="fa-solid fa-plus sumar-cantidad"></i>
+          </div>
+          <span class="carrito_item_precio">
+            $13.000
+          </span>
+        </div>
+        <span class="btn_eliminar">
+          <i class="fa-solid fa-trash"></i>            
+        </span>
+      </div>
+      <div class="carrito_item">
+        <img src="./imagenes/pizzas/pizzas_estofadas/estofada.JPG" alt="pizza estofada">
+        <div class="carrito_item_detalle">
+          <span class="carrito_item_titulo">Porción Estofada</span>
+          <div class="selector_cantidad">
+            <i class="fa-solid fa-minus restar-cantidad"></i>
+            <input type="text" value="1" class="carrito_item_cantidad" disabled>
+            <i class="fa-solid fa-plus sumar-cantidad"></i>
+          </div>
+          <span class="carrito_item_precio">
+            $13.000
+          </span>
+        </div>
+        <span class="btn_eliminar">
+          <i class="fa-solid fa-trash"></i>            
+        </span>
+      </div>
+      <div class="carrito_total">
+        <div class="fila">
+          <strong>Tu total</strong>
+          <span class="carrito_precio_total">
+            $26.000
+          </span>
+        </div>
+        <button class="btn_pagar">Pagar<i class="fa solid fa-bag-shopping"></i></button>
+      </div>
+    </div>
+  </div>  
+</header>
   <main>
     <H1>PASTAS</H1>  
   <section class="container_menu container_pizzas">  
@@ -213,42 +212,48 @@
   </section>
   </main>
   <footer class="container_footer">
-    <section class="footer_superior">        
-        <nav class="nav_bar__footer">
-          <ul>UTILIDADES
-            <li><a href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank">Nuestro WhatsApp</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=2152" target="_blank">Contáctenos</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=121" target="_blank">Nuestro Blog</a></li>
+    <div class="container_footer_izquierda">       
+        <nav class="nav_bar_footer">
+          <ul>
+            <h3><u>UTILIDADES</u></h3>
+            <li><a class="ancla_verde" href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank">Nuestro WhatsApp</a></li>
+            <li><a class="ancla_verde" href="https://drivepizza.co/i/?page_id=2152" target="_blank">Contáctenos</a></li>
+            <li><a class="ancla_verde" href="https://drivepizza.co/i/?page_id=121" target="_blank">Nuestro Blog</a></li>
           </ul>
-          <ul>MENU
-            <li><a href="https://drivepizza.co/i/">Inicio</a></li>
-            <li><a href="../index.html">Nuestro menú</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=3301">Nuestras Sedes</a></li>
+          <ul>
+            <h3><u>MENU</u></h3>
+            <li><a class="ancla_gris" href="https://drivepizza.co/i/">Inicio</a></li>
+            <li><a class="ancla_gris" href="./index.html">Nuestro menú</a></li>
+            <li><a class="ancla_gris" href="https://drivepizza.co/i/?page_id=3301">Nuestras Sedes</a></li>
           </ul>
-          <ul>NUESTRAS SEDES
-            <li><a href="https://drivepizza.co/i/?page_id=3275">Cerrito</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=3271">Cartago</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=3267">Bucaramanga</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=3260">Tulua</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=3254">Ibague</a></li>
-            <li><a href="https://drivepizza.co/i/?page_id=3232">Palmira</a></li>
+          <ul>
+            <h3><u>NUESTRAS SEDES</u></h3>
+            <li><a class="ancla_rojo" href="https://drivepizza.co/i/?page_id=3275">Cerrito</a></li>
+            <li><a class="ancla_rojo" href="https://drivepizza.co/i/?page_id=3271">Cartago</a></li>
+            <li><a class="ancla_rojo" href="https://drivepizza.co/i/?page_id=3267">Bucaramanga</a></li>
+            <li><a class="ancla_rojo" href="https://drivepizza.co/i/?page_id=3260">Tulua</a></li>
+            <li><a class="ancla_rojo" href="https://drivepizza.co/i/?page_id=3254">Ibague</a></li>
+            <li><a class="ancla_rojo" href="https://drivepizza.co/i/?page_id=3232">Palmira</a></li>
           </ul>          
-        </nav>  
-        <img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza">                
-    </section>
-    <section class="footer_inferior">
-      <div class="redes__footer_inferior">    
-        <h3>Nuestras Redes</h3>  
-        <a href="https://www.instagram.com/drivepizza_oficial/" target="_blank"><img src="./imagenes/assets/instagram_color.png" alt="Instagram"></a>  
-        <a href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank"><img src="./imagenes/assets/whatsapp_color.png" alt="WhatsApp"></a> 
-        <a href="https://www.facebook.com/DrivePizzabga" target="_blank"><img src="./imagenes/assets/facebook.png" alt="Facebook"></a> 
-      </div>
-      <div class="metodos_pago__footer_inferior">
-        <img src="./imagenes/assets/metodos_de_pago.PNG" alt="metodos de pago">
-      </div>
-      
-    </section>        
-  </footer>  
+        </nav> 
+        <div class="redes_footer">    
+          <h3>Nuestras Redes</h3> 
+          <div class="iconos_redes">
+            <a href="https://www.instagram.com/drivepizza_oficial/" target="_blank"><img src="./imagenes/assets/instagram_color.png" alt="Instagram"></a>  
+            <a href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank"><img src="./imagenes/assets/whatsapp_color.png" alt="WhatsApp"></a> 
+            <a href="https://www.facebook.com/DrivePizzabga" target="_blank"><img src="./imagenes/assets/facebook.png" alt="Facebook"></a> 
+          </div>           
+        </div>      
+    </div>
+    <div class="container_footer_derecha">     
+        <div class="footer_logo">
+          <img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza">                
+        </div>        
+        <div class="metodos_pago_footer">
+          <img src="./imagenes/assets/metodos_de_pago.PNG" alt="metodos de pago">
+        </div>      
+    </div>         
+  </footer> 
   <div class="modal" action="#" id="modal">
     <i class="fa-solid fa-circle-xmark" id="icon_close"></i>
     <section class="modal_descripcion">
@@ -286,7 +291,11 @@
       <input type="text" placeholder="1">
       <i class="fa-solid fa-plus"></i>
     </section> 
-  </div> 
+    <div class="footer_modal">
+      <div class="footer_modal_total">$124.000</div>
+      <button class="footer_modal_carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </div>
   <script src="./index.js"></script>  
 </body>
 </html>
