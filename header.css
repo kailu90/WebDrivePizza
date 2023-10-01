@@ -57,6 +57,16 @@ p {
 }
 .nav_bar {
   display: none;
+  position: absolute;
+  top: 100px;
+  background: black;
+  transition: 0.3s;
+  width: 393px;
+  height: 100vh;
+  font-size: 6rem;
+  justify-content: center; 
+  text-align: center;
+  line-height: 50px;
 }
 /******Carrito de compras****/
 .carrito_img {  
@@ -79,11 +89,10 @@ p {
   border-top: 1px solid white;
   width: 100vw; 
   max-width: 380px; 
-  height: max-content;  
-  max-height: 100vh;
+  height: max-content;   
   margin-top: 100px;  
   margin-bottom: auto;
-  position: absolute;
+  position: absolute;  
   top: 0;
   right: calc(50vw - 190px);
   transition: 0.3s;

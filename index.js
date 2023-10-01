@@ -4,7 +4,7 @@ const menuBurguer = document.getElementById("menu_hamburguesa")
 
 menuBurguer.addEventListener("click", function(){mostrarMenu(navBar,"flex")})
 
-function mostrarMenu(elemento,propiedadDisplay){  
+function mostrarMenu(elemento , propiedadDisplay){  
   if(elemento.style.display == ""){
     elemento.style.display = propiedadDisplay   
     console.log("esta entrando primer if")
@@ -37,3 +37,7 @@ modalOpen.addEventListener("click" , function(){mostrarMenu(modal,"flex")})
 /******Ocultar modal productos***/
 
 iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
+
+const atras = document.querySelector(".flecha_atras_container")
+
+atras.addEventListener("click" , )
