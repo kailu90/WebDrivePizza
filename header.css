@@ -111,6 +111,11 @@ p {
 .carrito_container .header_carrito h3 { 
   font-size: 2rem;  
 }
+.carrito_items {
+  display: flex;
+  flex-direction: column;  
+  position: static;
+}
 .carrito_container .carrito_item {
   display: flex;
   justify-content: center;
@@ -197,9 +202,16 @@ p {
   height: 100%;
 }
 .carrito_total { 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  width: 320px;
   height: 140px;
   background-color: grey;
   padding: 30px; 
+  border-top: 1px solid black;  
+  z-index: 100;
 }
 .carrito_total .fila {
   display: flex;
