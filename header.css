@@ -111,11 +111,6 @@ p {
 .carrito_container .header_carrito h3 { 
   font-size: 2rem;  
 }
-.carrito_items {
-  display: flex;
-  flex-direction: column;  
-  position: static;
-}
 .carrito_container .carrito_item {
   display: flex;
   justify-content: center;

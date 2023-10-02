@@ -40,4 +40,5 @@ iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
 
 const atras = document.querySelector(".flecha_atras_container")
 
+
 atras.addEventListener("click" , )
