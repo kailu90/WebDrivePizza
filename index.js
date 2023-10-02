@@ -1,6 +1,6 @@
 /**Mostrar menu versión mobile***/
 const navBar = document.getElementById("nav_bar")
-const menuBurguer = document.getElementById("menu_hamburguesa")
+const menuBurguer = document.querySelector(".menu_hamburguesa")
 
 menuBurguer.addEventListener("click", function(){mostrarMenu(navBar,"flex")})
 

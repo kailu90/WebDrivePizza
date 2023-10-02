@@ -92,7 +92,7 @@ p {
 .iconos_redes {
   display: flex; 
   justify-content: center;
-  align-items: start; 
+  align-items: center; 
   margin-bottom: 20px; 
 }
 .iconos_redes img {
