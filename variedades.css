@@ -165,7 +165,8 @@ h1 {
   width: 393px;
   height: max-content;
   background: white;
-  border: 1px solid black;  
+  border: 1px solid black; 
+  z-index: 1;  
 }
 #icon_close {
   position: absolute;
@@ -275,8 +276,7 @@ h1 {
   height: 50px;
   font-size: 8rem;
   line-height: 10px;
-  color: black;
-  z-index: -1;
+  color: black;  
 }
 .flecha_atras_container i {
  font-size: 4rem;
