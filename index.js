@@ -2,9 +2,9 @@
 const navBar = document.getElementById("nav_bar")
 const menuBurguer = document.querySelector(".menu_hamburguesa")
 
-menuBurguer.addEventListener("click", function(){ mostrarMenu(navBar,"flex")})
+menuBurguer.addEventListener("click", function(){mostrarMenu(navBar,"flex")})
 
-function mostrarMenu(elemento , propiedadDisplay){  
+function mostrarMenu(elemento,propiedadDisplay){  
   if(elemento.style.display == ""){
     elemento.style.display = propiedadDisplay   
     console.log("esta entrando primer if")
