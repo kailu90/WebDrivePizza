@@ -161,7 +161,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: calc(50vw - 191.5px);
   width: 393px;
   height: max-content;
