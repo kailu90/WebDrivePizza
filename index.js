@@ -30,7 +30,7 @@ carritoImg.addEventListener("click", function(){mostrarMenu(carrito,"block")})
 
 const modal = document.getElementById("modal")
 const iconClose = document.getElementById("icon_close")
-const modalOpen = document.querySelector(".card")
+const modalOpen = document.querySelector(".card_boton")
 
 modalOpen.addEventListener("click" , function(){mostrarMenu(modal,"flex")})
 

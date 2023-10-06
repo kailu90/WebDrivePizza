@@ -153,6 +153,7 @@ h1 {
 .container_menu .card a:hover {     
   border-color: 1px solid #008000;
   cursor: pointer;
+  color: white;
 }
 /******MODAL********/
 .modal {
@@ -160,7 +161,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  top: 100px;
+  bottom: 0;
   right: calc(50vw - 191.5px);
   width: 393px;
   height: max-content;
