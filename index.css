@@ -240,3 +240,26 @@ h1 {
   margin-left: 5px;
   margin-bottom: 20px;
 }
+@media (min-width: 1250px) {
+  main {
+    padding-top: 450px;
+    height: 2000px;
+  }
+  h1 {
+    font-size: 12rem;
+    margin-bottom: 100px;
+  }
+  .container_menu {    
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 10px;   
+    margin-bottom: 40px;
+    width: 800px;    
+  }
+  .container_menu .card1 {
+    width: 1000px;
+    height: 1500px;
+  }
+
+}
+
+

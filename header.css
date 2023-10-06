@@ -234,3 +234,51 @@ p {
 .carrito_total .btn_pagar:hover {
   scale: 1.1;
 }
+@media (min-width: 1250px)
+{
+  .header {
+    height: 600px;
+  }
+  .header_logo {
+    width: max-content;
+    height: max-content;
+  }
+  .header_logo img {
+    margin-left: 150px;
+    height: auto;
+    width:600px;
+  }
+  .header .menu_hamburguesa {
+    display: none;
+  }
+  .header .nav_bar {
+    display: flex;    
+    position: static;
+    width: max-content;
+    height: 100%;
+  }
+  .nav_bar__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .nav_bar__items li {
+    margin: auto 80px;
+    font-size: 8rem;
+  }
+  .nav_bar__items li:hover {
+    scale: 1.2;
+  }
+  .carrito_img {
+    width: 200px;
+    height: max-content;
+    margin-right: 150px;
+  }
+  .carrito_img i {
+   font-size: 12rem;
+  }
+  .carrito_container {
+    right: 0;
+  }
+}
