@@ -163,7 +163,7 @@ h1 {
   top: 100px;
   right: calc(50vw - 191.5px);
   width: 393px;
-  height: 100vh;
+  height: max-content;
   background: white;
   border: 1px solid black; 
   z-index: 1;  
