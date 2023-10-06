@@ -158,10 +158,11 @@ h1 {
   top: 0;
   right: calc(50vw - 191.5px);
   width: 393px;
-  height: max-content;
+  height: 100vh;
   background: white;
   border: 1px solid black; 
   z-index: 1;  
+  overflow: auto;
 }
 #icon_close {
   position: absolute;

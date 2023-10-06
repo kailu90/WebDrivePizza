@@ -244,9 +244,9 @@ p {
     height: max-content;
   }
   .header_logo img {
-    margin-left: 150px;
+    margin-left: 50px;
     height: auto;
-    width:600px;
+    width: 200px;
   }
   .header .menu_hamburguesa {
     display: none;
@@ -264,16 +264,16 @@ p {
     margin: 0 auto;
   }
   .nav_bar__items li {
-    margin: auto 80px;
-    font-size: 8rem;
+    margin: auto 20px;
+    font-size: 4rem;
   }
   .nav_bar__items li:hover {
     scale: 1.2;
   }
   .carrito_img {
-    width: 200px;
+    width: 100px;
     height: max-content;
-    margin-right: 150px;
+    margin-right: 50px;
   }
   .carrito_img i {
    font-size: 12rem;

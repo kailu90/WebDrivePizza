@@ -244,6 +244,7 @@ h1 {
   main {
     padding-top: 450px;
     height: 2000px;
+    overflow-x: scroll;
   }
   h1 {
     font-size: 12rem;
@@ -256,8 +257,11 @@ h1 {
     width: 800px;    
   }
   .container_menu .card1 {
-    width: 1000px;
-    height: 1500px;
+    width: 600px;
+    height: 1000px;
+  }
+  .container_menu .card1 h2 {
+    font-size: 8rem;
   }
 
 }

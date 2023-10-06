@@ -30,9 +30,12 @@ carritoImg.addEventListener("click", function(){mostrarMenu(carrito,"block")})
 
 const modal = document.getElementById("modal")
 const iconClose = document.getElementById("icon_close")
-const modalOpen = document.querySelector(".card_boton")
+const modalOpen = document.querySelectorAll(".card_boton")
+const modalOpenArray = [...modalOpen]
 
-modalOpen.addEventListener("click" , function(){mostrarMenu(modal,"flex")})
+modalOpenArray.forEach(card => {card.addEventListener("click" , function(){mostrarMenu(modal,"flex")})})
+
+/*modalOpen.addEventListener("click" , function(){mostrarMenu(modal,"flex")})*/
 
 /******Ocultar modal productos***/
 
