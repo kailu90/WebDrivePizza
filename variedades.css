@@ -157,7 +157,8 @@ h1 {
   position: fixed;
   top: 0;
   right: calc(50vw - 191.5px);
-  width: 393px;
+  width: 100vw;
+  max-width: 400px;
   height: 100vh;
   background: white;
   border: 1px solid black; 
@@ -250,6 +251,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 50%;
+  height: 80px;
   background: black;
   color: white;
   border-radius: 10px;
@@ -258,6 +260,7 @@ h1 {
 }
 .footer_modal_carrito {
   width: 50%;
+  height: 80px;
   background: black;
   color: white;
   border-radius: 10px;
