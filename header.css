@@ -88,8 +88,8 @@ p {
   display: none;
   border-top: 1px solid white;
   width: 100vw; 
-  max-width: 380px; 
-  height: 90vh;   
+  max-width: 400px; 
+  height: calc(100vh - 100px);   
   margin-top: 100px;  
   margin-bottom: auto;
   position: absolute;  
@@ -202,7 +202,8 @@ p {
   justify-content: center;  
   position: absolute;
   bottom: 50px;
-  width: 340px;
+  width: 90vw;
+  max-width: 400px;
   height: 140px;
   background-color: grey;
   padding: 20px; 
@@ -234,7 +235,7 @@ p {
 .carrito_total .btn_pagar:hover {
   scale: 1.1;
 }
-@media (min-width: 1250px)
+@media (min-width: 1400px)
 {
   .header {
     height: 600px;
@@ -276,9 +277,24 @@ p {
     margin-right: 50px;
   }
   .carrito_img i {
-   font-size: 12rem;
+    margin-right: 200px;
+    font-size: 12rem;
   }
   .carrito_container {
     right: 0;
   }
+}
+@media (min-width: 3000px) {  
+  .header_logo img {   
+    width: 400px;
+  }    
+  .nav_bar__items li {
+    font-size: 8rem;
+  }
+  .nav_bar__items li:hover {
+    scale: 1.2;
+  }  
+  .carrito_img i {
+   font-size: 12rem;
+  }  
 }
