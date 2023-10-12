@@ -240,30 +240,28 @@ h1 {
   margin-left: 5px;
   margin-bottom: 20px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1400px) {
   main {
-    padding-top: 450px;
-    height: 2000px;
+    padding-top: 140px;
+    height: max-content;
     overflow-x: scroll;
   }
   h1 {
-    font-size: 12rem;
-    margin-bottom: 100px;
+    font-size: 4rem;
+    margin-bottom: 20px;
   }
   .container_menu {    
     grid-template-columns: repeat(5,1fr);
     column-gap: 10px;   
-    margin-bottom: 40px;
-    width: 800px;    
+    margin-bottom: 40px;     
   }
   .container_menu .card1 {
-    width: 600px;
-    height: 1000px;
+    width: 200px;
+    height: 300px;
   }
   .container_menu .card1 h2 {
-    font-size: 8rem;
+    font-size: 3rem;
   }
-
 }
 
 

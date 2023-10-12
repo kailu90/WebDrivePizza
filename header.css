@@ -74,6 +74,7 @@ p {
   height: 40px;  
   cursor: pointer;  
   margin-right: 40px;
+  position: relative;
 }
 .carrito_img i {
   display: flex;
@@ -83,6 +84,24 @@ p {
 }
 .carrito_img i:hover {
  scale: 1.2;
+}
+.carrito_punto {  
+  background: green;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -12px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;  
+}
+.carrito_punto p {
+  position: absolute;
+  top: -5px;
+  right: calc(50% - 45px);
+  font-size: 1.5rem;
 }
 .carrito_container {
   display: none;
@@ -238,7 +257,7 @@ p {
 @media (min-width: 1400px)
 {
   .header {
-    height: 600px;
+    height: 150px;
   }
   .header_logo {
     width: max-content;
@@ -247,7 +266,7 @@ p {
   .header_logo img {
     margin-left: 50px;
     height: auto;
-    width: 200px;
+    width: 180px;
   }
   .header .menu_hamburguesa {
     display: none;
@@ -266,7 +285,7 @@ p {
   }
   .nav_bar__items li {
     margin: auto 20px;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .nav_bar__items li:hover {
     scale: 1.2;
@@ -278,7 +297,11 @@ p {
   }
   .carrito_img i {
     margin-right: 200px;
-    font-size: 12rem;
+    font-size: 4rem;
+  } 
+  .carrito_punto {   
+    top: -12px;
+    right: 65px;    
   }
   .carrito_container {
     right: 0;

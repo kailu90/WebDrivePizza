@@ -296,4 +296,18 @@ h1 {
 .flecha_atras_container p:hover {
   color: #008000;
 }
+@media (min-width: 1400px) {
+  h1 {
+    margin-top: 100px;
+  }
+.container_menu {
+  grid-template-columns: repeat(4,1fr);
+}
+.flecha_atras_container {
+  top: 170px;
+}
+.modal {
+  width: 800px;
+}
 
+}
