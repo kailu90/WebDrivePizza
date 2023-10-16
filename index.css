@@ -248,12 +248,13 @@ h1 {
   }
   h1 {
     font-size: 4rem;
-    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
   }
   .container_menu {    
     grid-template-columns: repeat(5,1fr);
     column-gap: 10px;   
-    margin-bottom: 40px;     
+    margin-bottom: 60px;     
   }
   .container_menu .card1 {
     width: 200px;

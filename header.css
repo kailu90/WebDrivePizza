@@ -113,7 +113,7 @@ p {
   margin-bottom: auto;
   position: absolute;  
   top: 0;
-  right: calc(50vw - 190px);
+  right: 0;
   transition: 0.3s;
   color: black;
   z-index: 2;
@@ -136,7 +136,7 @@ p {
   align-items: center;
   position: relative;
   border-bottom: 1px solid gray;
-  padding: 20px;
+  padding: 20px 30px;
 }
 .carrito_container .carrito_item img {
   margin-right: 10px; 
@@ -190,7 +190,7 @@ p {
   display: flex; 
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   align-items: center; 
   color: black;
   width: 40px;
@@ -220,9 +220,9 @@ p {
   flex-direction: column;
   justify-content: center;  
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   width: 90vw;
-  max-width: 400px;
+  max-width: 360px;
   height: 140px;
   background-color: grey;
   padding: 20px; 
@@ -290,6 +290,7 @@ p {
   .nav_bar__items li:hover {
     scale: 1.2;
   }
+  /*********************CARRITO COMPRAS*****************************/
   .carrito_img {
     width: 100px;
     height: max-content;
@@ -304,7 +305,13 @@ p {
     right: 65px;    
   }
   .carrito_container {
-    right: 0;
+    top: 50px;
+    right: 20px;
+    height: 100vh;
+    max-height: 1000px;
+  }
+  .carrito_total .btn_pagar {
+    width: 100%;
   }
 }
 @media (min-width: 3000px) {  
