@@ -234,7 +234,7 @@ p {
   align-items: center;
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 .carrito_total .btn_pagar {
   display: flex;  
