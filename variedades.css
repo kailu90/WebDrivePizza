@@ -190,7 +190,7 @@ h1 {
   font-size: 2rem;
   margin: 10px 40px 10px 50px;
 }
-.modal_tamaño , .modal_sabores {
+.modal_lista {
   display: flex;
   justify-content: space-between;
   width: 300px;
@@ -210,6 +210,13 @@ h1 {
   margin-right: 47px;
 }
 .modal_sabores_lista select {  
+  width: 100px;
+}
+.modal_toppings_lista label {  
+  width: 150px;
+  margin-right: 47px;
+}
+.modal_toppings_lista select {  
   width: 100px;
 }
 .modal_cantidad {

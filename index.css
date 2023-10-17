@@ -128,7 +128,7 @@ h1 {
   scale: 1.05;  
   cursor: pointer;  
 }
-/******MODAL********/
+/******************************MODAL***************************/
 .modal {
   display: none;
   flex-direction: column;
@@ -163,7 +163,7 @@ h1 {
   font-size: 2rem;
   margin: 10px 40px 10px 50px;
 }
-.modal_tamaño , .modal_sabores {
+.modal_lista {
   display: flex;
   justify-content: space-between;
   width: 300px;
