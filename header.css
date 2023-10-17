@@ -130,6 +130,9 @@ p {
 .carrito_container .header_carrito h3 { 
   font-size: 2rem;  
 }
+.carrito_items {
+  height: 140px;
+}
 .carrito_container .carrito_item {
   display: flex;
   justify-content: center;
@@ -137,6 +140,7 @@ p {
   position: relative;
   border-bottom: 1px solid gray;
   padding: 20px 30px;
+  height: 100px;
 }
 .carrito_container .carrito_item img {
   margin-right: 10px; 
@@ -308,7 +312,7 @@ p {
     top: 50px;
     right: 20px;
     height: 100vh;
-    max-height: 1000px;
+    max-height: 750px;
   }
   .carrito_total .btn_pagar {
     width: 100%;
