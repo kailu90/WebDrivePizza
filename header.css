@@ -258,7 +258,7 @@ p {
 
 .carrito_total {  
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center; 
