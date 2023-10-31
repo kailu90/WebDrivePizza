@@ -206,11 +206,11 @@ p {
   text-align: center;
 }
 
-.carrito_container .carrito_item .selector_cantidad i {
+.carrito_container .carrito_item .selector_cantidad i {  
   font-size: 1rem;
   width: 20px;
   height: 20px;
-  line-height: 32px;
+  line-height: 24px;
   text-align: center;
   border-radius: 50%;
   border: 1px solid black;
