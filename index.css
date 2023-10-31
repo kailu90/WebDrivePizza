@@ -6,16 +6,20 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
 }
+
 a {
   text-decoration: none;
-  color: white;   
+  color: white;
 }
+
 ul {
   list-style: none;
 }
+
 p {
   font-weight: 300;
 }
+
 /******************************INICIO DE MAIN******************************/
 /***Acá están las 5 secciones de todos los productos, pizzas, pastas, otras delicias, ensaladas y bebidas***/
 main {
@@ -23,11 +27,12 @@ main {
   flex-direction: column;
   width: 100vw;
   height: max-content;
-  background-color: white;  
+  background-color: white;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;   
+  padding-top: 100px;
 }
+
 h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -36,133 +41,154 @@ h1 {
   justify-content: center;
   margin: 40px 0 40px 0;
 }
+
 .container_menu {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 5px;
-  row-gap: 5px;    
-  margin-bottom: 40px; 
-  width: 320px; 
+  row-gap: 5px;
+  margin-bottom: 40px;
+  width: 320px;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   z-index: 0;
 }
-.container_menu .card1 {  
-  display: flex;  
-  height: 200px;  
+
+.container_menu .card1 {
+  display: flex;
+  height: 200px;
   width: 150px;
   margin: 5px;
   border-radius: 30px;
 }
+
 .container_menu .card_pizza {
   background-image: url(./imagenes/pizzas/pizza_california2_Mobile.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .container_menu .card_pasta {
   background-image: url(./imagenes/pastas/pasta_Mobile.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.container_menu .card_otras_delicias{
+
+.container_menu .card_otras_delicias {
   background-image: url(./imagenes/otras_delicias/hamburguesa4_Mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .container_menu .card_ensaladas {
   background-image: url(./imagenes/ensaladas/ensalada_cesar_Mobile.JPG);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .container_menu .card_bebidas {
   background-image: url(./imagenes/bebidas/jugos_Mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.container_menu .card1 a { 
-  display: flex;  
+
+.container_menu .card1 a {
+  display: flex;
   height: 100%;
-  width: 100%;  
+  width: 100%;
   align-self: flex-end;
   align-items: center;
   justify-content: center;
   margin: 0;
-  border-radius: 30px; 
+  border-radius: 30px;
   background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
 }
+
 .container_menu .card1 a:hover {
   background: transparent;
 }
+
 .container_menu .card1 h2 {
-  display: flex;  
+  display: flex;
   align-items: center;
-  font-size: 2rem;   
+  font-size: 2rem;
   padding-bottom: 20px;
   opacity: 0.5;
   text-align: center;
 }
+
 .container_menu .card1 h2:hover {
   opacity: 1;
 }
+
 .container_menu .card1 p {
   font-size: 2rem;
   text-align: center;
-  margin: 10px; 
+  margin: 10px;
 }
-.container_menu .card1 button {  
+
+.container_menu .card1 button {
   border-radius: 20px;
   width: 200px;
   height: 40px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #e4bc22;  
-  justify-self: end; 
-  margin-bottom: 10px; 
+  background-color: #e4bc22;
+  justify-self: end;
+  margin-bottom: 10px;
 }
-.container_menu .card1:hover {   
-  scale: 1.05;  
-  cursor: pointer;  
+
+.container_menu .card1:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
+
 /******************************MODAL***************************/
 .modal {
   display: none;
   flex-direction: column;
   justify-content: center;
-  position: fixed;  
+  position: fixed;
   top: 100px;
   right: calc(50vw - 191.5px);
   width: 393px;
   height: max-content;
   background: white;
-  border: 1px solid black;  
+  border: 1px solid black;
 }
+
 #icon_close {
   position: absolute;
   top: 0;
   right: 20px;
   width: 40px;
   height: 40px;
-  font-size: 4rem; 
+  font-size: 4rem;
 }
+
 .modal_descripcion {
- display: flex;
- flex-direction: column;  
- margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
+
 .modal_descripcion img {
   width: 300px;
   height: auto;
   align-self: center;
 }
-.modal_descripcion h2 , p {
+
+.modal_descripcion h2,
+p {
   font-size: 2rem;
   margin: 10px 40px 10px 50px;
 }
+
 .modal_lista {
   display: flex;
   justify-content: space-between;
@@ -171,24 +197,30 @@ h1 {
   font-size: 4rem;
   margin-bottom: 10px;
 }
+
 .modal_tamaño_lista label {
   width: 150px;
   margin-right: 30px;
 }
-.modal_tamaño_lista select {  
+
+.modal_tamaño_lista select {
   width: 100px;
 }
-.modal_sabores_lista label {  
+
+.modal_sabores_lista label {
   width: 150px;
   margin-right: 47px;
 }
-.modal_sabores_lista select {  
+
+.modal_sabores_lista select {
   width: 100px;
 }
+
 .modal_cantidad {
   display: flex;
   justify-content: center;
 }
+
 .modal_cantidad {
   display: flex;
   justify-content: center;
@@ -196,23 +228,27 @@ h1 {
   height: 40px;
   border-radius: 10px;
 }
+
 .modal_cantidad i {
   font-size: 2rem;
   margin: 0 10px;
 }
+
 .modal_cantidad input {
   padding: 5px 0;
   width: 100px;
   height: 20px;
-  margin: 10px 0; 
+  margin: 10px 0;
   background: gainsboro;
   color: black;
 }
+
 .modal_cantidad input::placeholder {
   font-size: 2rem;
   color: black;
   text-align: center;
 }
+
 .footer_modal {
   display: flex;
   margin: 0 auto;
@@ -221,6 +257,7 @@ h1 {
   font-size: 4rem;
   margin-top: 20px;
 }
+
 .footer_modal_total {
   display: flex;
   justify-content: center;
@@ -229,9 +266,10 @@ h1 {
   background: black;
   color: white;
   border-radius: 10px;
-  margin-right: 5px; 
+  margin-right: 5px;
   margin-bottom: 20px;
 }
+
 .footer_modal_carrito {
   width: 50%;
   background: black;
@@ -240,29 +278,32 @@ h1 {
   margin-left: 5px;
   margin-bottom: 20px;
 }
+
 @media (min-width: 1400px) {
   main {
     padding-top: 140px;
     height: max-content;
     overflow-x: scroll;
   }
+
   h1 {
     font-size: 4rem;
     margin-top: 80px;
     margin-bottom: 60px;
   }
-  .container_menu {    
-    grid-template-columns: repeat(5,1fr);
-    column-gap: 10px;   
-    margin-bottom: 60px;     
+
+  .container_menu {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    margin-bottom: 60px;
   }
+
   .container_menu .card1 {
     width: 200px;
     height: 300px;
   }
+
   .container_menu .card1 h2 {
     font-size: 3rem;
   }
 }
-
-
