@@ -70,8 +70,14 @@ const modalOpenArray = [...modalOpen]
 
 modalOpenArray.forEach(card => {card.addEventListener("click" , function(){mostrarMenu(modal,"flex")})})
 
-/*modalOpen.addEventListener("click" , function(){mostrarMenu(modal,"flex")})*/
-
 /******Ocultar modal productos***/
 
 iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
+
+/*Adicionar o eliminar elementos del carrito de compras*/
+
+var productoCarrito = document.createElement(".carrito_item");
+const carritoContainer = document.getElementById("carritoContainer")
+carrito_itemn.textContent = "";
+
+carritoContainer.appendChild(productoCarrito);
