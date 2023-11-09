@@ -129,8 +129,8 @@ p {
   border-top: 1px solid white;
   width: 100vw;
   max-width: 400px;
-  height: 80vh;
-  max-height: 700px;
+  height: max-content;
+  max-height: 100vh;
   margin-top: 100px;
   margin-bottom: auto;
   position: absolute;
@@ -159,9 +159,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: max-content;
-  max-height: 100vh;  
-  overflow-y: scroll;
+  height: max-content;  
+  background: white;
+  overflow-y: auto;
 }
 
 .carrito_container .carrito_item {
@@ -367,9 +367,8 @@ p {
 
   .carrito_container {
     top: 50px;
-    right: 20px;
-    height: 100vh;
-    max-height: 700px;
+    right: 0;
+    height: max-content;    
   }
 
   .carrito_total .btn_pagar {
