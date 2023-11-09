@@ -267,11 +267,12 @@ p {
   flex-direction: column;
   justify-content: center; 
   width: 100vw;  
-  max-width: 360px;
+  max-width: 400px;
   height: 140px;
   background-color: grey;
-  padding: 10px;
+  padding: 10px 20px;
   border-top: 1px solid black;
+  z-index: 20;
 }
 
 .carrito_total .fila {

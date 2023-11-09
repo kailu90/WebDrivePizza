@@ -103,5 +103,44 @@ p {
 .iconos_redes img:hover {
   scale: 1.2;
 }
-/**********************FOOTER LADO DERECHO********************/
 
+@media (min-width: 1400px) {
+
+  .container_footer {
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 0;
+  }
+
+  .footer_logo {
+    margin-left: 100px;
+  }
+
+  .nav_bar_footer ul {
+    width: 300px;
+    font-size: 5rem;
+    line-height: 20px;
+  }
+
+  .nav_bar_footer ul h3 {
+    font-size: 4rem;
+    
+  }
+
+  .redes_container {
+    margin-right: 100px;
+  }
+
+  .redes_container h3 {
+    font-size: 2.8rem;
+  }
+
+  .iconos_redes img {
+    width: 40px;
+    height: 40px;
+  }
+
+ 
+
+}

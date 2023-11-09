@@ -20,6 +20,12 @@ p {
   font-weight: 300;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /******************************INICIO DE MAIN******************************/
 /***Acá están las 5 secciones de todos los productos, pizzas, pastas, otras delicias, ensaladas y bebidas***/
 main {
@@ -31,6 +37,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  margin: auto 0;
 }
 
 h1 {

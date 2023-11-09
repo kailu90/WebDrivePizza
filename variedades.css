@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
 }
 
 a {
@@ -13,6 +14,16 @@ a {
 
 ul {
   list-style: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /******************************INICIO DE MAIN******************************/
@@ -25,6 +36,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 80px;
+  margin: auto 0;
 }
 
 h1 {
