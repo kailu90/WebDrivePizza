@@ -75,10 +75,6 @@ p {
   color: green;
 }
 
-.nav_bar_footer ul li .ancla_gris:hover {
-  color: grey;
-}
-
 .nav_bar_footer ul li .ancla_rojo:hover {
   color: red;
 }
@@ -141,8 +137,6 @@ p {
     line-height: 20px;
   }
 
-  
-
   .nav_bar_footer ul h3 {
     font-size: 4rem;
   }
@@ -150,15 +144,14 @@ p {
   .nav_bar_footer ul li .ancla_verde:hover {
     color: red;
   }
-  
+
   .nav_bar_footer ul li .ancla_gris:hover {
     color: red;
   }
-  
+
   .nav_bar_footer ul li .ancla_rojo:hover {
-    color:  green;
+    color: green;
   }
-  
 
   .redes_container {
     margin-right: 100px;
@@ -172,8 +165,5 @@ p {
     width: 40px;
     height: 40px;
   }
-
-
-
 
 }
