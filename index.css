@@ -290,8 +290,7 @@ p {
 @media (min-width: 1400px) {
   main {
     padding-top: 140px;
-    height: max-content;
-    overflow-x: scroll;
+    height: max-content;    
   }
 
   h1 {
