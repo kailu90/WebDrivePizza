@@ -125,7 +125,7 @@ p {
 }
 
 .carrito_container {
-  display: none;
+  display: none; 
   border-top: 1px solid white;
   width: 100vw;
   max-width: 400px;

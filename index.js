@@ -41,14 +41,14 @@ function mostrarMenu(elemento,propiedadDisplay){
     if(elemento.style.display == "") {
         console.log("entrandomodal")
         elemento.style.display = propiedadDisplay
-        navBar.style.display = "none"     
+        /*navBar.style.display = "none"*/   
         carrito.style.display = "none"      
       } else if(elemento.style.display == "none") {
         elemento.style.display = propiedadDisplay 
-        navBar.style.display = "none"           
+        /*navBar.style.display = "none"*/          
       } else if (elemento.style.display == propiedadDisplay) {
         elemento.style.display = "none"  
-        navBar.style.display = "none"     
+       /*navBar.style.display = "none"*/    
       } else if (propiedadDisplay == "none"){
         elemento.style.display = "none"
       }
@@ -78,6 +78,6 @@ iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
 
 var productoCarrito = document.createElement(".carrito_item");
 const carritoContainer = document.getElementById("carritoContainer")
-carrito_itemn.textContent = "";
+carrito_item.textContent = "";
 
 carritoContainer.appendChild(productoCarrito);
