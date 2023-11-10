@@ -193,7 +193,7 @@ h1 {
   justify-content: center;
   position: fixed;
   top: 0;
-  right: calc(50vw - 191.5px);
+  right: 0;
   width: 100vw;
   max-width: 400px;
   height: 100vh;
@@ -205,7 +205,7 @@ h1 {
 
 #icon_close {
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 20px;
   width: 40px;
   height: 40px;
@@ -221,6 +221,7 @@ h1 {
 }
 
 .modal_descripcion img {
+  margin-top: 200px;
   width: 300px;
   height: auto;
   align-self: center;
@@ -236,7 +237,7 @@ p {
   display: flex;
   justify-content: space-between;
   width: 300px;
-  margin-left: 50px;
+  margin: 0 auto;
   font-size: 4rem;
   margin-bottom: 10px;
 }
@@ -257,6 +258,18 @@ p {
 
 .modal_sabores_lista select {
   width: 100px;
+}
+
+.modal_toppings_lista {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.titulo_toppings {
+  width: 100px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .modal_toppings_lista label {
