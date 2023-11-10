@@ -196,11 +196,12 @@ h1 {
   right: 0;
   width: 100vw;
   max-width: 400px;
-  height: 100vh;
+  height: max-content;
   background: white;
   border: 1px solid black;
   z-index: 1;
-  overflow: auto;
+  overflow: scroll;
+  margin: 0 auto;
 }
 
 #icon_close {
@@ -221,7 +222,7 @@ h1 {
 }
 
 .modal_descripcion img {
-  margin-top: 200px;
+  margin-top: 50px;
   width: 300px;
   height: auto;
   align-self: center;
