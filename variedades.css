@@ -434,7 +434,17 @@ p {
   }
 
   .modal {
-    width: 800px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .modal_descripcion {
+    width: 90%;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .header .nav_bar {
