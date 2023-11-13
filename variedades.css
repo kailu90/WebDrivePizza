@@ -218,7 +218,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  height: max-content;
+  height: max-content; 
 }
 
 .modal_descripcion img {
@@ -226,6 +226,11 @@ h1 {
   width: 300px;
   height: auto;
   align-self: center;
+}
+
+.modal_superior_img {
+  display: flex;
+  justify-content: center; 
 }
 
 .modal_descripcion h2,
@@ -386,24 +391,32 @@ p {
 /****MODAL*****/
 
 .modal {
-  width: 100vw;
-  max-width: 100vw;
+  width: 50vw;
+  max-width: 90vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.modal_descripcion {
+  width: 100%;
+  border: 1px solid black;
 }
 
 .modal_superior {
-  display: flex;
-  flex-direction: row;
+  display: flex;  
   align-items: center;
   justify-content: center;
 }
 
-.modal_superior img {
-  margin-left: 100px;
+.modal_superior_img {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
 }
 
 .modal_inferior {
-  display: flex;
-  flex-direction: row;
+  display: flex; 
+  flex-direction: column; 
   align-items: center;
   align-content: center;
   justify-content: space-around;
@@ -436,15 +449,17 @@ p {
   .modal {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
   }
 
   .modal_descripcion {
     width: 90%;
     border: 1px solid black;
+    border-radius: 10px;
     margin-bottom: 50px;
     padding-bottom: 50px;
+
   }
 
   .header .nav_bar {
