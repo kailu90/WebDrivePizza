@@ -217,6 +217,7 @@ h1 {
 .modal_descripcion {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 20px;
   height: max-content; 
 }
@@ -287,6 +288,26 @@ p {
 
 .modal_toppings_lista select {
   width: 100px;
+}
+
+.modal_observacion h3 {  
+  font-size: 2rem;
+  margin: 5px 0 5px 20px;
+}
+
+.input_observacion {
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.input_observacion input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .modal_cantidad {
