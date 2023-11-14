@@ -219,7 +219,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
-  height: max-content; 
+  height: max-content;
 }
 
 .modal_descripcion img {
@@ -239,14 +239,19 @@ h1 {
 .modal_superior_img {
   position: relative;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   width: max-content;
   height: max-content;
 }
 
-.modal_descripcion h2,
-p {
-  font-size: 2rem;  
+.modal_descripcion h2 {
+  font-size: 2rem;
+  margin: 10px 40px 10px 50px;
+}
+
+.modal_descripcion p {
+  font-size: 2rem;
+  margin: 10px 40px 10px 50px;
 }
 
 .modal_lista {
@@ -299,7 +304,7 @@ p {
   width: 100px;
 }
 
-.modal_observacion h3 {  
+.modal_observacion h3 {
   font-size: 2rem;
   margin: 5px 0 5px 20px;
 }
@@ -307,7 +312,6 @@ p {
 .input_observacion {
   width: 90%;
   height: 200px;
-  border: 1px solid black;
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -321,8 +325,9 @@ p {
   border-radius: 10px;
   font-size: 2rem;
   padding: 20px;
-  text-align:start;
+  text-align: start;
   flex-wrap: wrap;
+
 }
 
 .modal_cantidad {
@@ -427,43 +432,43 @@ p {
 }
 
 @media (min-width: 1000px) {
-/****MODAL*****/
+  /****MODAL*****/
 
-.modal {
-  width: 50vw;
-  max-width: 90vw;
-  height: 100vh;
-  justify-content: center;
-}
+  .modal {
+    width: 50vw;
+    max-width: 90vw;
+    height: 100vh;
+    justify-content: center;
+  }
 
-.modal_superior {
-  display: flex;  
-  align-items: center;
-  justify-content: center;
-}
+  .modal_superior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.modal_superior_img {
-  display: flex;
-  justify-content: center;
-  margin-left: 50px;
-}
+  .modal_superior_img {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+  }
 
-.modal_inferior {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  align-content: center;
-  justify-content: space-around;
-  margin: 0 100px;
-}
+  .modal_inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: 0 100px;
+  }
 
-.modal_tamaño_lista select {
-  width: 200px;
-}
+  .modal_tamaño_lista select {
+    width: 200px;
+  }
 
-.modal_sabores_lista select {
-  width: 200px;
-}
+  .modal_sabores_lista select {
+    width: 200px;
+  }
 
 }
 
@@ -496,12 +501,16 @@ p {
     margin-top: 100px;
   }
 
-  .modal_inferior {
-    flex-direction: row;
-  }
-
   .header .nav_bar {
     display: flex;
+  }
+
+}
+
+@media (min-width: 2200px) {
+
+  .modal_inferior {
+    flex-direction: row;
   }
 
 }
