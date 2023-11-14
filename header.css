@@ -105,6 +105,8 @@ p {
 }
 
 .carrito_punto {
+  display: flex;
+  align-items: center;
   background: green;
   border-radius: 50%;
   width: 30px;
@@ -117,11 +119,9 @@ p {
   text-align: center;
 }
 
-.carrito_punto p {
-  position: absolute;
-  top: -5px;
-  right: calc(50% - 45px);
+.carrito_punto p {   
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .carrito_container {
