@@ -84,6 +84,10 @@ p {
   line-height: 50px;
 }
 
+.nav_bar__items {
+  margin-top: 50px;
+}
+
 /******Carrito de compras****/
 .carrito_img {
   width: 40px;
