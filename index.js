@@ -25,15 +25,15 @@ function mostrarMenu(elemento,propiedadDisplay){
   if(elemento == carrito) {    
     if(elemento.style.display == "") {
         elemento.style.display = propiedadDisplay
-        navBar.style.display = "none"  
+        /*navBar.style.display = "none"  */
         modal.style.display = "none" 
       } else if(elemento.style.display == "none") {
         elemento.style.display = propiedadDisplay 
-        navBar.style.display = "none"   
+        /*navBar.style.display = "none"   */
         modal.style.display = "none"         
       } else if (elemento.style.display == propiedadDisplay) {
         elemento.style.display = "none"  
-        navBar.style.display = "none" 
+        /*navBar.style.display = "none" */
         modal.style.display = "none"     
       }
   }
