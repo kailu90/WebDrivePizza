@@ -382,8 +382,7 @@ p {
   .carrito_container .header_carrito {
     justify-content: flex-start;
     padding-left: 100px;
-    height: 200px;
-    
+    height: 100px;    
   }
 
   .carrito_container .header_carrito h3 {
@@ -397,13 +396,10 @@ p {
     max-width: 1400px;   
   }
 
-
   .carrito_items {
     width: 50vw; 
     max-width: 50vw;   
   }
-
-  
 
   .carrito_total .btn_pagar {
     width: 90%;
