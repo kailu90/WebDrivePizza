@@ -149,16 +149,15 @@ p {
 
 .carrito_container .header_carrito {
   display: flex;
-  height: 200px;
-  justify-content: flex-start;
+  height: 100px;
+  justify-content: center;
   background: white;
   border-bottom: 1px solid black;
-  align-items: center;
-  padding-left: 100px;
+  align-items: center; 
 }
 
 .carrito_container .header_carrito h3 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .carrito_items {
@@ -170,7 +169,7 @@ p {
   height: max-content;  
   background: white;
   overflow-y: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .carrito_container .carrito_item {
@@ -281,7 +280,7 @@ p {
   height: 140px;
   background-color: grey;
   border-top: 1px solid black;
-  margin: 100px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .carrito_total .fila {
@@ -379,7 +378,18 @@ p {
   .carrito_container{
     top: 60px;  
   }
+
+  .carrito_container .header_carrito {
+    justify-content: flex-start;
+    padding-left: 100px;
+    height: 200px;
     
+  }
+
+  .carrito_container .header_carrito h3 {
+    font-size: 4rem;
+  } 
+
   .carrito_container_desktop {
     display: flex;
     flex-direction: row;
@@ -393,9 +403,7 @@ p {
     max-width: 50vw;   
   }
 
-  .carrito_item {
-    margin: 0 auto; 
-  }
+  
 
   .carrito_total .btn_pagar {
     width: 90%;
