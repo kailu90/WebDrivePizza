@@ -118,14 +118,19 @@
 
   .slogan_texto p {
     font-size: 1.5rem;
+    margin: 10px 0;
   }
 
   .btn_nuestro_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 20px;
     background: black;
     color: white;
     margin: 20px auto;
+    border-radius: 5px;
   }
 
 
