@@ -49,112 +49,57 @@
     margin: 40px 0 40px 0;
   }
   
-  .container_menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-    margin-bottom: 40px;
-    width: 320px;
+  .hero_video {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 0;
+    width: 100vw;
+    height: auto;
+    margin-top: 100px;    
   }
-  
-  .container_menu .card1 {
+
+  .slogan_container {
     display: flex;
-    height: 200px;
-    width: 150px;
-    margin: 5px;
-    border-radius: 30px;
-  }
-  
-  .container_menu .card_pizza {
-    background-image: url(./imagenes/pizzas/pizza_california2_Mobile.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container_menu .card_pasta {
-    background-image: url(./imagenes/pastas/pasta_Mobile.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container_menu .card_otras_delicias {
-    background-image: url(./imagenes/otras_delicias/hamburguesa4_Mobile.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container_menu .card_ensaladas {
-    background-image: url(./imagenes/ensaladas/ensalada_cesar_Mobile.JPG);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container_menu .card_bebidas {
-    background-image: url(./imagenes/bebidas/jugos_Mobile.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container_menu .card1 a {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-self: flex-end;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin: 0;
-    border-radius: 30px;
-    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
-  }
-  
-  .container_menu .card1 a:hover {
-    background: transparent;
-  }
-  
-  .container_menu .card1 h2 {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    padding-bottom: 20px;
-    opacity: 0.5;
     text-align: center;
   }
-  
-  .container_menu .card1 h2:hover {
-    opacity: 1;
+
+  .slogan_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  .container_menu .card1 p {
-    font-size: 2rem;
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .container_menu .card1 button {
-    border-radius: 20px;
-    width: 200px;
-    height: 40px;
+
+  .slogan_titulo p {
     font-size: 1rem;
-    font-weight: 600;
-    background-color: #e4bc22;
-    justify-self: end;
-    margin-bottom: 10px;
   }
-  
-  .container_menu .card1:hover {
-    scale: 1.05;
-    cursor: pointer;
+
+  .flecha_menu_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px auto;
   }
-  
+
+  .flecha_menu_container img {
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
   @media (min-width: 1400px) {
     main {
       padding-top: 140px;
@@ -166,19 +111,5 @@
       margin-top: 80px;
       margin-bottom: 60px;
     }
-  
-    .container_menu {
-      grid-template-columns: repeat(5, 1fr);
-      column-gap: 10px;
-      margin-bottom: 60px;
-    }
-  
-    .container_menu .card1 {
-      width: 200px;
-      height: 300px;
-    }
-  
-    .container_menu .card1 h2 {
-      font-size: 3rem;
-    }
+ 
   }

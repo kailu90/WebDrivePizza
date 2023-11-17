@@ -109,7 +109,7 @@ p {
 }
 
 .carrito_punto {
-  display: flex;
+  display: none;
   align-items: center;
   background: green;
   border-radius: 50%;
@@ -118,7 +118,6 @@ p {
   position: absolute;
   top: -12px;
   right: -20px;
-  display: flex;
   justify-content: center;
   text-align: center;
 }
