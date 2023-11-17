@@ -27,7 +27,7 @@
   }
   
   /******************************INICIO DE MAIN******************************/
-  /***Acá están las 5 secciones de todos los productos, pizzas, pastas, otras delicias, ensaladas y bebidas***/
+  /******Inicio de la sesión*****/
   main {
     display: flex;
     flex-direction: column;
@@ -48,6 +48,8 @@
     justify-content: center;
     margin: 40px 0 40px 0;
   }
+
+  /*Estilos para la sección de hero video*/
   
   .hero_video {
     display: flex;
@@ -138,6 +140,9 @@
     flex-direction: column;
   }
 
+  .titulo_nuestras_sedes {
+    font-size: 3rem;
+  }
 
   .sede {
     display: flex;
