@@ -113,7 +113,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin: 50px;
+    margin: 0 50px;
   }
 
   .slogan_texto p {
@@ -133,9 +133,47 @@
     border-radius: 5px;
   }
 
+  .nuestras_sedes_container {
+    display: flex;
+    flex-direction: column;
+  }
 
 
+  .sede {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
 
+  .sede_ibague img {
+    object-position: top;  
+  }
+
+  .sede img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .sede h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn_visitar_sede {
+    width: 100px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
 
 
 
