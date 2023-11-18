@@ -270,6 +270,8 @@
   .nombre_cliente {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 30px;
     font-weight: 900;
   }
