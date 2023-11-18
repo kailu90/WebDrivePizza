@@ -65,24 +65,43 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 200px;
+    height: 250px;
     max-width: 400px;   
     text-align: center;
   }
+
   .formulario_contactenos h4 {
+    width: 80%;  
     font-size: 1rem;
     font-weight: 200;
+    margin: 0 auto 20px auto;
   }
 
   .formulario_contactenos input {
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px;    
   }
 
   .campos_nombres_apellidos , .campos_email_telefono {
     display: flex;
     justify-content: space-around;
     margin: 10px 0;    
+  }
+
+  .campos_nombres_apellidos input {
+    width: 100px;
+  }
+
+  .campos_nombres_apellidos input::placeholder {
+    text-align: center;
+  }
+
+  .campos_email_telefono input::placeholder {
+    text-align: center;
+  }
+
+  .campos_email_telefono input {
+    width: 100px;
   }
 
   .campo_mensaje {
@@ -94,6 +113,16 @@
     text-align: center;
   }
 
+  .btn-enviar {
+    width: 60px;
+    height: 20px;
+    color: white;
+    font-size: 1rem;
+    background: black;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
 
 /*Estilos de segunda sección de página, contacto y sedes*/
 
@@ -102,7 +131,7 @@
     justify-content: center;
     width: max-content;
     max-width: 400px;
-    margin: 0 auto 30px auto;
+    margin: 30px auto;
 }
 
 .numero_contacto {
