@@ -214,6 +214,25 @@
     font-size: 2rem;
   }
 
+  .producto_destacado {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  .producto_destacado h3 { 
+    display: flex;
+    justify-content: center;  
+    width: 200px;
+    position: absolute;
+    top: 50%;    
+    right: -10px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
   .productos_destacados_texto p {
     text-align: center;
   }
@@ -265,7 +284,8 @@
   .comentario_container {
     display: flex;    
     width: 100px;
-    height: 50px;
+    height: max-content;
+    max-height: 50px;
     overflow: auto hidden;
     text-align: center;   
   }
@@ -278,6 +298,32 @@
     height: 30px;
     font-weight: 900;
   }
+
+  /*Sección galería multimedia*/
+
+  .galeria_multimedia_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 600px;
+    height: 600px;
+  }
+
+  .galeria_imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-gap: 10px;
+    overflow-x: scroll;    
+  }
+
+  .galeria_imagenes img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /*sección de blog*/
+
+  
 
   @media (min-width: 1400px) {
     main {
