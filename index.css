@@ -27,7 +27,7 @@
   }
   
   /******************************INICIO DE MAIN******************************/
-  /******Inicio de la sesión*****/
+  /******Inicio de la página inicio*****/
   main {
     display: flex;
     flex-direction: column;
@@ -138,7 +138,7 @@
     border-radius: 5px;
   }
 
- /*Sección de nuestras sedes en el inicio*/
+ /*Estilos para la sección de nuestras sedes*/
 
   .nuestras_sedes_container {
     display: flex;
@@ -185,7 +185,7 @@
     font-size: 1rem;
   }
 
-  /*Sección de menu en el inicio*/
+  /*Estilos para la sección de nuestro menu*/
 
   .nuestro_menu_container {
     width: 100vw;
@@ -197,7 +197,7 @@
     height: auto;
   }
 
- /*Sección de productos destacados en el inicio*/
+ /*Estilos para la sección de productos destacados*/
 
   .productos_destacados_container {
     display: flex;
@@ -250,7 +250,7 @@
     margin: 10px;
   }
 
-  /*sección comentarios de clientes*/
+  /*Estilos para la sección comentarios de clientes*/
 
   .comentarios_container {
     display: flex;
@@ -299,7 +299,7 @@
     font-weight: 900;
   }
 
-  /*Sección galería multimedia*/
+  /*Estilos para la sección galería multimedia*/
 
   .galeria_multimedia_container {
     display: flex;
@@ -321,15 +321,16 @@
     height: 200px;
   }
 
-  /*sección de blog*/
+  /*Estilos para la sección de blog*/
 
-  .items_blog_container {
+  .items_blog_container {  
     display: flex;
     width: 100vw;
     overflow-x: scroll;
   }
 
   .item_blog {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -355,6 +356,7 @@
   }
 
   .item_blog p {
+   
     max-width: 80%;
     margin: 30px 0 10px 20px;
     font-size: 1rem;
@@ -365,7 +367,24 @@
     font-weight: 900;   
   }
 
+  .btn_leer_mas {
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 900;
+    width: 80px;
+    border: transparent;
+    background: transparent;
+    justify-self: flex-end;   
+  }
 
+  .btn_leer_mas:hover {
+    color: gray;
+  }
+  
+  
   @media (min-width: 1400px) {
     main {
       padding-top: 140px;
