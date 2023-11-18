@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./imagenes/assets/logo_drive_Mobile.png" />
-  <link rel="stylesheet" href="./inicio.css">  
+  <link rel="stylesheet" href="contactenos.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
   <title>Menú - Drive Pizza</title>
 </head>
+
 <body>
   <header class="header">
     <div class="menu_hamburguesa">
       <div class="linea_superior"></div>
       <div class="linea_medio"></div>
       <div class="linea_inferior"></div>
-    </div>    
+    </div>
     <div class="header_logo">
       <a href="./index.html"><img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza"></a>
-    </div>   
+    </div>
     <nav class="nav_bar" id="nav_bar">
       <ul class="nav_bar__items" id="nav_bar_items">
         <li><a href="./index.html">INICIO</a></li>
@@ -30,13 +32,15 @@
         <li><a href="./nuestras_sedes.html">NUESTRAS SEDES</a></li>
         <li><a href="./nuestro_blog.html">BLOG</a></li>
         <li><a href="./contactenos.html">CONTACTENOS</a></li>
-      </ul>            
-    </nav>  
+      </ul>
+    </nav>
     <div class="carrito_img" id="carrito_img">
       <i class="fa-solid fa-bag-shopping"></i>
-      <div class="carrito_punto"><p>3</p></div>
-    </div> 
-    <div class="carrito_container" id="carritoContainer">        
+      <div class="carrito_punto">
+        <p>3</p>
+      </div>
+    </div>
+    <div class="carrito_container" id="carritoContainer">
       <div class="header_carrito">
         <h3>Tu carrito</h3>
       </div>
@@ -55,7 +59,7 @@
             </span>
           </div>
           <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+            <i class="fa-solid fa-trash"></i>
           </span>
         </div>
         <div class="carrito_item">
@@ -72,7 +76,7 @@
             </span>
           </div>
           <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+            <i class="fa-solid fa-trash"></i>
           </span>
         </div>
         <div class="carrito_item">
@@ -89,9 +93,9 @@
             </span>
           </div>
           <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+            <i class="fa-solid fa-trash"></i>
           </span>
-        </div> 
+        </div>
         <div class="carrito_item">
           <img src="./imagenes/pizzas/pizza_estofada_Mobile.jpg" alt="pizza estofada">
           <div class="carrito_item_detalle">
@@ -106,9 +110,9 @@
             </span>
           </div>
           <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+            <i class="fa-solid fa-trash"></i>
           </span>
-        </div> 
+        </div>
         <div class="carrito_item">
           <img src="./imagenes/pizzas/pizza_estofada_Mobile.jpg" alt="pizza estofada">
           <div class="carrito_item_detalle">
@@ -123,9 +127,9 @@
             </span>
           </div>
           <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+            <i class="fa-solid fa-trash"></i>
           </span>
-        </div> 
+        </div>
         <div class="carrito_item">
           <img src="./imagenes/pizzas/pizza_estofada_Mobile.jpg" alt="pizza estofada">
           <div class="carrito_item_detalle">
@@ -140,9 +144,9 @@
             </span>
           </div>
           <span class="btn_eliminar">
-            <i class="fa-solid fa-trash"></i>            
+            <i class="fa-solid fa-trash"></i>
           </span>
-        </div> 
+        </div>
       </div>
       <div class="carrito_total">
         <div class="fila">
@@ -153,17 +157,55 @@
         </div>
         <button class="btn_pagar">Pagar<i class="fa solid fa-bag-shopping"></i></button>
       </div>
-    </div>   
-  </header>     
-  
-  <footer class="container_footer"> 
+    </div>
+  </header>
+
+  <main class="contactenos_container">
+    <h3 class="titulo_formulario">Déjanos aquí tu mensaje</h3>
+    <section class="formulario_contactenos">
+      <form action="">       
+        <h4>Estarémos encantados de leerlo y responderte lo más pronto 
+          posible.</p>
+        <div class="campos_nombres_apellidos">
+          <input type="text" placeholder="[Escribe tus nombres aquí]">
+          <input type="text" placeholder="[Escribe tus apellidos aquí]">
+        </div>
+        <div class="campos_email_telefono">
+          <input type="email" placeholder="[Escribe tu correo aquí]">
+          <input type="number" placeholder=" [Escribe tu número de celular aquí]">
+        </div>
+        <input class="campo_mensaje" type="text" placeholder=" [Escribe tu mensaje aquí]">
+        <button class="btn-enviar"></button>
+      </form>
+    </section>
+
+    <section class="informacion_contactenos">
+      <div class="numero_contacto">
+        <h3>Contáctenos</h3>
+        <p><strong>Teléfono: </strong>312 609 18 69</p>
+        <p><strong>Correo: </strong>contacto@drivepizza.co</p>
+      </div>
+      <div class="nuestras_sedes_contactenos">
+        <h3>Nuestras Sedes</h3>
+        <a href="">Drive Pizza Cerrito</a>
+        <a href="">Drive Pizza Cartago</a>
+        <a href="">Drive Pizza Bucaramanga</a>
+        <a href="">Drive Pizza Tulua</a>
+        <a href="">Drive Pizza Ibague</a>
+        <a href="">Drive Pizza Palmira</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container_footer">
     <div class="footer_logo">
-      <img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza">                
-    </div>        
+      <img src="./imagenes/assets/logo_drive_blanco.png" alt="logo drive pizza">
+    </div>
     <nav class="nav_bar_footer">
       <ul>
         <h3><u>UTILIDADES</u></h3>
-        <li><a class="ancla_verde" href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank">Nuestro WhatsApp</a></li>
+        <li><a class="ancla_verde" href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank">Nuestro
+            WhatsApp</a></li>
         <li><a class="ancla_verde" href="./contactenos.html" target="_blank">Contáctenos</a></li>
         <li><a class="ancla_verde" href="./nuestro_blog.html" target="_blank">Nuestro Blog</a></li>
       </ul>
@@ -172,7 +214,7 @@
         <li><a class="ancla_verde" href="./index.html">Inicio</a></li>
         <li><a class="ancla_verde" href="./nuestro_menu.html">Nuestro menú</a></li>
         <li><a class="ancla_verde" href="./nuestras_sedes.html">Nuestras Sedes</a></li>
-      </ul>      
+      </ul>
       <ul>
         <h3><u>NUESTRAS SEDES</u></h3>
         <li><a class="ancla_rojo" href="./nuestras_sedes.html">Cerrito</a></li>
@@ -181,24 +223,28 @@
         <li><a class="ancla_rojo" href="./nuestras_sedes.html">Tulua</a></li>
         <li><a class="ancla_rojo" href="./nuestras_sedes.html">Ibague</a></li>
         <li><a class="ancla_rojo" href="./nuestras_sedes.html">Palmira</a></li>
-      </ul>   
+      </ul>
       <ul>
-        <h3><u>SERVICIO AL CLIENTE</u></h3>            
+        <h3><u>SERVICIO AL CLIENTE</u></h3>
         <li><a class="ancla_rojo" href="">Términos y condiciones</a></li>
-        <li><a class="ancla_rojo" href="">Politica de Privacidad</a></li>  
-        <li><a class="ancla_rojo" href="./contactenos.html" target="_blank">Pqrs</a></li>         
-      </ul>                
+        <li><a class="ancla_rojo" href="">Politica de Privacidad</a></li>
+        <li><a class="ancla_rojo" href="./contactenos.html" target="_blank">Pqrs</a></li>
+      </ul>
     </nav>
-    <div class="redes_container">    
-      <h3>Nuestras Redes</h3> 
+    <div class="redes_container">
+      <h3>Nuestras Redes</h3>
       <div class="iconos_redes">
-        <a href="https://www.instagram.com/drivepizza_oficial/" target="_blank"><img src="./imagenes/assets/instagram_color.png" alt="Instagram"></a>  
-        <a href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank"><img src="./imagenes/assets/whatsapp_color.png" alt="WhatsApp"></a> 
-        <a href="https://www.facebook.com/DrivePizzabga" target="_blank"><img src="./imagenes/assets/facebook.png" alt="Facebook"></a> 
-      </div>           
-    </div>                   
-</div>         
-</footer>  
-<script src="./nuestro_menu.js"></script>  
+        <a href="https://www.instagram.com/drivepizza_oficial/" target="_blank"><img
+            src="./imagenes/assets/instagram_color.png" alt="Instagram"></a>
+        <a href="https://api.whatsapp.com/send?phone=57316091869&text=" target="_blank"><img
+            src="./imagenes/assets/whatsapp_color.png" alt="WhatsApp"></a>
+        <a href="https://www.facebook.com/DrivePizzabga" target="_blank"><img src="./imagenes/assets/facebook.png"
+            alt="Facebook"></a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="./nuestro_menu.js"></script>
 </body>
+
 </html>
