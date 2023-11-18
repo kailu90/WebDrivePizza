@@ -47,6 +47,7 @@
     align-content: center;
     justify-content: center;
     margin: 40px 0 40px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   /*Estilos para la sección de hero video y slogan*/
@@ -261,6 +262,8 @@
   }
 
   .comentario_container {
+    display: flex;
+    align-items: center;
     width: 100px;
     height: 50px;
     overflow-y: hidden;
