@@ -178,19 +178,17 @@ p {
   max-width: 500px;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: relative;  
   border-top: 1px solid gray;
-  border-top: 1px solid gray;
-  padding: 10px 30px;
   height: 100px;
-  margin: 10px 0;
+  margin: 5px 0;
   overflow: hidden;
 }
 
 .carrito_container .carrito_item img {
   margin-right: 10px;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   overflow: hidden;
 }
