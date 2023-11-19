@@ -163,19 +163,27 @@
   <main class="contactenos_container">
     <h3 class="titulo_formulario">Déjanos aquí tu mensaje</h3>
     <section class="formulario_contactenos">
-      <form action="">
+      <form class="formulario" action="">
         <h4>Estarémos encantados de leerlo y responderte lo más pronto
           posible.</h4>
         <div class="campos_nombres_apellidos">
-          <input type="text" placeholder="[Escribe tus nombres aquí]">
-          <input type="text" placeholder="[Escribe tus apellidos aquí]">
+          <label for="nombres">Nombres:</label>
+          <input name="nombres" type="text" placeholder="[Escribe tus nombres aquí]">
+          <label for="apellidos">Apellidos:</label>
+          <input name="apellidos" type="text" placeholder="[Escribe tus apellidos aquí]">
         </div>
         <div class="campos_email_telefono">
-          <input type="email" placeholder="[Escribe tu correo aquí]">
-          <input type="number" placeholder=" [Escribe tu número de celular aquí]">
+          <label for="email">Email:</label>
+          <input name="email" type="email" placeholder="[Escribe tu correo aquí]">
+          <label for="telefono">Teléfono:</label>
+          <input name="telefono" type="number" placeholder=" [Escribe tu número de celular aquí]">
         </div>
-        <input class="campo_mensaje" type="text" placeholder=" [Escribe tu mensaje aquí]">
-        <button class="btn-enviar">Enviar</button>
+        <div class="campo_mensaje">
+          <label for="mensaje">Mensaje:</label>
+          <input name="mensaje" class="mensaje" type="text" placeholder=" [Escribe tu mensaje aquí]">
+          <button class="btn-enviar">Enviar</button>
+        </div>
+        
       </form>
     </section>
 

@@ -64,10 +64,25 @@ h3 {
 .formulario_contactenos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 90vw;
-    height: 250px;
+    height: max-content;
     max-width: 400px;
     text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+
+.formulario label {
+    text-align: start;
+    margin-left: 10px;
+    font-weight: 900;
 }
 
 .formulario_contactenos h4 {
@@ -80,47 +95,47 @@ h3 {
 .formulario_contactenos input {
     border-radius: 5px;
     padding: 5px;
+    margin: 0 0 5px 0;
+    height: 20px;
 }
 
 .campos_nombres_apellidos,
 .campos_email_telefono {
     display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-
-.campos_nombres_apellidos input {
-    width: 100px;
+    flex-direction: column; 
+    width: 90%;   
 }
 
 .campos_nombres_apellidos input::placeholder {
-    text-align: center;
+    text-align: start;
 }
 
 .campos_email_telefono input::placeholder {
-    text-align: center;
-}
-
-.campos_email_telefono input {
-    width: 100px;
+    text-align: start;
 }
 
 .campo_mensaje {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    height: 100px;
+    height: max-content;
 }
 
-.campo_mensaje::placeholder {
-    text-align: center;
+.campo_mensaje .mensaje {
+    height: 40px;
 }
 
-.btn-enviar {
+.mensaje::placeholder {
+    text-align: start;
+}
+
+.campo_mensaje .btn-enviar {
     width: 60px;
     height: 20px;
     color: white;
     font-size: 1rem;
     background: black;
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 5px;
 }
 
