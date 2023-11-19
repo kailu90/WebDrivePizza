@@ -41,12 +41,12 @@ main {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 40px 0 40px 0;
+  margin: 20px 0 20px 0;
 }
 
 .container_menu {
