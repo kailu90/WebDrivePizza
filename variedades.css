@@ -334,13 +334,25 @@ h1 {
 }
 
 .observacion {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.campo_observacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  width: 100%;
+  width: 80%;
   height: 100%;  
-  border-radius: 10px;    
+  border-radius: 10px; 
+  font-size: 1.5rem;   
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .observacion label {
