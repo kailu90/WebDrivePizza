@@ -36,8 +36,10 @@
     </nav>
     <div class="carrito_img" id="carrito_img">
       <i class="fa-solid fa-bag-shopping"></i>
-      <div class="carrito_punto"><p>3</p></div>
-    </div> 
+      <div class="carrito_punto">
+        <p>3</p>
+      </div>
+    </div>
     <div class="carrito_container" id="carritoContainer">
       <div class="header_carrito">
         <h3>Resumen de tu compra</h3>
@@ -77,7 +79,7 @@
             <span class="btn_eliminar">
               <i class="fa-solid fa-trash"></i>
             </span>
-          </div>          
+          </div>
           <div class="carrito_item">
             <img src="./imagenes/pizzas/pizza_estofada_Mobile.jpg" alt="pizza estofada">
             <div class="carrito_item_detalle">
@@ -95,7 +97,7 @@
               <i class="fa-solid fa-trash"></i>
             </span>
           </div>
-        </div>          
+        </div>
         <div class="carrito_total">
           <div class="fila">
             <strong>Tu total</strong>
@@ -107,7 +109,7 @@
         </div>
       </div>
 
-    </div> 
+    </div>
   </header>
   <main>
     <H1>PIZZAS</H1>
@@ -245,7 +247,7 @@
     </div>
     </div>
   </footer>
-  <div class="modal" action="#" id="modal">   
+  <section class="modal" action="#" id="modal">
     <section class="modal_descripcion">
       <div class="modal_superior">
         <div class="modal_superior_img">
@@ -254,12 +256,13 @@
         </div>
         <div class="modal_superior_title">
           <h2 class="modal_descripcion_title">ESTOFADA</h2>
-          <p class="modal_descripcion_parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, mollitia.</p>
+          <p class="modal_descripcion_parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, mollitia.
+          </p>
         </div>
-      </div>    
+      </div>
       <div class="modal_inferior">
         <div class="modal_inferior_container">
-          <section class="modal_tamaño modal_lista">
+          <div class="modal_tamaño modal_lista">
             <form class="modal_tamaño_lista">
               <label for="tamaño" class="modal_tamaño_title">Escoge el tamaño</label>
               <select name="tamaño" id="tamaño">
@@ -271,8 +274,8 @@
                 <option value="">Jumbo</option>
               </select>
             </form>
-          </section>
-          <section class="modal_sabores modal_lista">
+          </div>
+          <div class="modal_sabores modal_lista">
             <form class="modal_sabores_lista">
               <label for="sabores" class="modal_sabores_title">Escoge el sabor</label>
               <select name="sabores" id="sabores">
@@ -283,90 +286,88 @@
                 <option value="">Estofada de carnes</option>
               </select>
             </form>
-          </section> 
-        </div>
-        <div class="modal_inferior_derecho">
-          <div>
-        <section class="modal_toppings modal_lista">
-              <h3 class="titulo_toppings">Escoge tus toppins adicionales</h3>
-              <form class="modal_toppings_lista">        
-                <label class="modal_toppings_title">Tomate      
-                  <input type="radio" name="tomate">
-                </label>
-                <label class="modal_toppings_title">Cebolla
-                  <input type="radio" name="cebolla">
-                </label>
-                <label class="modal_toppings_title">Pimenton
-                  <input type="radio" name="pimenton">
-                </label>
-                <label class="modal_toppings_title">Piña
-                  <input type="radio" name="piña">
-                </label>
-                <label class="modal_toppings_title">Maduro
-                  <input type="radio" name="maduro">
-                </label>
-                <label class="modal_toppings_title">Jamón
-                  <input type="radio" name="jamón">
-                </label>
-                <label class="modal_toppings_title">Ranchera
-                  <input type="radio" name="ranchera">
-                </label>
-                <label class="modal_toppings_title">Maiz
-                  <input type="radio" name="maiz">
-                </label>       
-                <label class="modal_toppings_title">Champiñon
-                  <input type="radio" name="maiz">
-                </label>       
-                <label class="modal_toppings_title">Salami
-                  <input type="radio" name="maiz">
-                </label>      
-                <label class="modal_toppings_title">Tocineta
-                  <input type="radio" name="maiz">
-                </label>      
-                <label class="modal_toppings_title">Queso
-                  <input type="radio" name="maiz">
-                </label>      
-                <label class="modal_toppings_title">Pepperoni
-                  <input type="radio" name="maiz">
-                </label>      
-                <label class="modal_toppings_title">Carne
-                  <input type="radio" name="maiz">
-                </label>      
-                <label class="modal_toppings_title">Pollo
-                  <input type="radio" name="maiz">
-                </label>  
-                <label class="modal_toppings_title">Chorizo
-                  <input type="radio" name="maiz">
-                </label>  
-                <label class="modal_toppings_title">Camarón
-                  <input type="radio" name="maiz">
-                </label>       
-              </form>
-        </section>
-        </div>
-      </div>      
-      <div class="modal_observacion">
-        <h3>Observaciones:</h3>
-        <form action="" class="input_observacion">       
-          <input placeholder="brindamos más información de ser necesario" >
+          </div>
+          <div class="modal_toppings modal_lista">
+            <h3 class="titulo_toppings">Escoge tus toppins adicionales</h3>
+            <form class="modal_toppings_lista">
+              <label class="modal_toppings_title">Tomate
+                <input type="radio" name="tomate">
+              </label>
+              <label class="modal_toppings_title">Cebolla
+                <input type="radio" name="cebolla">
+              </label>
+              <label class="modal_toppings_title">Pimenton
+                <input type="radio" name="pimenton">
+              </label>
+              <label class="modal_toppings_title">Piña
+                <input type="radio" name="piña">
+              </label>
+              <label class="modal_toppings_title">Maduro
+                <input type="radio" name="maduro">
+              </label>
+              <label class="modal_toppings_title">Jamón
+                <input type="radio" name="jamón">
+              </label>
+              <label class="modal_toppings_title">Ranchera
+                <input type="radio" name="ranchera">
+              </label>
+              <label class="modal_toppings_title">Maiz
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Champiñon
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Salami
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Tocineta
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Queso
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Pepperoni
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Carne
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Pollo
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Chorizo
+                <input type="radio" name="maiz">
+              </label>
+              <label class="modal_toppings_title">Camarón
+                <input type="radio" name="maiz">
+              </label>
+            </form>
+          </div>
+        </div>       
+      </div>
+      <div class="modal_observacion">      
+        <form action="" class="observacion">
+          <label for="observacion">Observaciones:</label>
+          <input name="observacion" placeholder="brindamos más información de ser necesario">
         </form>
       </div>
-      
-  </section> 
-    <section class="modal_cantidad">
-      <i class="fa-solid fa-minus"></i>
-      <input type="text" placeholder="1">
-      <i class="fa-solid fa-plus"></i>
+      <div class="modal_cantidad">
+        <i class="fa-solid fa-minus"></i>
+        <input type="text" placeholder="1">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="footer_modal">
+        <div class="btn_modal_total">
+          <p>$124.000</p>          
+        </div>
+        <button class="btn_modal_checkout">
+         <i class="fa-solid fa-cart-shopping"></i>
+        </button>
     </section>
-    <div class="footer_modal">
-      <div class="footer_modal_total">$124.000</div>
-      <button class="footer_modal_carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+    <div class="flecha_atras_container">
+      <a href="./nuestro_menu.html"><i class="fa-solid fa-arrow-left"></i>Atrás</a>
     </div>
-  </div>
-  <div class="flecha_atras_container">
-    <a href="./nuestro_menu.html"><i class="fa-solid fa-arrow-left"></i>Atrás</a>
-  </div>
-  <script src="./nuestro_menu.js"></script>
+    <script src="./nuestro_menu.js"></script>
 </body>
 
 </html>

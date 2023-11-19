@@ -186,11 +186,11 @@ h1 {
   color: white;
 }
 
-/******MODAL********/
+/******Acá empiezan los estilos del MODAL********/
 .modal {
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   position: fixed;
   top: 0;
   left: 0;
@@ -200,13 +200,13 @@ h1 {
   background: white;
   border: 1px solid black;
   z-index: 1;
-  overflow: auto;
+  overflow-y: scroll;
   margin: 0 auto;
 }
 
 #icon_close {
   position: absolute;
-  top: 20px;
+  top: -20px;
   right: -20px;
   width: 40px;
   height: 40px;
@@ -219,29 +219,13 @@ h1 {
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
-  height: max-content;
+  height: max-content;  
 }
 
-.modal_descripcion img {
-  margin-top: 50px;
+.modal_descripcion img { 
   width: 300px;
   height: auto;
   align-self: center;
-}
-
-.modal_superior {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal_superior_img {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: max-content;
-  height: max-content;
 }
 
 .modal_descripcion h2 {
@@ -252,6 +236,65 @@ h1 {
 .modal_descripcion p {
   font-size: 2rem;
   margin: 10px 40px 10px 50px;
+}
+
+.modal_superior {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.modal_superior_img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+}
+
+.modal_superior_title {
+  height: 150px;
+}
+
+/*Estilos de tamaño, sabor y toppings*/
+
+.modal_inferior {
+  height: 400px;
+}
+
+.modal_inferior_container {
+  height: 450px;
+}
+
+.modal_tamaño_lista , .modal_sabores_lista {
+  height: 40px;
+}
+
+.modal_toppings_lista {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  height: 350px;
+}
+
+.titulo_toppings {
+  display: flex;
+  width: 100px;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.modal_toppings_lista label {
+  width: 150px;
+  margin-right: 47px;
+}
+
+.modal_toppings_lista select {
+  width: 100px;
 }
 
 .modal_lista {
@@ -281,53 +324,50 @@ h1 {
   width: 100px;
 }
 
-.modal_toppings_lista {
+
+/*Estilos del input observación*/
+
+.modal_observacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 300px;
+}
+
+.observacion {
   display: flex;
   flex-direction: column;
-  text-align: end;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;  
+  border-radius: 10px;    
 }
 
-.titulo_toppings {
-  display: flex;
-  width: 100px;
-  font-size: 1.5rem;
-  text-align: center;
-  align-items: center;
-}
-
-.modal_toppings_lista label {
-  width: 150px;
-  margin-right: 47px;
-}
-
-.modal_toppings_lista select {
-  width: 100px;
-}
-
-.modal_observacion h3 {
+.observacion label {
   font-size: 2rem;
   margin: 5px 0 5px 20px;
+  font-weight: 900;
+  text-align: start;
 }
 
-.input_observacion {
-  width: 90%;
-  height: 200px;
-  margin: 0 auto;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.input_observacion input {
+.observacion input {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 100%;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
   font-size: 2rem;
-  padding: 20px;
-  text-align: start;
-  text-justify: inter-word;
+  padding: 20px;  
 }
+
+.observacion::placeholder {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+}
+
+/*Estilos del botón de cantidad*/
 
 .modal_cantidad {
   display: flex;
@@ -365,35 +405,31 @@ h1 {
   text-align: center;
 }
 
+
+/*Estilos para el footer del modal que es el precio y boton carrito*/
+
 .footer_modal {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  width: 300px;
+  width: 100vw;
+  max-width: 400px;
   height: 100px;
   font-size: 4rem;
   margin-top: 20px;
 }
 
-.footer_modal_total {
+.btn_modal_total , .btn_modal_checkout {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 40%;
   height: 80px;
   background: black;
   color: white;
   border-radius: 10px;
   margin-right: 5px;
-  margin-bottom: 20px;
-}
-
-.footer_modal_carrito {
-  width: 50%;
-  height: 80px;
-  background: black;
-  color: white;
-  border-radius: 10px;
-  margin-left: 5px;
   margin-bottom: 20px;
 }
 
