@@ -142,11 +142,14 @@ p {
   color: black;
   z-index: 2;
   background-color: white;
-  justify-content: center;
+  overflow-y: scroll;
 }
 
 .carrito_container_desktop {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content; 
   margin: 0 auto;
 }
 
@@ -169,8 +172,7 @@ p {
   width: 100vw;
   max-width: 500px;
   height: max-content;  
-  background: white;
-  overflow-y: auto; 
+  background: white;  
 }
 
 .carrito_container .carrito_item {
@@ -181,8 +183,7 @@ p {
   position: relative;  
   border-top: 1px solid gray;
   height: 100px;
-  margin: 5px 0;
-  overflow: hidden;
+  margin: 5px 0;  
 }
 
 .carrito_container .carrito_item img {
@@ -273,6 +274,8 @@ p {
   height: 100%;
 }
 
+/*Estilos del footer del carrito**/
+
 .carrito_total {   
   bottom: 100px;
   display: flex;
@@ -283,7 +286,6 @@ p {
   height: 140px;
   background-color: grey;
   border-top: 1px solid black;
-  margin: 0 auto 0 auto;
 }
 
 .carrito_total .fila {
