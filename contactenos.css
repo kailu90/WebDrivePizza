@@ -36,29 +36,25 @@ body {
     background-color: white;
     justify-content: center;
     align-items: center;
-    margin: 150px 0 0 0;
+    margin: 100px 0 0 0;
 }
 
-h2 {
+h1 {
+    width: 300px;
     font-size: 4rem;
     font-weight: 800;
     display: flex;
     align-content: center;
-    justify-content: center;
-    margin: 40px 0 40px 0;
+    justify-content: center;    
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    text-align: center;
 }
 
 h3 {
     align-self: center;
     margin-bottom: 10px;
     font-size: 1.5rem;
-}
-
-
-.titulo_formulario {
-    margin-bottom: 10px;
-    font-size: 2rem;
 }
 
 .formulario_contactenos {
@@ -94,10 +90,14 @@ h3 {
 }
 
 .formulario_contactenos input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border-radius: 5px;
     padding: 5px;
     margin: 0 0 5px 0;
     height: 20px;
+
 }
 
 .campos_nombres_apellidos,
