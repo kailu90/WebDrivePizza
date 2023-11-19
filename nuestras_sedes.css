@@ -33,7 +33,7 @@ body {
     width: 100vw;
     height: max-content;
     background-color: white;
-    justify-content: center;
+    justify-content: center;   
     align-items: center;
     margin: 100px 0 0 0;
 }
@@ -50,10 +50,14 @@ h2 {
 }
 
 .sedes_container {   
-    display: flex;
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     flex-direction: column;
-    font-size: 2rem;   
+    font-size: 2rem;    
 }
 
 .sedes_container a {
