@@ -218,7 +218,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
   height: max-content;  
 }
 
@@ -244,7 +243,7 @@ h1 {
   justify-content: start;
   align-items: center;
   height: 600px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .modal_superior_img {
@@ -346,9 +345,10 @@ h1 {
 
 .observacion label {
   font-size: 2rem;
-  margin: 5px 0 5px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-weight: 900;
-  text-align: start;
+  text-align: left;
 }
 
 .observacion input {
