@@ -1,5 +1,5 @@
 * {
-  border-radius: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -35,7 +35,7 @@ p {
   background-color: black;
   color: white;
   z-index: 1;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid white; 
 }
 
 .header .menu_hamburguesa {
@@ -105,7 +105,7 @@ p {
 }
 
 .carrito_img i:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .carrito_punto {
@@ -131,16 +131,16 @@ p {
   display: none; 
   border-top: 1px solid white;
   width: 100vw; 
-  height: 100vh;  
-  margin-top: 100px;
-  margin-bottom: auto;
+  height: 100vh;     
   position: absolute;
-  top: 0;
+  top: 100px;
   right: 0;
   transition: 0.3s;
   color: black;
   z-index: 2;
   background-color: white; 
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
 }
 
 .carrito_container_desktop {
