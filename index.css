@@ -130,12 +130,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 20px;
+    width: 200px;
+    height: 30px;
     background: black;
     color: white;
     margin: 20px auto;
     border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .main button:hover {
+    background: transparent;
+    color: black;
   }
 
  /*Estilos para la sección de nuestras sedes*/
