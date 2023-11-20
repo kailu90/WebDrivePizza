@@ -96,13 +96,15 @@ function actualizarCantidadProductos() {
 
 restar.addEventListener("click", function() {
   console.log("entrando a restar")
-  sumaProductosModal -= 1;
+  sumaProductosModal= sumaProductosModal-1;
+  cantidad.value.innerHTML=cantidad;
   actualizarCantidadProductos();
 });
 
 sumar.addEventListener("click", function() {
   console.log("entrando a sumar")
-  sumaProductosModal += 1;
+  sumaProductosModal= sumaProductosModal+1;
+  cantidad.value.innerHTML=cantidad;
   actualizarCantidadProductos();
 });
 
