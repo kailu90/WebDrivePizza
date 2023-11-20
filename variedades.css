@@ -405,18 +405,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 0;
   width: 100px;
-  height: 25px;
+  height: 40px;
   margin: 10px 0;
   background: gainsboro;
   color: black;
 }
 
-.modal_cantidad input::placeholder {
+.modal_cantidad input {
   font-size: 2rem;
   color: black;
   text-align: center;
+  align-self: center;
 }
 
 

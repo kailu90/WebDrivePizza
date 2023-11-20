@@ -76,8 +76,33 @@ iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
 
 /*Adicionar o eliminar elementos del carrito de compras*/
 
-var productoCarrito = document.createElement(".carrito_item");
+var productoCarrito = document.createElement(".carrito_item")
 const carritoContainer = document.getElementById("carritoContainer")
 carrito_item.textContent = "";
 
 carritoContainer.appendChild(productoCarrito);
+
+/*Sumar y restar cantidad en el modal*/
+
+let restar = document.getElementById("restaModal")
+let sumar = document.getElementById("sumaModal")
+let cantidad = document.getElementById("cantidad")
+let sumaProductosModal = 0;
+
+function actualizarCantidadProductos() {
+  cantidad.value = sumaProductosModal;
+  console.log("entrando a actualizar")
+}
+
+restar.addEventListener("click", function() {
+  console.log("entrando a restar")
+  sumaProductosModal -= 1;
+  actualizarCantidadProductos();
+});
+
+sumar.addEventListener("click", function() {
+  console.log("entrando a sumar")
+  sumaProductosModal += 1;
+  actualizarCantidadProductos();
+});
+
