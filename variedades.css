@@ -356,6 +356,8 @@ h1 {
 }
 
 .observacion label {
+  width: 100%;
+  margin-left: 100px;
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
