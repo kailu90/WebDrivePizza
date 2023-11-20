@@ -131,8 +131,7 @@ p {
   display: none; 
   border-top: 1px solid white;
   width: 100vw; 
-  height: 100vh;
-  max-height: 100vh;
+  height: 100vh;  
   margin-top: 100px;
   margin-bottom: auto;
   position: absolute;
@@ -141,8 +140,7 @@ p {
   transition: 0.3s;
   color: black;
   z-index: 2;
-  background-color: white;
-  overflow-y: scroll;
+  background-color: white; 
 }
 
 .carrito_container_desktop {
@@ -150,7 +148,8 @@ p {
   flex-direction: column;
   justify-content: center;
   width: max-content; 
-  margin: 0 auto;
+  height: calc (100vh - 50px);
+  margin: 0 auto;  
 }
 
 .carrito_container .header_carrito {
@@ -168,7 +167,7 @@ p {
 .carrito_items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   width: 100vw;
   max-width: 500px;
   height: max-content;  
@@ -190,8 +189,7 @@ p {
   margin-right: 10px;
   width: 90px;
   height: 90px;
-  object-fit: cover;
-  overflow: hidden;
+  object-fit: cover; 
 }
 
 .carrito_container .carrito_item_detalle {
