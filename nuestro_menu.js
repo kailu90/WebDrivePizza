@@ -84,27 +84,12 @@ carritoContainer.appendChild(productoCarrito);
 
 /*Sumar y restar cantidad en el modal*/
 
-let restar = document.getElementById("restaModal")
-let sumar = document.getElementById("sumaModal")
-let cantidad = document.getElementById("cantidad")
-let sumaProductosModal = 0;
+let restar = document.querySelector(".btn_restar")
+let sumar = document.querySelector(".btn_sumar")
 
-function actualizarCantidadProductos() {
-  cantidad.value = sumaProductosModal;
-  console.log("entrando a actualizar")
+
+restar.addEventListener("click" , function(actualizarCantidad))
+
+function actualizarCantidad(){
+  console.log("entrando a función actualizarCantidad")
 }
-
-restar.addEventListener("click", function() {
-  console.log("entrando a restar")
-  sumaProductosModal= sumaProductosModal-1;
-  cantidad.value.innerHTML=cantidad;
-  actualizarCantidadProductos();
-});
-
-sumar.addEventListener("click", function() {
-  console.log("entrando a sumar")
-  sumaProductosModal= sumaProductosModal+1;
-  cantidad.value.innerHTML=cantidad;
-  actualizarCantidadProductos();
-});
-

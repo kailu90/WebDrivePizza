@@ -396,9 +396,10 @@ h1 {
   border-radius: 10px;
 }
 
-.modal_cantidad i {
-  font-size: 2rem;
-  margin: 0 10px;
+.modal_cantidad button {
+  background: none;
+  border: none;
+  font-size: 4rem;
 }
 
 .modal_cantidad input {
@@ -407,7 +408,7 @@ h1 {
   align-items: center;
   width: 100px;
   height: 40px;
-  margin: 10px 0;
+  margin: 20px;
   background: gainsboro;
   color: black;
 }
