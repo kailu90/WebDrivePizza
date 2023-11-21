@@ -74,22 +74,19 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){mostr
 
 iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
 
-/*Adicionar o eliminar elementos del carrito de compras*/
-
-var productoCarrito = document.createElement(".carrito_item")
-const carritoContainer = document.getElementById("carritoContainer")
-carrito_item.textContent = "";
-
-carritoContainer.appendChild(productoCarrito);
-
 /*Sumar y restar cantidad en el modal*/
 
-let restar = document.querySelector(".btn_restar")
-let sumar = document.querySelector(".btn_sumar")
+const restar = document.querySelector(".btn_restar")
+const sumar = document.querySelector(".btn_sumar")
+const cantidad = document.getElementById("cantidad")
 
+restar.addEventListener("click", function() {
+  if (cantidad.value > 0 ) {
+    cantidad.value = parseInt(cantidad.value) - 1;
+  } 
+});
 
-restar.addEventListener("click" , function(actualizarCantidad))
-
-function actualizarCantidad(){
-  console.log("entrando a función actualizarCantidad")
-}
+sumar.addEventListener("click", function() {
+  console.log("entró en sumar")
+  cantidad.value = parseInt(cantidad.value) + 1;
+});
