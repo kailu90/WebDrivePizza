@@ -284,6 +284,7 @@ p {
   height: 140px;
   background-color: grey;
   border-bottom: 1px solid black;
+  z-index: 100;
 }
 
 .carrito_total .fila {
