@@ -1,4 +1,5 @@
 /**Mostrar menu versión mobile***/
+
 const navBar = document.getElementById("nav_bar")
 const menuBurguer = document.querySelector(".menu_hamburguesa")
 
@@ -56,6 +57,7 @@ function mostrarMenu(elemento,propiedadDisplay){
 
   } 
 }
+
 /**Mostrar carrito compras mobile***/
 
 const carrito = document.querySelector(".carrito_container")
@@ -524,28 +526,3 @@ sumar.addEventListener("click", function() {
   console.log("entró en sumar")
   cantidad.value = parseInt(cantidad.value) + 1;
 });
-
-// class Pizza {
-//   constructor(nombre, description, tamaño, sabor, toppins) {
-//     this.nombre = nombre 
-//     this.description = description 
-//     this.tamaño = tamaño
-//     this.sabor = sabor
-//     this.toppins = toppins
-//     this.observation = []
-//   }
-
-//   calcTotalPrice() {}
-
-
-//   addToCart() {
-
-//   }
-
-//   addObservation() {
-
-//   }
-  
-// }
-
-// const primeraPizza = new Pizza('')
