@@ -93,6 +93,19 @@ sumar.addEventListener("click", function() {
   cantidad.value = parseInt(cantidad.value) + 1;
 });
 
+/*mostrar el modal según botón seleccionado, muestra imagen distinta según botón*/
+
+const btnEstofadas = document.getElementById("btn-estofadas")
+const btnSuperEstofadas  = document.getElementById("btn-super-estofadas")
+const btnEspeciales = document.getElementById("btn-especiales")
+const btnSencillas = document.getElementById("btn-sencillas")
+const btnTipicas = document.getElementById("btn-tipicas")
+const btnExclusivas = document.getElementById("btn-exclusivas")
+const btnPremium  = document.getElementById("btn-premium")
+
+
+
+
 /**Pintar modal de cada tipo de producto**/
 
 // // Clase padre Pizza
