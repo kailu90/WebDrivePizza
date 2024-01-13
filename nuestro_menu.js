@@ -212,6 +212,7 @@ function  mostrarModal(objeto) {
 
 let iconClose
 
+
 modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
   mostrarMenu(modal,"flex")
 
@@ -281,30 +282,44 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
     })
   }
 
+/******Ocultar modal productos***/
+
   iconClose = document.getElementById("icon_close")
-  console.log(iconClose)
 
   iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
+  
+  const restar = document.querySelector(".btn_restar")
+  const sumar = document.querySelector(".btn_sumar")
+  const cantidad = document.getElementById("cantidad")
+
+  restar.addEventListener("click", function () {
+    sumarRestar(cantidad, "restar");
+  });
+  
+  sumar.addEventListener("click", function () {
+    sumarRestar(cantidad, "sumar");
+  });
+  
 
 })})
 
-/******Ocultar modal productos***/
-
-
-
 /*Sumar y restar cantidad en el modal*/
 
-/*const restar = document.querySelector(".btn_restar")
-const sumar = document.querySelector(".btn_sumar")
-const cantidad = document.getElementById("cantidad")
-
-restar.addEventListener("click", function() {
-  if (cantidad.value > 0 ) {
+function sumarRestar(cantidad , operacion){
+if (operacion === "restar"){  
+  console.log(operacion , cantidad)
+  if (cantidad.value > 0) {
     cantidad.value = parseInt(cantidad.value) - 1;
-  } 
-});
-
-sumar.addEventListener("click", function() {
-  console.log("entró en sumar")
+  }   
+}
+if (operacion === "sumar") {
+  console.log(operacion , cantidad)
   cantidad.value = parseInt(cantidad.value) + 1;
-});*/
+}
+}
+
+
+
+
+
+
