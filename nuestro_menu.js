@@ -68,7 +68,6 @@ carritoImg.addEventListener("click", function(){mostrarMenu(carrito,"block")})
 /******Mostrar modal productos***/
 
 const modal = document.getElementById("modal")
-const iconClose = document.getElementById("icon_close")
 const modalOpen = document.querySelectorAll(".card_boton")
 const modalOpenArray = [...modalOpen]
 
@@ -89,15 +88,12 @@ let imagePremium
 // las opciones deben tener ID's que se puedan identificar luego
 
 function  mostrarModal(objeto) {
+  
 
   const { image , title,
     description,
     sabor,
     totalPrice} = objeto
-console.log(title,
-  description,
-  sabor,
-  totalPrice)
 
     modal.innerHTML = `<section class="modal_descripcion">
     <div class="modal_superior">
@@ -211,9 +207,10 @@ console.log(title,
         <i class="fa-solid fa-cart-shopping"></i>
       </button>
     </div>
-  </section>`
-
+  </section>` 
 }
+
+let iconClose
 
 modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
   mostrarMenu(modal,"flex")
@@ -225,7 +222,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
       description : "Pizza con dos capas de masa, en el medio con ingredientes",
       sabor : ["ESTOFADA CARNE" , "ESTOFADA HAWAIANA" , "SUPREMA ESTOFADA" , "ESTOFADA TRIPLE QUESO" ],
       totalPrice : "$14.000" ,
-    })
+    })    
 
   } else if(card.id === "btn-super-estofadas") {
     mostrarModal({
@@ -284,12 +281,16 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
     })
   }
 
+  iconClose = document.getElementById("icon_close")
+  console.log(iconClose)
+
+  iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
 
 })})
 
 /******Ocultar modal productos***/
 
-/*iconClose.addEventListener("click" , function(){mostrarMenu(modal,"none")})
+
 
 /*Sumar y restar cantidad en el modal*/
 
