@@ -90,7 +90,7 @@ let imagePremium
 
 function  mostrarModal(objeto) {
 
-  const { title,
+  const { image , title,
     description,
     sabor,
     totalPrice} = objeto
@@ -103,7 +103,7 @@ console.log(title,
     <div class="modal_superior">
       <div class="modal_superior_img">
         <i class="fa-solid fa-circle-xmark" id="icon_close"></i>
-        <img src="./imagenes/pizzas/pizza_estofada_Mobile.jpg" alt="imagen de producto">
+        <img src=${image} alt="imagen de producto">
       </div>
       <div class="modal_superior_title">
         <h2 class="modal_descripcion_title">${title}</h2>
@@ -220,6 +220,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
 
   if (card.id === "btn-estofadas") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_estofada_Mobile.jpg",
       title : "ESTOFADAS",
       description : "Pizza con dos capas de masa, en el medio con ingredientes",
       sabor : ["ESTOFADA CARNE" , "ESTOFADA HAWAIANA" , "SUPREMA ESTOFADA" , "ESTOFADA TRIPLE QUESO" ],
@@ -228,6 +229,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
 
   } else if(card.id === "btn-super-estofadas") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_super_carnes1_Mobile.jpg",
       title : "SUPER ESTOFADAS",
       description : "Pizza con dos capas de masa, en el medio con ingredientes, con doble porción de queso mozarella y queso de la casa.",
       sabor : ["SUPER ESTOFADAS CARNES" , "SUPER ESTOFADA HAWAIANA"],
@@ -236,6 +238,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
     
   } else if (card.id === "btn-especiales") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_drive_topetunas_bolognesa_criolla1.jpg ",
       title : "ESPECIALES",
       description : "Pizzas con una masa tradicional con ingredientes especiales en la medida correcta.",
       sabor : ["PEPPERONI" , "MEXICANA" , "TERIYAKI" , "CAMARÓN A LA CRIOLLA" , "PAISA" , "CRIOLLA" , "CARNIVORA" , "PIZZA DRIVE"],
@@ -244,6 +247,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
 
   } else if (card.id === "btn-sencillas") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_p_champ2_Mobile.jpg",
       title : "SENCILLAS",
       description : "Pizzas con una masa tradicional con sabores más clásicos que aún perduran en el tiempo.",
       sabor : ["MARGARITA TRADICIONAL" , "POLLO", "TRES CARNES" , "CHAMPIÑONES" , "DOBLE QUESO" , "NAPOLITANA" , "JAMÓN", "BOCADILLO"],
@@ -252,6 +256,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
 
   } else if (card.id === "btn-tipicas") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_suprema_pollo_Mobile.jpg",
       title : "TÍPICAS",
       description : "Pizza con una masa tradicional, con sabores más auténticos.",
       sabor : ["TOC" , "SUPREMA", "CIRUELA Y TOCINETA" , "POLLO Y BBQ" , "POLLO Y MIEL MOSTAZA" , "VEGETARIANA" , "SUPREMA DE POLLO", 
@@ -261,6 +266,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
 
   } else if (card.id === "btn-exclusivas") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_topetunas1_Mobile.jpg",
       title : "EXCLUSIVAS",
       description : "Pizzas con una masa tradicional con sabores exclusivos.",
       sabor : ["HAWAIANA CHIC" , "ESCANDINAVA", "BOLOGNESA" , "TOPETUNAS" , "CARBONARA"],
@@ -269,6 +275,7 @@ modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
 
   } else if (card.id === "btn-premium") {
     mostrarModal({
+      image : "./imagenes/pizzas/pizza_genova_Mobile.JPG",
       title : "PREMIUM",
       description : "Pizza con una masa tradicional, con sabores gourmet.",
       sabor : ["CALIFORNIA PDT" , "CARBONARA PDT" , "CUATRO QUESOS" , "DEL HUERTO PDT" , "FLORENCIA PT" , "GENOVA PT" ,
