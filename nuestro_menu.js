@@ -53,9 +53,7 @@ function mostrarMenu(elemento,propiedadDisplay){
       } else if (propiedadDisplay == "none"){
         elemento.style.display = "none"
       }
-
-
-  } 
+    } 
 }
 
 /**Mostrar carrito compras mobile***/
@@ -71,8 +69,8 @@ const modal = document.getElementById("modal")
 const modalOpen = document.querySelectorAll(".card_boton")
 const modalOpenArray = [...modalOpen]
 
-
 //variables que contienen las imágenes de las clases de pizzas para el modal
+
 let imageEstofadas = `./imagenes/pizzas/pizza`
 let imageSuperEstofadas
 let imageSencillas
@@ -87,13 +85,16 @@ let imagePremium
 // Título dependiendo del tipo de pizza, la descripción igual
 // las opciones deben tener ID's que se puedan identificar luego
 
-function  mostrarModal(objeto) {
-  
+function  mostrarModal(objeto) {  
 
-  const { image , title,
+  const { 
+    image ,
+    title,
     description,
     sabor,
     totalPrice} = objeto
+
+  
 
     modal.innerHTML = `<section class="modal_descripcion">
     <div class="modal_superior">
@@ -106,6 +107,8 @@ function  mostrarModal(objeto) {
         <p class="modal_descripcion_parrafo">${description}</p>
       </div>
     </div>
+
+    
     <div class="modal_inferior">
       <div class="modal_inferior_container">
         <div class="modal_tamaño modal_lista">
@@ -212,7 +215,6 @@ function  mostrarModal(objeto) {
 
 let iconClose
 
-
 modalOpenArray.forEach(card => {card.addEventListener("click" , function(){
   mostrarMenu(modal,"flex")
 
@@ -317,9 +319,3 @@ if (operacion === "sumar") {
   cantidad.value = parseInt(cantidad.value) + 1;
 }
 }
-
-
-
-
-
-

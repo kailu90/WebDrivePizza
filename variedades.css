@@ -192,7 +192,7 @@ h1 {
   flex-direction: column;
   justify-content: start;
   position: fixed;
-  top: 100px;
+  top: 99px;
   right: 0;
   width: 100vw;
   max-width: 400px;
@@ -497,25 +497,16 @@ h1 {
   }
 
   .modal {  
-    top: 150px;
+    top: 149px;
   }
 
   .modal_descripcion {    
     width: 100vw;
     max-width: 400px;  
-    top: 150px;
+    top: 149px;
   }
 
   .header .nav_bar {
     display: flex;
   }
-
-}
-
-@media (min-width: 2200px) {
-
-  .modal_inferior {
-    flex-direction: row;
-  }
-
 }
