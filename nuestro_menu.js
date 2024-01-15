@@ -88,28 +88,141 @@ let imagePremium
 // las opciones deben tener ID's que se puedan identificar luego
 
 function  mostrarModal(objeto) {
-  
-
   const { image , title,
     description,
     sabor,
     totalPrice} = objeto
+  
+  const modalContent = document.createElement('div')
+  modalContent.classList.add('modal__content')
 
+  const divDescription = document.createElement('div')
+  divDescription.classList.add('modal__description')
+
+  const divImageContainer = document.createElement('div')
+  divImageContainer.classList.add('modal__image-container')
+  
+  const i = document.createElement('i')
+  i.classList.add('fa-solid fa-circle-xmark')
+  
+  const img = document.createElement('img')
+  img.classList.add('modal__image')
+
+  divImageContainer.append(i, img)
+
+  const divTitleContainer = document.createElement('div')
+  divTitleContainer.classList.add('modal__title-container')
+
+  const h2Title = document.createElement('h2')
+  h2Title.classList.add('modal__title')  
+  const pDescription = document.createElement('p')
+  pDescription.classList.add('modal__description')
+  
+  const form = document.createElement('form')
+  
+  const divModalInferior = document.createElement('div')
+  const divModalInferiorContainer = document.createElement('div')
+  const divModalTamañoModalLista = document.createElement('div')
+  const modaltamañoLista = document.createElement('form')
+  const modaltamañoLabel = document.createElement('label')
+  const selectTamaño = document.createElement('select')
+  const optionSeleccionar = document.createElement('option')
+  const optionPorcion = document.createElement('option')
+  const optionPequeña = document.createElement('option')
+  const optionMediana = document.createElement('option')
+  const optionGrande = document.createElement('option')
+  const optionJumbo = document.createElement('option')
+
+  const divModalSabores = document.createElement('div')
+  const modalSaboresLista = document.createElement('form')
+  const labelSabores = document.createElement('label')
+  const selectSabores = document.createElement('select')
+  const optionSabor = document.createElement('option')
+
+  const divModalToppings = document.createElement('div')
+  const h3Toppings = document.createElement('h3')
+  const modalToppingsLista = document.createElement('form')
+  const labelTomate = document.createElement('label')
+  const inputTomate = document.createElement('input')
+  const labelCebolla = document.createElement('label')
+  const inputCebolla = document.createElement('input')
+  const labelPimenton = document.createElement('label')
+  const inputPimenton = document.createElement('input')
+  const labelPina = document.createElement('label')
+  const inputPina = document.createElement('input')
+  const labelMaduro = document.createElement('label')
+  const inputMaduro = document.createElement('input')
+  const labelJamon = document.createElement('label')
+  const inputJamon = document.createElement('input')
+  const labelRanchera = document.createElement('label')
+  const inputRanchera = document.createElement('input')
+  const labelMaiz = document.createElement('label')
+  const inputMaiz = document.createElement('input')
+  const labelChampinon = document.createElement('label')
+  const inputChampinon = document.createElement('input')
+  const labelSalami = document.createElement('label')
+  const inputSalami = document.createElement('input')
+  const labelTocineta = document.createElement('label')
+  const inputTocineta = document.createElement('input')
+  const labelQueso = document.createElement('label')
+  const inputQueso = document.createElement('input')
+  const labelPepperoni = document.createElement('label')
+  const inputPepperoni = document.createElement('input')
+  const labelCarne = document.createElement('label')
+  const inputCarne = document.createElement('input')
+  const labelPollo = document.createElement('label')
+  const inputPollo = document.createElement('input')
+  const labelChorizo = document.createElement('label')
+  const inputChorizo = document.createElement('input')
+  const labelCamaron = document.createElement('label')
+  const inputCamaron = document.createElement('input')
+
+  const observacionContainer = document.createElement('div')
+  const observacionForm = document.createElement('form')
+  const labelObservacion = document.createElement('label')
+  const textArea = document.createElement('textarea')
+
+  const cantidadContainer = document.createElement('div')
+  const btnRestar = document.createElement('button')
+  const cantidad = document.createElement('input')
+  const btnSumar = document.createElement('button')
+
+  const footerModal = document.createElement('div')
+  const divPTotal = document.createElement('div')
+  const pTotal = document.createElement('p')
+
+  const btnModalSubmit = document.createElement('button')
+  const iIconCart = document.createElement('i')
+
+
+
+
+  
+  modal.appendChild(modalContent)
+  
     modal.innerHTML = `<section class="modal_descripcion">
     <div class="modal_superior">
+
       <div class="modal_superior_img">
         <i class="fa-solid fa-circle-xmark" id="icon_close"></i>
         <img src=${image} alt="imagen de producto">
       </div>
+
       <div class="modal_superior_title">
         <h2 class="modal_descripcion_title">${title}</h2>
         <p class="modal_descripcion_parrafo">${description}</p>
       </div>
+
     </div>
+
+
     <div class="modal_inferior">
-      <div class="modal_inferior_container">
-        <div class="modal_tamaño modal_lista">
-          <form class="modal_tamaño_lista">
+    
+    <div class="modal_inferior_container">
+    
+    <div class="modal_tamaño modal_lista">
+    
+      <form class="modal_tamaño_lista">
             <label for="tamaño" class="modal_tamaño_title">Escoge el tamaño</label>
             <select name="tamaño" id="tamaño">
               <option selected>Seleccionar</option>
@@ -119,8 +232,9 @@ function  mostrarModal(objeto) {
               <option value="">Grande</option>
               <option value="">Jumbo</option>
             </select>
-          </form>
-        </div>
+      </form>
+    
+    </div>
         <div class="modal_sabores modal_lista">
           <form class="modal_sabores_lista">
             <label for="sabores" class="modal_sabores_title">Escoge el sabor</label>
