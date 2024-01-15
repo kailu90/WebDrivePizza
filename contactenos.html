@@ -165,8 +165,8 @@
 
   <main class="contactenos_container">
     <h1 class="titulo_formulario">Déjanos tu mensaje</h3>
-      <section class="formulario_contactenos">
-        <form class="formulario" action="">
+      <form class="formulario_contactenos">
+        <section class="formulario" action="">
           <h4>Estarémos encantados de leerlo y responderte lo más pronto
             posible.</h4>
           <div class="campos_nombres_apellidos">
@@ -177,7 +177,7 @@
           </div>
           <div class="campos_email_telefono">
             <label for="email">Email:</label>
-            <input name="email" type="email" placeholder="[Escribe tu correo aquí]">
+            <input name="email" type="email" placeholder="[Escribe tu correo aquí]" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
             <label for="telefono">Teléfono:</label>
             <input name="telefono" type="number" placeholder=" [Escribe tu número de celular aquí]">
           </div>
@@ -188,25 +188,8 @@
             <button class="btn-enviar">Enviar</button>
           </div>
 
-        </form>
-      </section>
-
-      <!--<section class="informacion_contactenos">
-        <div class="numero_contacto">
-          <h3>Contáctenos</h3>
-          <p><strong>Teléfono: </strong>312 609 18 69</p>
-          <p><strong>Correo: </strong>contacto@drivepizza.co</p>
-        </div>
-        <div class="nuestras_sedes_contactenos">
-          <h3>Nuestras Sedes</h3>
-          <a href="">Drive Pizza Cerrito</a>
-          <a href="">Drive Pizza Cartago</a>
-          <a href="">Drive Pizza Bucaramanga</a>
-          <a href="">Drive Pizza Tulua</a>
-          <a href="">Drive Pizza Ibague</a>
-          <a href="">Drive Pizza Palmira</a>
-        </div>
-      </section>-->
+        </section>
+      </form>
   </main>
 
   <footer class="container_footer">
