@@ -128,12 +128,13 @@ p {
 
 .carrito_container {
   display: none; 
-  border-top: 1px solid white;
-  width: 100vw; 
+  border: 1px solid black;
+  width: 100vw;
+  max-width: 400px; 
   height: 100vh;     
   position: absolute;
   top: 100px;
-  left: 0;
+  right: 0;
   transition: 0.3s;
   color: black;
   z-index: 2;
@@ -175,7 +176,7 @@ p {
 
 .carrito_container .carrito_item {
   display: flex;
-  max-width: 500px;
+  max-width: 400px;
   justify-content: center;
   align-items: center;
   position: relative;  
@@ -276,11 +277,12 @@ p {
 .carrito_total {   
   position: fixed;
   bottom: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center; 
   width: 100vw;  
-  max-width: 500px;
+  max-width: 400px;
   height: 140px;
   background-color: grey;
   border-bottom: 1px solid black;
@@ -380,12 +382,12 @@ p {
   }
 
   .carrito_container{
-    top: 60px;  
+    top: 150px;  
   }
 
   .carrito_container .header_carrito {
-    justify-content: flex-start;
-    padding-left: 100px;
+    text-align: center;
+    justify-content: flex-start;    
     height: 100px;    
   }
 
