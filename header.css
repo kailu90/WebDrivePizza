@@ -132,7 +132,7 @@ p {
   width: 100vw;
   max-width: 400px; 
   height: 100vh;     
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 0;
   transition: 0.3s;
@@ -146,9 +146,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: max-content; 
+  width: 100vw; 
+  max-width: 400px;
   height: max-content;
-  margin: 0 auto;  
+  margin: 0 auto;
+  padding-bottom: 150px;  
 }
 
 .carrito_container .header_carrito {
@@ -167,11 +169,12 @@ p {
 .carrito_items {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   width: 100vw;
-  max-width: 500px;
+  max-width: 400px;
   height: max-content;  
-  background: white;  
+  background: white;   
+  padding-bottom: 100px;  
 }
 
 .carrito_container .carrito_item {
@@ -385,31 +388,11 @@ p {
     top: 150px;  
   }
 
-  .carrito_container .header_carrito {
-    text-align: center;
-    justify-content: flex-start;    
-    height: 100px;    
+  .carrito_items {  
+    padding-bottom: 150px;  
   }
-
-  .carrito_container .header_carrito h3 {
-    font-size: 4rem;
-  } 
-
-  .carrito_container_desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 1400px;   
-  }
-
-  .carrito_items {
-    width: 50vw; 
-    max-width: 50vw;   
-  }
-
-  .carrito_total .btn_pagar {
-    width: 90%;
-  }
+  
+  
 }
 
 @media (min-width: 3000px) {
