@@ -90,44 +90,71 @@ function  mostrarModal(objeto) {
   const { 
     image ,
     title,
-
     description,
     sabor,
     totalPrice} = objeto
+
+  /*Creo contenedor ModalContent con sus elementos hijos*/
   
   const modalContent = document.createElement('div')
-  modalContent.classList.add('modal__content')
+  modalContent.classList.add('modal-content')
 
-  const divDescription = document.createElement('div')
-  divDescription.classList.add('modal__description')
+  const modalDescription = document.createElement('div')
+  modalDescription.classList.add('modal-description')
+  
+  /*Creo contenedor ImageContainer con sus elementos hijos*/
 
-  const divImageContainer = document.createElement('div')
-  divImageContainer.classList.add('modal__image-container')
+  const modalImageContainer = document.createElement('div')
+  modalImageContainer.classList.add('modal__image-container')
   
   const i = document.createElement('i')
-  i.classList.add('fa-solid fa-circle-xmark')
+  i.classList.add('fa-solid' , 'fa-circle-xmark')
+  i.setAttribute('id', 'icon_close')
   
-  const img = document.createElement('img')
-  img.classList.add('modal__image')
+  const modalImage = document.createElement('img')
+  modalImage.classList.add('modal__image')
 
-  divImageContainer.append(i, img)
+  modalImageContainer.append(i, modalImage)
 
-  const divTitleContainer = document.createElement('div')
-  divTitleContainer.classList.add('modal__title-container')
+  /*Creo contenedor TitleContainer con sus elementos hijos*/
+
+  const modalTitleContainer = document.createElement('div')
+  modalTitleContainer.classList.add('modal__title-container')
 
   const h2Title = document.createElement('h2')
-  h2Title.classList.add('modal__title')  
+  h2Title.classList.add('modal__title') 
+  h2Title.innerText = 'PRUEBA';
+
   const pDescription = document.createElement('p')
   pDescription.classList.add('modal__description')
+
+  modalTitleContainer.append(h2Title, pDescription)
+
+  /*Agrego los elementos padres, con sus elementos hijos*/
   
-  const form = document.createElement('form')
+  modalDescription.append(modalImageContainer, modalTitleContainer)
+
+
+/*Creo contenedor padres de tamaños, con sus elementos hijos*/
   
-  const divModalInferior = document.createElement('div')
-  const divModalInferiorContainer = document.createElement('div')
-  const divModalTamañoModalLista = document.createElement('div')
-  const modaltamañoLista = document.createElement('form')
-  const modaltamañoLabel = document.createElement('label')
-  const selectTamaño = document.createElement('select')
+  const modalForm = document.createElement('form')
+  modalForm.classList.add('modal__form')
+
+  const modalFormContainer = document.createElement('div')
+  modalFormContainer.classList.add('modal__form-container')
+
+  const modalSize = document.createElement('div')
+  modalSize.classList.add('modal__size')
+
+  const modalSizeList = document.createElement('div')
+  modalSizeList.classList.add('modal__size-list')
+
+  const modalSizeTitle = document.createElement('label')
+  modalSizeTitle.classList.add('modal__size-title')
+
+  const modalSizeSelect = document.createElement('select')
+  modalSizeSelect.classList.add('modal__size-select')
+
   const optionSeleccionar = document.createElement('option')
   const optionPorcion = document.createElement('option')
   const optionPequeña = document.createElement('option')
@@ -135,192 +162,221 @@ function  mostrarModal(objeto) {
   const optionGrande = document.createElement('option')
   const optionJumbo = document.createElement('option')
 
-  const divModalSabores = document.createElement('div')
-  const modalSaboresLista = document.createElement('form')
-  const labelSabores = document.createElement('label')
-  const selectSabores = document.createElement('select')
+  modalSizeSelect.append(optionSeleccionar, optionPorcion, optionPequeña, optionMediana, optionGrande, optionJumbo)
+  modalSizeList.append(modalSizeTitle ,  modalSizeSelect)
+  modalSize.append(modalSizeList)
+  modalFormContainer.append(modalSize)
+
+
+  /*Se crea contenedor padre de sabores y sus hijos*/
+
+  const modalFlavors = document.createElement('div')
+  modalFlavors.classList.add('modal__flavors')
+
+  const modalFlavorsList = document.createElement('div')
+  modalFlavorsList.classList.add('modal__flavors-list')
+  
+  const modalFlavorsTitle = document.createElement('label')
+  modalFlavorsTitle.classList.add('modal__flavors-title')
+
+  const modalFlavorsSelect = document.createElement('select')
+  modalFlavorsSelect.classList.add('modal__flavors-select')
+
   const optionSabor = document.createElement('option')
 
-  const divModalToppings = document.createElement('div')
-  const h3Toppings = document.createElement('h3')
-  const modalToppingsLista = document.createElement('form')
-  const labelTomate = document.createElement('label')
-  const inputTomate = document.createElement('input')
-  const labelCebolla = document.createElement('label')
-  const inputCebolla = document.createElement('input')
-  const labelPimenton = document.createElement('label')
-  const inputPimenton = document.createElement('input')
-  const labelPina = document.createElement('label')
-  const inputPina = document.createElement('input')
-  const labelMaduro = document.createElement('label')
-  const inputMaduro = document.createElement('input')
-  const labelJamon = document.createElement('label')
-  const inputJamon = document.createElement('input')
-  const labelRanchera = document.createElement('label')
-  const inputRanchera = document.createElement('input')
-  const labelMaiz = document.createElement('label')
-  const inputMaiz = document.createElement('input')
-  const labelChampinon = document.createElement('label')
-  const inputChampinon = document.createElement('input')
-  const labelSalami = document.createElement('label')
-  const inputSalami = document.createElement('input')
-  const labelTocineta = document.createElement('label')
-  const inputTocineta = document.createElement('input')
-  const labelQueso = document.createElement('label')
-  const inputQueso = document.createElement('input')
-  const labelPepperoni = document.createElement('label')
-  const inputPepperoni = document.createElement('input')
-  const labelCarne = document.createElement('label')
-  const inputCarne = document.createElement('input')
-  const labelPollo = document.createElement('label')
-  const inputPollo = document.createElement('input')
-  const labelChorizo = document.createElement('label')
-  const inputChorizo = document.createElement('input')
-  const labelCamaron = document.createElement('label')
-  const inputCamaron = document.createElement('input')
+  modalFlavorsSelect.appendChild(optionSabor)
+  modalFlavorsList.append(modalFlavorsTitle, modalFlavorsSelect)
+  modalFlavors.append(modalFlavorsList) 
+  modalFormContainer.append(modalFlavors) 
 
-  const observacionContainer = document.createElement('div')
-  const observacionForm = document.createElement('form')
-  const labelObservacion = document.createElement('label')
-  const textArea = document.createElement('textarea')
+  
+ /*Se crea contenedor padre de Toppings y sus hijos*/
 
-  const cantidadContainer = document.createElement('div')
-  const btnRestar = document.createElement('button')
-  const cantidad = document.createElement('input')
-  const btnSumar = document.createElement('button')
+ const modalToppings = document.createElement('div')
+ modalToppings.classList.add('modal__toppings')
+ 
+ const modalToppingsTitle = document.createElement('h3')
+ modalToppingsTitle.classList.add('modal__toppings-title')
 
-  const footerModal = document.createElement('div')
-  const divPTotal = document.createElement('div')
-  const pTotal = document.createElement('p')
+ const modalToppingsList = document.createElement('div')
+ modalToppingsList.classList.add('modal__toppings-list')
 
-  const btnModalSubmit = document.createElement('button')
-  const iIconCart = document.createElement('i')
+ /*Creación de todos los hijos de Toppings List (los Labels e inputs de los Toppings)*/
+
+ const labelTomate = document.createElement('label')
+ labelTomate.classList.add('modal__toppings-label')
+ labelTomate.setAttribute('id', 'labelTomate') 
+ const inputTomate = document.createElement('input')
+ labelTomate.appendChild(inputTomate)
+
+ const labelCebolla = document.createElement('label')
+ labelCebolla.classList.add('modal__toppings-label')
+ labelCebolla.setAttribute('id', 'labelCebolla')
+ const inputCebolla = document.createElement('input')
+ labelCebolla.appendChild(inputCebolla)
+
+ const labelPimenton = document.createElement('label')
+ labelPimenton.classList.add('modal__toppings-label')
+ labelPimenton.setAttribute('id', 'labelPimenton') 
+ const inputPimenton = document.createElement('input')
+ labelPimenton.appendChild(inputPimenton)
+
+ const labelPina = document.createElement('label')
+ labelPina.classList.add('modal__toppings-label')
+ labelPina.setAttribute('id', 'labelPina') 
+ const inputPina = document.createElement('input')
+ labelPina.appendChild(inputPina)
+
+ const labelMaduro = document.createElement('label')
+ labelMaduro.classList.add('modal__toppings-label')
+ labelMaduro.setAttribute('id', 'labelMaduro') 
+ const inputMaduro = document.createElement('input')
+ labelMaduro.appendChild(inputMaduro)
+
+ const labelJamon = document.createElement('label')
+ labelJamon.classList.add('modal__toppings-label')
+ labelJamon.setAttribute('id', 'labelJamon') 
+ const inputJamon = document.createElement('input')
+ labelJamon.appendChild(inputJamon)
+ 
+ const labelRanchera = document.createElement('label')
+ labelRanchera.classList.add('modal__toppings-label')
+ labelRanchera.setAttribute('id', 'labelRanchera') 
+ const inputRanchera = document.createElement('input')
+ labelRanchera.appendChild(inputRanchera)
+
+ const labelMaiz = document.createElement('label')
+ labelMaiz.classList.add('modal__toppings-label')
+ labelMaiz.setAttribute('id', 'labelMaiz') 
+ const inputMaiz = document.createElement('input')
+ labelMaiz.appendChild(inputMaiz)
+
+ const labelChampinon = document.createElement('label')
+ labelChampinon.classList.add('modal__toppings-label')
+ labelChampinon.setAttribute('id', 'labelChampinon') 
+ const inputChampinon = document.createElement('input')
+ labelChampinon.appendChild(inputChampinon)
+
+ const labelSalami = document.createElement('label')
+ labelSalami.classList.add('modal__toppings-label')
+ labelChampinon.setAttribute('id', 'labelChampinon') 
+ const inputSalami = document.createElement('input')
+ labelSalami.appendChild(inputSalami)
+
+ const labelTocineta = document.createElement('label')
+ labelTocineta.classList.add('modal__toppings-label')
+ labelTocineta.setAttribute('id', 'labelTocineta') 
+ const inputTocineta = document.createElement('input')
+ labelTocineta.appendChild(inputTocineta)
+
+ const labelQueso = document.createElement('label')
+ labelQueso.classList.add('modal__toppings-label')
+ labelQueso.setAttribute('id', 'labelQueso') 
+ const inputQueso = document.createElement('input')
+ labelQueso.appendChild(inputQueso)
+
+ const labelPepperoni = document.createElement('label')
+ labelPepperoni.classList.add('modal__toppings-label')
+ labelPepperoni.setAttribute('id', 'labelPepperoni') 
+ const inputPepperoni = document.createElement('input')
+ labelPepperoni.appendChild(inputPepperoni)
+ 
+ const labelCarne = document.createElement('label')
+ labelCarne.classList.add('modal__toppings-label')
+ labelCarne.setAttribute('id', 'labelCarne') 
+ const inputCarne = document.createElement('input')
+ labelCarne.appendChild(inputCarne)
+
+ const labelPollo = document.createElement('label')
+ labelPollo.classList.add('modal__toppings-label')
+ labelPollo.setAttribute('id', 'labelPollo') 
+ const inputPollo = document.createElement('input')
+ labelPollo.appendChild(inputPollo)
+ 
+ const labelChorizo = document.createElement('label')
+ labelChorizo.classList.add('modal__toppings-label')
+ labelChorizo.setAttribute('id', 'labelChorizo') 
+ const inputChorizo = document.createElement('input')
+ labelChorizo.appendChild(inputChorizo)
+
+ const labelCamaron = document.createElement('label')
+ labelCamaron.classList.add('modal__toppings-label')
+ labelCamaron.setAttribute('id', 'labelCamaron') 
+ const inputCamaron = document.createElement('input')
+ labelCamaron.appendChild(inputCamaron)
+
+ modalToppingsList.append(labelTomate , labelCebolla ,  labelPimenton ,
+ labelPina , labelMaduro , labelJamon , labelRanchera , labelMaiz , 
+ labelChampinon , labelSalami , labelTocineta , labelQueso , labelPepperoni ,
+ labelCarne , labelPollo , labelChorizo , labelCamaron)
+
+ modalToppings.append(modalToppingsTitle , modalToppingsList)
+ modalFormContainer.append(modalToppings)
+
+ /*Creación de los elementos Observación y sus hijos*/
+
+ const modalObservation = document.createElement('div')
+ modalObservation.classList.add('modal__observation')
+
+ const modalObservationContainer = document.createElement('div')
+ modalObservationContainer.classList.add('modal__observation-container')
+
+ const modalObservationLabel = document.createElement('label')
+ modalObservationLabel.classList.add('modal__observation-label')
+
+ const modalObservationField = document.createElement('textarea')
+ modalObservationField.classList.add('modal__observation-field')
+
+ modalObservationContainer.append(modalObservationLabel , modalObservationField)
+ modalObservation.append(modalObservationContainer) 
+ modalFormContainer.append(modalObservation)
+
+ /*Creación de los elementos cantidad y sus hijos*/
+ 
+ const modalQuantity = document.createElement('div')
+ modalQuantity.classList.add('modal__quantity') 
+
+ const modalBtnMinus = document.createElement('button')
+ modalBtnMinus.classList.add('modal__btn-minus')
+
+ const modalQuantityInput = document.createElement('input')
+ modalQuantityInput.classList.add('modal__quantity-input')
+
+ const modalBtnPlus = document.createElement('button')
+ modalBtnPlus.classList.add('modal__btn-plus')
+
+ modalQuantity.append(modalBtnMinus , modalQuantityInput , modalBtnPlus)
+ modalFormContainer.append(modalQuantity) 
+
+  /*Creación de los elementos footer y sus hijos*/
+
+  const modalFooter = document.createElement('div')
+  modalFooter.classList.add('modal__footer')
+
+  const modalTotal = document.createElement('div')
+  modalTotal.classList.add('modal__total')
+
+  const pTotalPrice = document.createElement('p')
+  pTotalPrice.classList.add('p__total-price')
+
+  const modalCheckoutBtn = document.createElement('button')
+  modalCheckoutBtn.classList.add('modal__checkout-btn')
+
+  const iconCart = document.createElement('i')
+  iconCart.classList.add('fa-solid' , 'fa-cart-shopping')
 
 
+  /*Se agregan elementos padres a sus respectivos padres*/
 
+  modalCheckoutBtn.appendChild(iconCart)
+  modalTotal.appendChild(pTotalPrice)
+  modalFooter.append(modalTotal , modalCheckoutBtn)
+  modalFormContainer.append(modalFooter)
+
+  modalForm.append(modalFormContainer)
+  modalContent.append(modalDescription , modalForm)
   modal.appendChild(modalContent)
-
-    modal.innerHTML = `<section class="modal_descripcion">
-    <div class="modal_superior">
-
-      <div class="modal_superior_img">
-        <i class="fa-solid fa-circle-xmark" id="icon_close"></i>
-        <img src=${image} alt="imagen de producto">
-      </div>
-
-      <div class="modal_superior_title">
-        <h2 class="modal_descripcion_title">${title}</h2>
-        <p class="modal_descripcion_parrafo">${description}</p>
-      </div>
-
-    </div>
-
-    <div class="modal_inferior">
-    
-    <div class="modal_inferior_container">
-    
-    <div class="modal_tamaño modal_lista">
-    
-      <form class="modal_tamaño_lista">
-            <label for="tamaño" class="modal_tamaño_title">Escoge el tamaño</label>
-            <select name="tamaño" id="tamaño">
-              <option selected>Seleccionar</option>
-              <option value="">Porción</option>
-              <option value="">Pequeña</option>
-              <option value="">Mediana</option>
-              <option value="">Grande</option>
-              <option value="">Jumbo</option>
-            </select>
-      </form>
-    
-    </div>
-        <div class="modal_sabores modal_lista">
-          <form class="modal_sabores_lista">
-            <label for="sabores" class="modal_sabores_title">Escoge el sabor</label>
-            <select name="sabores" id="sabores">
-            ${sabor.map(string => `<option selected>${string}</option>`)}      
-            </select>
-          </form>
-        </div>
-        <div class="modal_toppings modal_lista">
-          <h3 class="titulo_toppings">Escoge tus toppins adicionales</h3>
-          <form class="modal_toppings_lista">
-            <label class="modal_toppings_title">Tomate
-              <input id="tomate" type="radio" name="tomate">
-            </label>
-            <label class="modal_toppings_title">Cebolla
-              <input type="radio" name="cebolla">
-            </label>
-            <label class="modal_toppings_title">Pimenton
-              <input type="radio" name="pimenton">
-            </label>
-            <label class="modal_toppings_title">Piña
-              <input type="radio" name="piña">
-            </label>
-            <label class="modal_toppings_title">Maduro
-              <input type="radio" name="maduro">
-            </label>
-            <label class="modal_toppings_title">Jamón
-              <input type="radio" name="jamón">
-            </label>
-            <label class="modal_toppings_title">Ranchera
-              <input type="radio" name="ranchera">
-            </label>
-            <label class="modal_toppings_title">Maiz
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Champiñon
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Salami
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Tocineta
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Queso
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Pepperoni
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Carne
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Pollo
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Chorizo
-              <input type="radio" name="maiz">
-            </label>
-            <label class="modal_toppings_title">Camarón
-              <input type="radio" name="maiz">
-            </label>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="modal_observacion">
-      <form action="" class="observacion">
-        <label for="observacion">Observaciones:</label>
-        <textarea class="campo_observacion" name="observacion" id="observacion" cols="30" rows="6"
-          placeholder="[Escribe tu observación aquí]"></textarea>
-      </form>
-    </div>
-    <div class="modal_cantidad">
-      <button class="btn_restar">-</button>
-      <input type="text" id="cantidad" value="0">
-      <button class="btn_sumar">+</button>
-    </div>
-    <div class="footer_modal">
-      <div class="btn_modal_total">
-        <p>${totalPrice}</p>
-      </div>
-      <button id="btn-modal-submit" class="btn_modal_checkout">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </button>
-    </div>
-  </section>` 
+ 
 }
 
 let iconClose
